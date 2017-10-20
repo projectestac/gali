@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+  File    : index.html
+  Created : 20/10/2017
+  By      : Francesc Busquets <francesc@gmail.com>
+
+  Galí
+  Guia per a l'aprenentatge interactiu d ela llengua
+  https://clic.xtec.cat/gali
+  
+  @source https://github.com/projectestac/gali
+  
+  @license EUPL-1.1
+  @licstart
+  (c) 2000-2017 Catalan Educational Telematic Network (XTEC)
+
+  Licensed under the EUPL, Version 1.1 or -as soon they will be approved by
+  the European Commission- subsequent versions of the EUPL (the "Licence");
+  You may not use this work except in compliance with the Licence.
+
+  You may obtain a copy of the Licence at:
+  https://joinup.ec.europa.eu/software/page/eupl
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the Licence is distributed on an "AS IS" basis, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  Licence for the specific language governing permissions and limitations
+  under the Licence.
+  @licend
+-->
+
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>Galí</title>
+  <meta name="description" content="Guia per a l'aprenentatge interactiu de la llengua">
+  <meta name="author" content="XTEC">
+
+  <link rel="icon" href="img/favicon.ico">
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#2196F3">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Galí">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Galí">
+
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" href="images/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="images/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/icon-192x192.png">
+
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2196F3">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Load and register pre-caching Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+
+  <link rel="stylesheet" href="gali.css">
+</head>
+
+<body>
+  Pàgina d'inici
+</body>
+
+</html>
