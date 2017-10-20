@@ -1,0 +1,4063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0606a" version="0.1.3" code="gali">
+ <settings>
+  <title>g0606a</title>
+  <revision description="created" date="5/23/03" />
+  <descriptors />
+  <skin file="gali.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="ms40040/ms40040.txa">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="ms40065/ms40065.txa" />
+  <item name="ms40064/ms40064.txa" />
+  <item name="ms15021/ms15021.ass" />
+  <item name="ms15024c/ms15024c.ass" />
+  <item name="ms15024b/ms15024b.ass" />
+  <item name="ms15037/ms15037.txa" />
+  <item name="ms15001/ms15001.txa" />
+  <item name="ms15025/ms15025.txa" />
+  <item name="ms15015b/ms15015b.txa" />
+  <item name="ms15004/ms15004.txa" />
+  <item name="ms40008/ms40008.txa" />
+  <item name="ms40054/ms40054.txa" />
+  <item name="ms15002a/ms15002a.txa" />
+  <item name="ms15002b/ms15002b.txa" />
+  <item name="ms15014/ms15014.txa" />
+  <item name="ms15015a/ms15015a.txa" />
+  <item name="v50002/v50002.sop" />
+  <item name="ms40059/ms40059.txa" />
+  <item name="ms40055b/ms40055b.txa" />
+  <item name="ms99020/ms99020.txa" />
+  <item name="ms15003/ms15003.txa" />
+  <item name="ms12017/ms12017.txa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="ms12017/ms12017.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu es frases en tot cambiar eth vèrb en majuscula peth vèrb entre parentèsi</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="453" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <cell txtAlign="left,middle" width="460" height="45" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: Es conilhs S'AMAGUEN ena tuta. (calar-se)</p>
+       <p>                Es conilhs se calen ena tuta. </p>
+      </cell>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> - Aguesta pòrta non SE DAURÍS ben. (barrar-se) </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <target>
+       <answer>Aguesta pòrta non se barre ben</answer>
+       <response fill="_" length="10" maxLength="30" />
+       <info mode="onError">
+        <cell width="250" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>Aguesta pòrta non se barre ben</p>
+        </cell>
+       </info>
+       <text>Aguesta pòrta non se barre ben</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> .</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- TE QUEDES en casa tota era tarde? (estar-se) </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <target>
+       <answer>T'estàs en casa tota era tarde?</answer>
+       <response fill="_" length="10" maxLength="31" />
+       <info mode="onError">
+        <cell width="250" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>T'estàs en casa tota era tarde?</p>
+        </cell>
+       </info>
+       <text>T'estàs en casa tota era tarde?</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- VOS EMPORTATZ toti es libres? (sauvar-se) </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <target>
+       <answer>Vos sauvatz toti es libres?</answer>
+       <response fill="_" length="10" maxLength="27" />
+       <info mode="onError">
+        <cell width="250" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>Vos sauvatz toti es libres?</p>
+        </cell>
+       </info>
+       <text>Vos sauvatz toti es libres?</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- A viatges M'ENFADI damb era mia germana. (pelejar-se) </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <target>
+       <answer>A viatges me pelegi damb era mia germana</answer>
+       <response fill="_" length="10" maxLength="41" />
+       <info mode="onError">
+        <cell width="300" height="60">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>A viatges me pelegi damb era mia germana</p>
+        </cell>
+       </info>
+       <text>A viatges me pelegi damb era mia germana</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> . </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15001/ms15001.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb era forma avienta deth present deth vèrb HÈR</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="320" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" background="0xC0DCC0" tabWidth="16" family="Arial" size="18" bold="false" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <cell width="550" height="30" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: Maria e  Ròsa hèn de secretàries.</p>
+      </cell>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">	- El Pere </text>
+      <target>
+       <answer>hè</answer>
+       <response fill="_" length="1" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hè</p>
+        </cell>
+       </info>
+       <text>hè</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false"> d'escampaire. </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">	- Rafel e jo </text>
+      <target>
+       <answer>hèm</answer>
+       <response fill="_" length="1" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hèm</p>
+        </cell>
+       </info>
+       <text>hèm</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false"> de recepcionistes. </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">	- Tu </text>
+      <target>
+       <answer>hès</answer>
+       <response fill="_" length="1" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hès</p>
+        </cell>
+       </info>
+       <text>hès</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false"> d'infirmièr?</text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">	- Era tua germana e tu </text>
+      <target>
+       <answer>hètz</answer>
+       <response fill="_" length="1" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hètz</p>
+        </cell>
+       </info>
+       <text>hètz</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false"> d'inspectores, vertat?</text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false">	- Jo </text>
+      <target>
+       <answer>hèsqui</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hèsqui</p>
+        </cell>
+       </info>
+       <text>hèsqui</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false"> de pintor.</text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" size="18" family="Arial" bold="false" italic="false" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15002a/ms15002a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta eth dialòg damb  era forma de present adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfècte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="280" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- E tu, en auer dinat tanben </text>
+      <target>
+       <answer>trabalhes</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>TRABALLAR</p>
+        </cell>
+       </info>
+       <text>trabalhes</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> ?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	- Non, sonque </text>
+      <target>
+       <answer>trabalhi</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>TRABALHAR </p>
+        </cell>
+       </info>
+       <text>trabalhi</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> peth maitin. En auer dinat </text>
+      <target>
+       <answer>vau</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ANAR</p>
+        </cell>
+       </info>
+       <text>vau</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> a dromir ua estona e 	dempús </text>
+      <target>
+       <answer>escoti</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ESCOTAR </p>
+        </cell>
+       </info>
+       <text>escoti</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> musica o </text>
+      <target>
+       <answer>vau</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ANAR </p>
+        </cell>
+       </info>
+       <text>vau</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> a passejar. </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tostemp </text>
+      <target>
+       <answer>se quede</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>QUEDAR-SE</p>
+        </cell>
+       </info>
+       <text>se quede</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> en çò de Margarida, es  dimenjades?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	- Ara òc, pr'amor que  </text>
+      <target>
+       <answer>premanís</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>PREMANIR</p>
+        </cell>
+       </info>
+       <text>premanís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> examens, mès normaument gessem toti es 	amics e </text>
+      <target>
+       <answer>vam</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ANAR</p>
+        </cell>
+       </info>
+       <text>vam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tath cinema. 	</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15002b/ms15002b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta eth dialòg damb era forma de present adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfècte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="240" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tostemp </text>
+      <target>
+       <answer>sopatz</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>SOPAR</p>
+        </cell>
+       </info>
+       <text>sopatz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tan tard, vosati? </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	- Eth dia que </text>
+      <target>
+       <answer>sopam</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>SOPAR</p>
+        </cell>
+       </info>
+       <text>sopam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> mès lèu, ac </text>
+      <target>
+       <answer>hèm</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>HÈR</p>
+        </cell>
+       </info>
+       <text>hèm</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tàs onze, mès ei que </text>
+      <target>
+       <answer>mos lheuam</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>LHEUAR-SE</p>
+        </cell>
+       </info>
+       <text>mos lheuam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	tara ua, </text>
+      <target>
+       <answer>dinam</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>DINAR</p>
+        </cell>
+       </info>
+       <text>dinam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tàs cinc e non </text>
+      <target>
+       <answer>començam</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>COMENÇAR</p>
+        </cell>
+       </info>
+       <text>començam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de trabalhar enquiàs dotze dera 	net. </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Qué hètz? </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	Jo </text>
+      <target>
+       <answer>escoti</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ESCOTAR</p>
+        </cell>
+       </info>
+       <text>escoti</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> musica, es mèns pairs </text>
+      <target>
+       <answer>guarden</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>GUARDAR</p>
+        </cell>
+       </info>
+       <text>guarden</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> ua pellicula e eth mèn germà </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <target>
+       <answer>se doche</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>DOCHAR-SE</p>
+        </cell>
+       </info>
+       <text>se doche</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> .</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15003/ms15003.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu era forma adequada de cada vèrb en lòc que li correspon</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfècte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="400" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">     </text>
+      <cell width="590" height="70" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>jogar - telefonar - esdejoar - banhar-se - lheuar-se - premanir-se - èster - sopar - tornar - hèr - dinar - entrenar - anar</p>
+      </cell>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">Ròc ei un personatge ben curiós: cada dia </text>
+      <target>
+       <answer>se lhèue</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>se lhèue</p>
+        </cell>
+       </info>
+       <text>se lhèue</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tara ua e non </text>
+      <target>
+       <answer>esdéjoe</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>esdéjoe</p>
+        </cell>
+       </info>
+       <text>esdéjoe</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> jamès. Aquerò plan, </text>
+      <target>
+       <answer>se banhe</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>se banhe</p>
+        </cell>
+       </info>
+       <text>se banhe</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> , </text>
+      <target>
+       <answer>se premanís</answer>
+       <response fill="_" length="3" maxLength="11" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>se premanís</p>
+        </cell>
+       </info>
+       <text>se premanís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> e </text>
+      <target>
+       <answer>dine</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>dine</p>
+        </cell>
+       </info>
+       <text>dine</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tostemps dehòra. Tres viatges per setmana, </text>
+      <target>
+       <answer>entrene</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>entrene</p>
+        </cell>
+       </info>
+       <text>entrene</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> en un gimnàs pr'amor que peth sòn trabalh </text>
+      <target>
+       <answer>ei</answer>
+       <response fill="_" length="3" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>ei</p>
+        </cell>
+       </info>
+       <text>ei</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> fòrça important mantier-se en forma. </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>Sope</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>Sope</p>
+        </cell>
+       </info>
+       <text>Sope</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> cada vrèspe en un restaurant desparièr e, en auer sopat, </text>
+      <target>
+       <answer>torne</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>torne</p>
+        </cell>
+       </info>
+       <text>torne</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tà casa. Alavetz, </text>
+      <target>
+       <answer>jògue</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>jògue</p>
+        </cell>
+       </info>
+       <text>jògue</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> ar ordenador o ben </text>
+      <target>
+       <answer>hè</answer>
+       <response fill="_" length="3" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>hè</p>
+        </cell>
+       </info>
+       <text>hè</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> mots crotzadi. Tanben </text>
+      <target>
+       <answer>telefòne</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>telefòne</p>
+        </cell>
+       </info>
+       <text>telefòne</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> as sòns amics. Dempús, se'n </text>
+      <target>
+       <answer>va</answer>
+       <response fill="_" length="3" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>va</p>
+        </cell>
+       </info>
+       <text>va</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> a dromir. Ditz qu'eth sòn trabalh ei pro complicat e qu'ei sustot cansat. Praube Ròc! </text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15004/ms15004.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu eth vèrb ena forma de present adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfècte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="420" height="320" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Es professors </text>
+      <target>
+       <answer>corregissen</answer>
+       <response fill="_" length="2" maxLength="11" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CORREGIR</p>
+        </cell>
+       </info>
+       <text>corregissen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> es exercicis.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Jo </text>
+      <target>
+       <answer>bastisqui</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>BASTIR</p>
+        </cell>
+       </info>
+       <text>bastisqui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> cases.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Nosati  vos </text>
+      <target>
+       <answer>arregraïm</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ARREGRAÏR</p>
+        </cell>
+       </info>
+       <text>arregraïm</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> es vòsti presents </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Amèlia e jo </text>
+      <target>
+       <answer>fregim</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>FREGIR</p>
+        </cell>
+       </info>
+       <text>fregim</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> eth peish </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tu </text>
+      <target>
+       <answer>amanisses</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>AMANIR</p>
+        </cell>
+       </info>
+       <text>amanisses</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> er anciam. </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Vosati </text>
+      <target>
+       <answer>condusitz</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CONDUSIR</p>
+        </cell>
+       </info>
+       <text>condusitz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> un autobús.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15014/ms15014.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb era forma de present adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="660" height="310" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" italic="false" tabWidth="5" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Jo esdéjoi e </text>
+      <target>
+       <answer>sopi</answer>
+       <response fill="_" length="2" maxLength="4" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>SOPAR</p>
+        </cell>
+       </info>
+       <text>sopi</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> en casa, mès </text>
+      <target>
+       <answer>dini</answer>
+       <response fill="_" length="2" maxLength="4" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>DINAR</p>
+        </cell>
+       </info>
+       <text>dini</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> ena escòla. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Marta non care jamès: o </text>
+      <target>
+       <answer>parle</answer>
+       <response fill="_" length="2" maxLength="5" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>PARLAR</p>
+        </cell>
+       </info>
+       <text>parle</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> , o </text>
+      <target>
+       <answer>explique</answer>
+       <response fill="_" length="2" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>EXPLICAR</p>
+        </cell>
+       </info>
+       <text>explique</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> remoquets, o </text>
+      <target>
+       <answer>cante</answer>
+       <response fill="_" length="2" maxLength="5" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CANTAR</p>
+        </cell>
+       </info>
+       <text>cante</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> o ben </text>
+      <target>
+       <answer>telefòne</answer>
+       <response fill="_" length="2" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>TELEFONAR</p>
+        </cell>
+       </info>
+       <text>telefòne</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> a quauquarrés. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Se trabalhes tota era setmana e non </text>
+      <target>
+       <answer>repòses</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>REPOSAR</p>
+        </cell>
+       </info>
+       <text>repòses</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> jamès, te meteràs malaut. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Pes tardes, nosati guardam era television o ben </text>
+      <target>
+       <answer>escotam</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ESCOTAR</p>
+        </cell>
+       </info>
+       <text>escotam</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> musica.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Aqueri mainatges petiti ploren e </text>
+      <target>
+       <answer>criden</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CRIDAR</p>
+        </cell>
+       </info>
+       <text>criden</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> quan an hame. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Se tu e Carme visitatz a tia Ròsa e li </text>
+      <target>
+       <answer>portatz</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>PORTAR</p>
+        </cell>
+       </info>
+       <text>portatz</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">  flors, serà fòrça contenta. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="17" bold="false" background="0xC0DCC0" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15015a/ms15015a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Triga era forma verbau corrècta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Esplendid!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="620" height="310" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" italic="false" tabWidth="5" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Nosati </text>
+      <target>
+       <answer>espartim</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ESPARTIR</p>
+        </cell>
+       </info>
+       <text>espartim</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> eth pastís en ueit talhs. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Tu tostemp </text>
+      <target>
+       <answer>seguisses</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>SEGUIR</p>
+        </cell>
+       </info>
+       <text>seguisses</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> eth camin que i a ath costat dera plaja. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Vosati non </text>
+      <target>
+       <answer>boritz</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>BORIR</p>
+        </cell>
+       </info>
+       <text>boritz</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> era lèit abans de beuer-vo'la? </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Eri tostemp ac </text>
+      <target>
+       <answer>decidissen</answer>
+       <response fill="_" length="2" maxLength="10" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>DECIDIR</p>
+        </cell>
+       </info>
+       <text>decidissen</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> tot a darrèra ora.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Eth </text>
+      <target>
+       <answer>dromís</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>DROMIR</p>
+        </cell>
+       </info>
+       <text>dromís</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> ueit ores diàries. </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Tu tostemp t' </text>
+      <target>
+       <answer>amasses</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>AMASSAR</p>
+        </cell>
+       </info>
+       <text>amasses</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> damb elth grop de trabalh cada quinze dies? </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15015b/ms15015b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Triga era forma verbau corrècta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" italic="false" tabWidth="5" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Jo </text>
+      <target>
+       <answer>tossisqui</answer>
+       <optionList>
+        <option>tossisqui</option>
+        <option>tossis</option>
+       </optionList>
+       <text>tossisqui</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> quan sò constipada.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Es mainades </text>
+      <target>
+       <answer>cuelhen</answer>
+       <optionList>
+        <option>cuelhen</option>
+        <option>cuelh</option>
+       </optionList>
+       <text>cuelhen</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> flors en jardin </text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Era mair </text>
+      <target>
+       <answer>patís</answer>
+       <optionList>
+        <option>patim</option>
+        <option>patís</option>
+       </optionList>
+       <text>patís</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> se  què eth sòn hilh.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Jo </text>
+      <target>
+       <answer>arregraïsqui</answer>
+       <optionList>
+        <option>arregraïsqui</option>
+        <option>arregraïm</option>
+       </optionList>
+       <text>arregraïsqui</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> de tot còr era ajuda des ciutadans.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Tu </text>
+      <target>
+       <answer>dividisses</answer>
+       <optionList>
+        <option>dividís</option>
+        <option>dividisses</option>
+       </optionList>
+       <text>dividisses</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> malament; encara non n'as aprés.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0">- Era protagonista </text>
+      <target>
+       <answer>morís</answer>
+       <optionList>
+        <option>morís</option>
+        <option>morisses</option>
+       </optionList>
+       <text>morís</text>
+      </target>
+      <text italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0"> ath finau dera pellicula.</text>
+     </p>
+     <p italic="false" foreground="0x000000" family="Arial" size="18" bold="false" background="0xC0DCC0" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms15021/ms15021.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Aparelha eth pronòm damb era frasa corresponenta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="7" cols="1" cellWidth="250.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell id="0">
+     <p>Jo</p>
+    </cell>
+    <cell id="1">
+     <p>Tu</p>
+    </cell>
+    <cell id="2">
+     <p>Era</p>
+    </cell>
+    <cell id="3">
+     <p>Nosati / Nosates</p>
+    </cell>
+    <cell id="4">
+     <p>Vosati / Vosates</p>
+    </cell>
+    <cell id="5">
+     <p>Eri</p>
+    </cell>
+    <cell id="6">
+     <p>Eres</p>
+    </cell>
+   </cells>
+   <cells rows="7" cols="1" cellWidth="250.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>sò de Manresa.</p>
+    </cell>
+    <cell>
+     <p>ès preciosa.</p>
+    </cell>
+    <cell>
+     <p>era ei nauta e simpatica.</p>
+    </cell>
+    <cell>
+     <p> èm de nauta montanha.</p>
+    </cell>
+    <cell>
+     <p>ètz ues bones atletes.</p>
+    </cell>
+    <cell>
+     <p>son es mèns pairs.</p>
+    </cell>
+    <cell>
+     <p>son es germanes de Pere.</p>
+    </cell>
+   </cells>
+   <cells rows="7" cols="1" cellWidth="245.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>Jo sò de Manresa</p>
+    </cell>
+    <cell>
+     <p>Tu ès preciosa</p>
+    </cell>
+    <cell>
+     <p>Era ei nauta e simpatica</p>
+    </cell>
+    <cell>
+     <p>Nosati èm de nauta montanha.</p>
+    </cell>
+    <cell>
+     <p>Vosati ètz ues bones atletes.</p>
+    </cell>
+    <cell>
+     <p>Eri son es mèns pairs.</p>
+    </cell>
+    <cell>
+     <p>Eres son es germanes de Pere</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms15024b/ms15024b.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Relaciona cada vèrb damb eth pronòm personau adequat</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="250.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell id="0">
+     <p>Jo</p>
+    </cell>
+    <cell id="1">
+     <p>Tu</p>
+    </cell>
+    <cell id="2">
+     <p>Eth / era</p>
+    </cell>
+    <cell id="3">
+     <p>Nosati/ nosates</p>
+    </cell>
+    <cell id="4">
+     <p>Vosati / vosates</p>
+    </cell>
+    <cell id="5">
+     <p>Eri /eres</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="184.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>è</p>
+    </cell>
+    <cell>
+     <p>hès</p>
+    </cell>
+    <cell>
+     <p>ei</p>
+    </cell>
+    <cell>
+     <p>èm</p>
+    </cell>
+    <cell>
+     <p>hètz</p>
+    </cell>
+    <cell>
+     <p>son</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>Jo è</p>
+    </cell>
+    <cell>
+     <p>Tu hès</p>
+    </cell>
+    <cell>
+     <p>Eth / era ei</p>
+    </cell>
+    <cell>
+     <p>Nosati / nosates èm</p>
+    </cell>
+    <cell>
+     <p>Vosati / vosates hètz</p>
+    </cell>
+    <cell>
+     <p>Eri / eres son</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms15024c/ms15024c.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Relaciona cada vèrb damb eth pronòm personau adequat</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="250.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell id="0">
+     <p>Jo</p>
+    </cell>
+    <cell id="1">
+     <p>Tu</p>
+    </cell>
+    <cell id="2">
+     <p>Eth / era</p>
+    </cell>
+    <cell id="3">
+     <p>Nosati/ nosates</p>
+    </cell>
+    <cell id="4">
+     <p>Vosati / vosates</p>
+    </cell>
+    <cell id="5">
+     <p>Eri /eres</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="184.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>pogui</p>
+    </cell>
+    <cell>
+     <p>pòs</p>
+    </cell>
+    <cell>
+     <p>pòt</p>
+    </cell>
+    <cell>
+     <p>podem</p>
+    </cell>
+    <cell>
+     <p>podetz</p>
+    </cell>
+    <cell>
+     <p>pòden</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>Jo pogui</p>
+    </cell>
+    <cell>
+     <p>Tu pòs</p>
+    </cell>
+    <cell>
+     <p>Eth / era pòt</p>
+    </cell>
+    <cell>
+     <p>Nosati/ nosates podem</p>
+    </cell>
+    <cell>
+     <p>Vosati / vosates podetz</p>
+    </cell>
+    <cell>
+     <p>Eri / eres pòden</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15025/ms15025.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta damb era forma avienta deth present des vèrbs: ÈSTER, HÈR, AUER</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="640" height="302" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="5" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Jo </text>
+      <target>
+       <answer>sò</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>sò</p>
+        </cell>
+       </info>
+       <text>sò</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Vic, </text>
+      <target>
+       <answer>hèsqui</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hèsqui</p>
+        </cell>
+       </info>
+       <text>hèsqui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de mèstre e </text>
+      <target>
+       <answer>è</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <info mode="onError">
+        <cell width="96" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>è</p>
+        </cell>
+       </info>
+       <text>è</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 22 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tu </text>
+      <target>
+       <answer>ès</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ès</p>
+        </cell>
+       </info>
+       <text>ès</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Sabadell, </text>
+      <target>
+       <answer>hès</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hès</p>
+        </cell>
+       </info>
+       <text>hès</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de hustèr e </text>
+      <target>
+       <answer>as</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>as</p>
+        </cell>
+       </info>
+       <text>as</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 30 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Marc </text>
+      <target>
+       <answer>ei</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ei</p>
+        </cell>
+       </info>
+       <text>ei</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Rubí, </text>
+      <target>
+       <answer>hè</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hè</p>
+        </cell>
+       </info>
+       <text>hè</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de monitor e </text>
+      <target>a</target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 16 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Maria e jo </text>
+      <target>
+       <answer>èm</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>èm</p>
+        </cell>
+       </info>
+       <text>èm</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Mollerussa, </text>
+      <target>
+       <answer>hèm</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hèm</p>
+        </cell>
+       </info>
+       <text>hèm</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de venedores e </text>
+      <target>
+       <answer>auem</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>auem</p>
+        </cell>
+       </info>
+       <text>auem</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 20 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Loís e tu </text>
+      <target>
+       <answer>ètz</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ètz</p>
+        </cell>
+       </info>
+       <text>ètz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Salt, </text>
+      <target>
+       <answer>hètz</answer>
+       <response fill="_" length="2" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hètz</p>
+        </cell>
+       </info>
+       <text>hètz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de mecanics e </text>
+      <target>
+       <answer>auetz</answer>
+       <response fill="_" length="2" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>auetz</p>
+        </cell>
+       </info>
+       <text>auetz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 25 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Jaime e Pilar </text>
+      <target>
+       <answer>son</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>son</p>
+        </cell>
+       </info>
+       <text>son</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de Salou, </text>
+      <target>
+       <answer>hèn</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>hèn</p>
+        </cell>
+       </info>
+       <text>hèn</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> de cambrèrs e </text>
+      <target>
+       <answer>an</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="18" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>an</p>
+        </cell>
+       </info>
+       <text>an</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 32 ans.</text>
+     </p>
+     <p italic="false" size="17" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms15037/ms15037.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb era forma avienta deth vèrb CREIR</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Esplendid!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="280" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="16" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tu qué </text>
+      <target>
+       <answer>cres</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <text>cres</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> ?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Jo </text>
+      <target>
+       <answer>creigui</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <text>creigui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> qu'ei innocent. </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Es alumnes </text>
+      <target>
+       <answer>cren</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <text>cren</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> qu'era excursion non ère adequada. </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- E vosati, qué </text>
+      <target>
+       <answer>creiguetz</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <info mode="onError">
+        <cell width="100" height="40" />
+       </info>
+       <text>creiguetz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> ?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Nosati </text>
+      <target>
+       <answer>creiguem</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <text>creiguem</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> qu'an rason es alumnes, mès Cristina </text>
+      <target>
+       <answer>cre</answer>
+       <optionList>
+        <option>creigui</option>
+        <option>cres</option>
+        <option>cre</option>
+        <option>creiguem</option>
+        <option>creiguetz</option>
+        <option>cren</option>
+       </optionList>
+       <text>cre</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> que non.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40008/ms40008.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb era forma de present adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantastic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="460" height="450" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="7" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Encara non </text>
+      <target>
+       <answer>logatz</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>LOGAR, 2au. persona plurau</p>
+        </cell>
+       </info>
+       <text>logatz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">aguesta casa?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Tostemp </text>
+      <target>
+       <answer>expliques</answer>
+       <response fill="_" length="2" maxLength="9" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>EXPLICAR, 2au. persona singular</p>
+        </cell>
+       </info>
+       <text>expliques</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">era madeisha istòria.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Ja </text>
+      <target>
+       <answer>penjatz</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>PENJAR, 2au. persona plurau</p>
+        </cell>
+       </info>
+       <text>penjatz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">ben er abric?</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Jamès non </text>
+      <target>
+       <answer>pugi</answer>
+       <response fill="_" length="2" maxLength="4" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>PUJAR, 1a persona singular</p>
+        </cell>
+       </info>
+       <text>pugi</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">es escales a pè.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Dimars </text>
+      <target>
+       <answer>comencen</answer>
+       <response fill="_" length="2" maxLength="8" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>COMENÇAR, 3au persona plurau</p>
+        </cell>
+       </info>
+       <text>comencen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">es vacances.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Non </text>
+      <target>
+       <answer>mèrques</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>MERCAR, 2au persona singular</p>
+        </cell>
+       </info>
+       <text>mèrques</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">ben es responses.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- As de gésser pr'amor que ja </text>
+      <target>
+       <answer>acabe</answer>
+       <response fill="_" length="2" maxLength="5" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>Acabar, 3au. persona singular</p>
+        </cell>
+       </info>
+       <text>acabe</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Aqueri alumnes </text>
+      <target>
+       <answer>jòguen</answer>
+       <response fill="_" length="2" maxLength="6" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>JOGAR, 3au. persona plurau</p>
+        </cell>
+       </info>
+       <text>jòguen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> tostemp.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- En ostiu </text>
+      <target>
+       <answer>caci</answer>
+       <response fill="_" length="2" maxLength="4" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>CAÇAR, 1a persona singular</p>
+        </cell>
+       </info>
+       <text>caci</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">parpalhòles.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40040/ms40040.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es sèries de vèrbs</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantastic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="400" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="35" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	</text>
+      <cell width="350" height="60" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Present d'indicatiu</p>
+      </cell>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">pensi 	perdi 	sentisqui  	invertertisqui</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>penses</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>penses</p>
+        </cell>
+       </info>
+       <text>penses</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>pèrdes</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pèrdes</p>
+        </cell>
+       </info>
+       <text>pèrdes</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sentisses</answer>
+       <response fill="_" length="5" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>sentisses</p>
+        </cell>
+       </info>
+       <text>sentisses</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	 </text>
+      <target>
+       <answer>invertisses</answer>
+       <response fill="_" length="5" maxLength="11" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>invertisses</p>
+        </cell>
+       </info>
+       <text>invertisses</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>pense</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pense</p>
+        </cell>
+       </info>
+       <text>pense</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>pèrd</answer>
+       <response fill="_" length="5" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pèrd</p>
+        </cell>
+       </info>
+       <text>pèrd</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sentís</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>sentís</p>
+        </cell>
+       </info>
+       <text>sentís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>invertís</answer>
+       <response fill="_" length="5" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>invertís</p>
+        </cell>
+       </info>
+       <text>invertís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>pensam</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pensam</p>
+        </cell>
+       </info>
+       <text>pensam</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>perdem</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>perdem</p>
+        </cell>
+       </info>
+       <text>perdem</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sentim</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>sentim</p>
+        </cell>
+       </info>
+       <text>sentim</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>invertim</answer>
+       <response fill="_" length="5" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>invertim</p>
+        </cell>
+       </info>
+       <text>invertim</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>pensatz</answer>
+       <response fill="_" length="5" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pensatz</p>
+        </cell>
+       </info>
+       <text>pensatz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>perdetz</answer>
+       <response fill="_" length="5" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>perdetz</p>
+        </cell>
+       </info>
+       <text>perdetz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sentitz</answer>
+       <response fill="_" length="5" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>sentitz</p>
+        </cell>
+       </info>
+       <text>sentitz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>invertitz</answer>
+       <response fill="_" length="5" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>invertitz</p>
+        </cell>
+       </info>
+       <text>invertitz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <target>
+       <answer>pensen</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pensen</p>
+        </cell>
+       </info>
+       <text>pensen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>pèrden</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pèrden</p>
+        </cell>
+       </info>
+       <text>pèrden</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sentissen</answer>
+       <response fill="_" length="5" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>sentissen</p>
+        </cell>
+       </info>
+       <text>sentissen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>invertissen</answer>
+       <response fill="_" length="5" maxLength="11" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>invertissen</p>
+        </cell>
+       </info>
+       <text>invertissen</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40054/ms40054.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb era forma verbau adequada</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="630" height="211" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="40" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Ja </text>
+      <target>
+       <answer>aprenetz</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>APRÉNER, present d'indicatiu, 2au. persona deth plurau</p>
+        </cell>
+       </info>
+       <text>aprenetz</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">fòrça causes ena escòla? </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Se vòs, aguest ostiu </text>
+      <target>
+       <answer>podem</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>PODER, present d'indicatiu, 1a persona deth plurau</p>
+        </cell>
+       </info>
+       <text>podem</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">anar de viatge. </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Encara </text>
+      <target>
+       <answer>dormís</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>DORMIR, present d'indicatiu, 3a. upersona deth singular</p>
+        </cell>
+       </info>
+       <text>dormís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">,  Miquèl? </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">- Toti es alumnes </text>
+      <target>
+       <answer>resòlven</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" />
+         </style>
+         <p>RESÒLVER, present d'indicatiu, 3au. persona deth plurau</p>
+        </cell>
+       </info>
+       <text>resòlven</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">es exercicis de matematiques damb calculadora.</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40055b/ms40055b.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu cada vèrb en gerondiu</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="523" height="340" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="25" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	escríuer 	</text>
+      <target>
+       <answer>escriuent</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>escriuent</p>
+        </cell>
+       </info>
+       <text>escriuent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	víuer 	</text>
+      <target>
+       <answer>viuent</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>viuent</p>
+        </cell>
+       </info>
+       <text>viuent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	plòir 	</text>
+      <target>
+       <answer>ploiguent</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ploiguent</p>
+        </cell>
+       </info>
+       <text>ploiguent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	córrer 	</text>
+      <target>
+       <answer>corrent</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>corrent</p>
+        </cell>
+       </info>
+       <text>corrent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	arrir 	</text>
+      <target>
+       <answer>arrint</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>arrint</p>
+        </cell>
+       </info>
+       <text>arrint</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	tossir 	</text>
+      <target>
+       <answer>tossint</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>tossint</p>
+        </cell>
+       </info>
+       <text>tossint</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	caçar 	</text>
+      <target>
+       <answer>caçant</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>caçant</p>
+        </cell>
+       </info>
+       <text>caçant</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40059/ms40059.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta era sèrie de vèrbs</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="523" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="25" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	INFINITIU	GERUNDI	PARTICIPI</text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">cre 	</text>
+      <target>
+       <answer>creir</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>creir</p>
+        </cell>
+       </info>
+       <text>creir</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  	</text>
+      <target>
+       <answer>creiguent</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>creiguent</p>
+        </cell>
+       </info>
+       <text>creiguent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  	</text>
+      <target>
+       <answer>creigut</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>creigut</p>
+        </cell>
+       </info>
+       <text>creigut</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">pòt 	</text>
+      <target>
+       <answer>poder</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>poder</p>
+        </cell>
+       </info>
+       <text>poder</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>podent</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>podent</p>
+        </cell>
+       </info>
+       <text>podent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>pogut</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>pogut</p>
+        </cell>
+       </info>
+       <text>pogut</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">sap 	</text>
+      <target>
+       <answer>saber</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>saber</p>
+        </cell>
+       </info>
+       <text>saber</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sabent</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>sabent</p>
+        </cell>
+       </info>
+       <text>sabent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>sabut</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>sabut</p>
+        </cell>
+       </info>
+       <text>sabut</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">a	</text>
+      <target>
+       <answer>auer</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>auer</p>
+        </cell>
+       </info>
+       <text>auer</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>auent</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>auent</p>
+        </cell>
+       </info>
+       <text>auent</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>auut</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>auut</p>
+        </cell>
+       </info>
+       <text>auut</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">florís 	</text>
+      <target>
+       <answer>florir</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>florir</p>
+        </cell>
+       </info>
+       <text>florir</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>florint</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>florint</p>
+        </cell>
+       </info>
+       <text>florint</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> 	</text>
+      <target>
+       <answer>florit</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>florit</p>
+        </cell>
+       </info>
+       <text>florit</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40064/ms40064.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta en tot seguir er exemple</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfècte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="430" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="7" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">		</text>
+      <cell width="240" height="30" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: mòir = jo moigui</p>
+      </cell>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	conéixer = 		jo </text>
+      <target>
+       <answer>coneishi</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>coneishi</p>
+        </cell>
+       </info>
+       <text>coneishi</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	apréner = 		jo </text>
+      <target>
+       <answer>apreni</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>apreni</p>
+        </cell>
+       </info>
+       <text>apreni</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	auer  = 			jo </text>
+      <target>
+       <answer>è</answer>
+       <response fill="_" length="3" maxLength="1" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>è</p>
+        </cell>
+       </info>
+       <text>è</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	compréner  =	jo </text>
+      <target>
+       <answer>compreni</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>compreni</p>
+        </cell>
+       </info>
+       <text>compreni</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	poder = 			jo </text>
+      <target>
+       <answer>pogui</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pogui</p>
+        </cell>
+       </info>
+       <text>pogui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	aparéisher = 	jo </text>
+      <target>
+       <answer>apareishi</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>apareishi</p>
+        </cell>
+       </info>
+       <text>apareishi</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	víuer  = 			jo </text>
+      <target>
+       <answer>viui</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>viui</p>
+        </cell>
+       </info>
+       <text>viui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	trèir = 			jo </text>
+      <target>
+       <answer>trèigui</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>trèigui</p>
+        </cell>
+       </info>
+       <text>trèigui</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">   </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40065/ms40065.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta en tot seguir er exemple</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="430" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" size="18" background="0xC0DCC0" family="Arial" tabWidth="7" bold="false" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">		</text>
+      <cell width="240" height="30" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: poder = eth pòt</p>
+      </cell>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	pèrder = 		eth </text>
+      <target>
+       <answer>pèrd</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>pèrd</p>
+        </cell>
+       </info>
+       <text>pèrd</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	morir = 			eth </text>
+      <target>
+       <answer>morís</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>morís</p>
+        </cell>
+       </info>
+       <text>morís</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	adméter = 		eth </text>
+      <target>
+       <answer>admet</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>admet</p>
+        </cell>
+       </info>
+       <text>admet</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	compréner = 	eth </text>
+      <target>
+       <answer>compren</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>compren</p>
+        </cell>
+       </info>
+       <text>compren</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000"> </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">	respóner = 		eth </text>
+      <target>
+       <answer>respon</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>respon</p>
+        </cell>
+       </info>
+       <text>respon</text>
+      </target>
+      <text italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000">  </text>
+     </p>
+     <p italic="false" size="18" background="0xC0DCC0" family="Arial" bold="false" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms99020/ms99020.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta es frases damb es formes des vèrbs indicades</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excellent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="450" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="18" family="Arial" bold="false" foreground="0x000000" tabWidth="5" background="0xC0DCC0" italic="false" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- S'eri non ac </text>
+      <target>
+       <answer>comprenen</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>COMPRÉNER, Present d'indicatiu, 3au. persona deth plurau</p>
+        </cell>
+       </info>
+       <text>comprenen</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> ei pr'amor que non </text>
+      <target>
+       <answer>vòlen</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info>
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>VOLER,Present d'indicatiu, 3au. persona deth plurau.</p>
+        </cell>
+       </info>
+       <text>vòlen</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> </text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- Ei que </text>
+      <target>
+       <answer>son</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ÈSTER, Present d'indicatiu, 3au. persona deth plurau.</p>
+        </cell>
+       </info>
+       <text>son</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> uns distrèti. </text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- Ei un feniant: non </text>
+      <target>
+       <answer>trabalhe</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>TRABALHAR, Present d'indicatiu, 3a.u persona deth singular</p>
+        </cell>
+       </info>
+       <text>trabalhe</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> jamès</text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- E, ath delà, ei un chafardèr: tostemp ac </text>
+      <target>
+       <answer>sap</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>SABER, Present d'indicatiu, 3au. persona deth singular.</p>
+        </cell>
+       </info>
+       <text>sap</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> tot. </text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- Es mèns germans son tot ath contrari de jo: </text>
+      <target>
+       <answer>son</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>ÈSTER, Present d'indicatiu, </p>
+         <p>3au. persona deth plurau.</p>
+        </cell>
+       </info>
+       <text>son</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> fòrça ordenats. </text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- Òc, pr'amor que tu, d'ordenat, bric. Ès  era persona mès deishada que </text>
+      <target>
+       <answer>coneishi</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CONÉISHER, Present d'indicatiu, 1a. persona delth singular.</p>
+        </cell>
+       </info>
+       <text>coneishi</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> .</text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">-  Ei massa pauruc tà condusir. Quinsevolh dia </text>
+      <target>
+       <answer>pòt</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>PODER, Present, 3au. persona deth singular.</p>
+        </cell>
+       </info>
+       <text>pòt</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> auer un accident. </text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">- Òc, pr'amor qu'autant  dangierosi son es que </text>
+      <target>
+       <answer>corren</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CÓRRER, Present d'indicatiu, </p>
+         <p>3au. persona deth plurau.</p>
+        </cell>
+       </info>
+       <text>corren</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false"> massa coma es que non </text>
+      <target>
+       <answer>corren</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info mode="onError">
+        <cell width="280" height="40">
+         <style>
+          <font family="Arial" size="20" bold="true" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>CÓRRER, Present d'indicatiu, 3a. persona deth plurau.</p>
+        </cell>
+       </info>
+       <text>corren</text>
+      </target>
+      <text family="Arial" size="18" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false">  bric.</text>
+     </p>
+     <p family="Arial" size="17" bold="false" foreground="0x000000" background="0xC0DCC0" italic="false" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="v50002/v50002.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Tròba cinc vèrbs en infinitiu</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="40.0" cellHeight="40.0" border="false">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" />
+    </style>
+    <text>
+     <row>***PUJAR****</row>
+     <row>***********A</row>
+     <row>***********N</row>
+     <row>ARTURAR****A</row>
+     <row>L**********R</row>
+     <row>H***********</row>
+     <row>E***********</row>
+     <row>U***GÉSSER**</row>
+     <row>A***********</row>
+     <row>R***********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ANAR</clue>
+    <clue id="1">ARTURAR</clue>
+    <clue id="2">PUJAR</clue>
+    <clue id="3">LHEUAR</clue>
+    <clue id="4">GÉSSER</clue>
+   </clues>
+   <cells rows="5" cols="1" cellWidth="10.0" cellHeight="10.0" border="false" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/anar.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/aturar.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/pujar.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/aixecar.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/sortir.mp3" />
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="wav/f/aixecar.mp3" file="wav_f_aixecar.mp3" />
+  <media name="wav/f/aturar.mp3" file="wav_f_aturar.mp3" />
+  <media name="wav/m/anar.mp3" file="wav_m_anar.mp3" />
+  <media name="wav/m/pujar.mp3" file="wav_m_pujar.mp3" />
+  <media name="wav/m/sortir.mp3" file="wav_m_sortir.mp3" />
+  <media name="gali.xml" file="gali.xml" />
+ </mediaBag>
+</JClicProject>
+

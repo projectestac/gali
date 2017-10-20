@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0601b_intro" version="0.1.3">
+ <settings>
+  <title>g0601b intro</title>
+  <revision description="created" date="5/14/03" />
+  <descriptors />
+  <skin file="gali.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Inici">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="presenta" name="Presentació">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Inici" code="">
+   <description>
+    <p>Pantalla d'espera mentre es carrega el paquet d'activitats</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x804000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="i01-img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="157.0" cellHeight="133.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell txtAlign="left,middle" imgAlign="left,middle" image="gali.gif">
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0101a.pac" params="g0101a.jclic" />
+    </cell>
+    <cell txtAlign="left,bottom">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x003366" background="0xFFFFFF" />
+     </style>
+     <p>MORFOSINTAXI </p>
+     <p>(Aprofundiment)</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Presentació" code="">
+   <description>
+    <p>Pantalla d'espera mentre es carrega el paquet d'activitats</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x804000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="morf.png">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.003145,0.511628,0.946541,0.093023</shape>
+     <shape comment="1">rectangle:0.023585,0.619186,0.929245,0.061047</shape>
+     <shape comment="2">rectangle:0.011006,0.688953,0.93239,0.061047</shape>
+     <shape comment="3">rectangle:0.009434,0.755814,0.941824,0.069767</shape>
+     <shape comment="4">rectangle:0.014151,0.819767,0.959119,0.078488</shape>
+     <shape comment="5">rectangle:0.001572,0.901163,0.97327,0.09593</shape>
+    </shaper>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0601b.pac" params="g0601b.jclic" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0602b.pac" params="g0602b.jclic" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0603b.pac" params="g0603b.jclic" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0604b.pac" params="g0604b.jclic" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" params="g0605b.jclic" />
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="g0606b.pac" params="g0606b.jclic" />
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="gali.gif" file="gali.gif" animated="false" />
+  <media name="i01-img/textura.gif" file="i01_img_textura.gif" animated="false" />
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="morf.png" file="morf.png" />
+  <media name="gali.xml" file="gali.xml" />
+ </mediaBag>
+</JClicProject>
+

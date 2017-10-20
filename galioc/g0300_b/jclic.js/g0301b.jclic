@@ -1,0 +1,2657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0301b" version="0.1.3" code="gali">
+ <settings>
+  <title>g0301b</title>
+  <revision description="created" date="5/21/03" />
+  <descriptors />
+  <skin file="gali.xml" />
+ </settings>
+ <sequence>
+  <item id="g0301b.pac" name="ms16010a/ms16010a.ass">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="ms16010b/ms16010b.ass" />
+  <item name="fp60055/fp60055.txa" />
+  <item name="fp60056/fp60056.txa" />
+  <item name="v14001/v14001.txa" />
+  <item name="v14003/v14003.txa" />
+  <item name="fp114af/fp114af.txa" />
+  <item name="fp114ae/fp114ae.txa" />
+  <item name="fp114ad/fp114ad.txa" />
+  <item name="fp114ac/fp114ac.txa" />
+  <item name="fp114ab/fp114ab.txa" />
+  <item name="fp114aa/fp114aa.txa" />
+  <item name="ms16004/ms16004.txa" />
+  <item name="ms16005/ms16005.txa" />
+  <item name="fp60054/fp60054.txa" />
+  <item name="fp60063/fp60063.txa" />
+  <item name="fp60064/fp60064.txa" />
+  <item name="fp60066/fp60066.txa" />
+  <item name="v14002/v14002.txa" />
+  <item name="v60017/v60017.ass" />
+  <item name="e60281/e60281.puz" />
+  <item name="fp114da/fp114da.txa" />
+  <item name="fp114db/fp114db.txa" />
+  <item name="fp114dc/fp114dc.txa" />
+  <item name="fp114dd/fp114dd.txa" />
+  <item name="v50030/v50030.sop">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@puzzles.ExchangePuzzle" name="e60281/e60281.puz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Ordena es sillabes que formen era paraula</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="wav/m/primaver.mp3" />
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/eprimave.gif" tiled="false" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <position x="220" y="290" />
+    </window>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="100.0" cellHeight="100.0" border="false">
+    <style>
+     <font family="Arial" size="18" bold="true" />
+     <color foreground="0xFFFFFF" background="0x008080" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>PRI</p>
+    </cell>
+    <cell>
+     <p>MA</p>
+    </cell>
+    <cell>
+     <p>UE</p>
+    </cell>
+    <cell>
+     <p>RA</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114aa/fp114aa.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="460" height="230" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114aa1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia èm aué?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114aa2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Aué èm a diuendres, 13 de març.</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114ab/fp114ab.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="480" height="231" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ab1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia èm aué?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ab2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Aué èm a dimèrcles, 16 de gèr. </text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114ac/fp114ac.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="410" height="220" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ac1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia èm aué?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ac2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Aué èm a dissabte, 14 de mai.</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114ad/fp114ad.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="430" height="220" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ad1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia èm aué?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ad2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Aué èm a deluns, 9 de seteme.</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114ae/fp114ae.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="410" height="220" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ae1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia siguec ager?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114ae2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Ager siguec dimars, 8 de junh.</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114af/fp114af.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="405" height="220" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xDEF7DE" italic="false" bold="true" size="20" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114af1.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Quin dia serà deman?</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114af2.mp3" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000"> Deman serà dijaus, 11 de junhsèga.</text>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xDEF7DE" bold="true" size="20" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114da/fp114da.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/primaver.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="334" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0x94AD94" italic="false" bold="true" size="18" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114da1.mp3" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000"> Quan ei era primauera?</text>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114da2.mp3" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000"> Era primauera comence cap ath vint-e-un de març e acabe cap ath vint-e-un de junh.</text>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114db/fp114db.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/estiu.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="260" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0x94AD94" italic="false" bold="true" size="18" family="Arial" foreground="0x400000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114db1.mp3" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000"> Quan ei er ostiu?</text>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114db2.mp3" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000"> Er ostiu comence cap ath vint-e-un de junh e acabe cap ath vint-e-un de seteme.</text>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000" />
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0x94AD94" bold="true" size="18" family="Arial" foreground="0x400000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114dc/fp114dc.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/tardor.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="280" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0x94AD94" italic="false" bold="true" tabWidth="8" family="Arial" size="18" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114dc1.mp3" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000"> Quan ei era tardor?</text>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114dc2.mp3" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000"> Era tardor comence cap ath vint-e-un de seteme e acabe cap ath vint-e-un de deseme.</text>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp114dd/fp114dd.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/hivern.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="271" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0x94AD94" italic="false" bold="true" tabWidth="8" family="Arial" size="18" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114dd1.mp3" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000"> Quan ei er iuèrn?</text>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="4" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <cell width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/a/fp114dd2.mp3" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000"> Er iuèrn comence cap ath vint-e-un de deseme e acabe cap ath vint-e-un de març. </text>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">			</text>
+      <cell width="60" height="30" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="4" />
+      </cell>
+      <text background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000">		</text>
+      <cell width="60" height="30" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0x94AD94" italic="false" bold="true" family="Arial" size="18" foreground="0x000000" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60054/fp60054.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="630" height="360" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" bold="true" tabWidth="8" family="Arial" size="20" foreground="0x808080" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">DIA			</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/dia.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">SETMANA	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/setmana.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">MES			</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/mes.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">AN			</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/any.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec4.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="20" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play4.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60055/fp60055.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="620" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" bold="true" tabWidth="8" family="Arial" size="25" foreground="0x808080" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">AGER	</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/ahir.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">AUÉ		</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/avui.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">DEMAN	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/dema.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60056/fp60056.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="640" height="208" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" bold="true" tabWidth="8" family="Arial" size="25" foreground="0x808080" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">DELÀGER 		</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/abansdah.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">DEMAN PASSAT	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/demapass.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60063/fp60063.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="278" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" bold="true" tabWidth="8" family="Arial" size="25" foreground="0x808080" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">Quinzena		</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/quinzena.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">Trimesadèr		</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/trimestr.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080" />
+     <p background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">Semèstre		</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/semestre.mp3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="3" />
+      </cell>
+      <text background="0xFFFFFF" italic="false" bold="true" family="Arial" size="25" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60064/fp60064.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="620" height="360" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xFFFFFF" italic="false" bold="true" size="25" family="Arial" foreground="0x808080" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Diari 		</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/diari.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080" />
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Setmanau	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/setmanal.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080" />
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Mensuau		</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/mensual.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080" />
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Anuau		</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/anual.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec4.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play4.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60066/fp60066.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota, lieg, repetís e compara</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="8" background="0xFFFFFF" italic="false" bold="true" size="25" family="Arial" foreground="0x808080" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Passat	</text>
+      <cell width="55" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/passat.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080" />
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Present	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/present.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play2.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080" />
+     <p italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">Futur	</text>
+      <cell width="54" height="55" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/futur.mp3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">		</text>
+      <cell width="140" height="55" border="false" image="img/rec3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="3" />
+      </cell>
+      <text italic="false" background="0xFFFFFF" bold="true" size="25" family="Arial" foreground="0x808080">	</text>
+      <cell width="140" height="55" border="false" image="img/play3.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms16004/ms16004.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>S'aué ei dissabte 12, complèta es frases damb er advèrbi corresponent</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="675" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" tabWidth="5" background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">            </text>
+      <cell width="400" height="70" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>delàger/ ager/ deman/ deman passat</p>
+      </cell>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">- Dijaus 10,  </text>
+      <target>
+       <answer>delàger</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>delàger</p>
+        </cell>
+       </info>
+       <text>delàger</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">, Marc portèc eth coche en talhèr. </text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">- Dimenge 13, </text>
+      <target>
+       <answer>deman</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>deman</p>
+        </cell>
+       </info>
+       <text>deman</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">,Marc anarà tath cinèma entàs ueit deth vrèspe.</text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">- Diuendres 11, </text>
+      <target>
+       <answer>ager</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>ager</p>
+        </cell>
+       </info>
+       <text>ager</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">,Marc joguèc un partit de basquet. </text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">-  Deluns 14, </text>
+      <target>
+       <answer>deman passat</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>deman passat</p>
+        </cell>
+       </info>
+       <text>deman passat</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" size="18" family="Arial" foreground="0x000000">,Marc anarà a dinar en casa des sòns oncles.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms16005/ms16005.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Complèta cada frasa damb er advèrbi avient</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="380" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" background="0xC0DCC0" tabWidth="5" size="17" family="Arial" bold="false" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">                 </text>
+      <cell width="420" height="70" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>delàger / ager / aué / deman / deman passat</p>
+      </cell>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> - </text>
+      <target>
+       <answer>Delàger</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>Delàger</p>
+        </cell>
+       </info>
+       <text>Delàger</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">  se metec en lhet ben enfebrat, mès </text>
+      <target>
+       <answer>ager</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <p>ager</p>
+        </cell>
+       </info>
+       <text>ager</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">  non telefonèc ath mètge e </text>
+      <target>
+       <answer>aué</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="36">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>aué</p>
+        </cell>
+       </info>
+       <text>aué</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">  auem agut d'anar tar espitau. </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> -  </text>
+      <target>
+       <answer>deman passat</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>deman passat</p>
+        </cell>
+       </info>
+       <text>Deman passat</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> o </text>
+      <target>
+       <answer>deman</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+         </style>
+         <p>deman </p>
+        </cell>
+       </info>
+       <text>deman</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">  vieràn a apraiar era lauadora, pr'amor que s'espatlèc </text>
+      <target>
+       <answer>ager</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>ager</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">  e non è trucat enquia </text>
+      <target>
+       <answer>aué</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>aué</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">. </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">- </text>
+      <target>
+       <answer>Aué</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>Aué</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> ei delu</text>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">ns </text>
+      <target>
+       <answer>deman</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>deman</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> serà dimars e </text>
+      <target>
+       <answer>deman passat</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>deman passat</p>
+        </cell>
+       </info>
+       <text>deman passat</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> serà dimèrcles. </text>
+      <target>
+       <answer>Ager</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>Ager</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> ère dimenge  e  </text>
+      <target>
+       <answer>delàger</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>delàger</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> ère dissabte.  </text>
+     </p>
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false" />
+     <p foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> - </text>
+      <target>
+       <answer>Aué</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>Aué</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false"> ei dimèrcles e sò en Andorra. I arribè </text>
+      <target>
+       <answer>delàger</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>delàger</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">, deluns, ath vrèspe, e m'i estarè enquia  </text>
+      <target>
+       <answer>deman passat</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>deman passat</text>
+      </target>
+      <text foreground="0x000000" background="0xC0DCC0" family="Arial" size="17" bold="false" italic="false">, diuendres, tà meddia. </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms16010a/ms16010a.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>En tot tier en compde qu'aué ei dimèrcles, relaciona es dues colomnes</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0">
+     <p>deluns</p>
+    </cell>
+    <cell id="1">
+     <p>dimars</p>
+    </cell>
+    <cell id="2">
+     <p>dimèrcles</p>
+    </cell>
+    <cell id="3">
+     <p>dijaus</p>
+    </cell>
+    <cell id="4">
+     <p>diuendres</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="184.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>delàger</p>
+    </cell>
+    <cell>
+     <p>ager</p>
+    </cell>
+    <cell>
+     <p>aué</p>
+    </cell>
+    <cell>
+     <p>deman</p>
+    </cell>
+    <cell>
+     <p>deman passat</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>delàger ère deluns</p>
+    </cell>
+    <cell>
+     <p>ager ère dimars</p>
+    </cell>
+    <cell>
+     <p>aué ei dimèrcles</p>
+    </cell>
+    <cell>
+     <p>deman serà dijaus</p>
+    </cell>
+    <cell>
+     <p>deman passat serà diuendres</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms16010b/ms16010b.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>En tot tier en compde qu'aué ei dia 8, relaciona es dues colomnes</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0">
+     <p>dia 6</p>
+    </cell>
+    <cell id="1">
+     <p>dia 7</p>
+    </cell>
+    <cell id="2">
+     <p>dia 8</p>
+    </cell>
+    <cell id="3">
+     <p>dia 9</p>
+    </cell>
+    <cell id="4">
+     <p>dia 10</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="184.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>delàger</p>
+    </cell>
+    <cell>
+     <p>ager</p>
+    </cell>
+    <cell>
+     <p>aué</p>
+    </cell>
+    <cell>
+     <p>deman</p>
+    </cell>
+    <cell>
+     <p>deman passat</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="143.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>delàger ère dia 6</p>
+    </cell>
+    <cell>
+     <p>agèr ère dia 7</p>
+    </cell>
+    <cell>
+     <p>aué ei dia 8</p>
+    </cell>
+    <cell>
+     <p>deman serà dia 9</p>
+    </cell>
+    <cell>
+     <p>deman passat serà dia 10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v14001/v14001.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>S'aué ei dimenge...</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tot ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="503" height="257" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" tabWidth="6" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">	ager ère  </text>
+      <target>
+       <answer>dissabte</answer>
+       <optionList>
+        <option>diuendres</option>
+        <option>dissabte</option>
+        <option>deluns</option>
+       </optionList>
+       <text>dissabte</text>
+      </target>
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0"> </text>
+     </p>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">	delàger ère  </text>
+      <target>
+       <answer>diuendres</answer>
+       <optionList>
+        <option>diuendres</option>
+        <option>dijaus</option>
+        <option>dimèrcles</option>
+       </optionList>
+       <text>diuendres</text>
+      </target>
+     </p>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">	hè quate dies ère </text>
+      <target>
+       <answer>dimèrcles</answer>
+       <optionList>
+        <option>deluns</option>
+        <option>dimèrcles</option>
+        <option>dimars</option>
+       </optionList>
+       <text>dimèrcles</text>
+      </target>
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0"> </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v14002/v14002.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota e complèta es frases</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excellent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="363" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xC0DCC0" italic="false" bold="false" tabWidth="7" family="Arial" size="17" foreground="0x000000" />
+    <style name="target" base="default" background="0xC0C0C0" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">
+      <cell txtAlign="left,middle" imgAlign="left,middle" width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/desembre.mp3" />
+      </cell>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">  - Eth darrèr mes der an ei  </text>
+      <target>
+       <answer>deseme</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>deseme</p>
+        </cell>
+       </info>
+       <text>deseme</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> .</text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">
+      <cell txtAlign="left,middle" imgAlign="left,middle" width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/setembre.mp3" />
+      </cell>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> - Eth dia 11 deth mes de </text>
+      <target>
+       <answer>seteme</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>seteme</p>
+        </cell>
+       </info>
+       <text>seteme</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> se celebre era Diada Nacionau. </text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">
+      <cell txtAlign="left,middle" imgAlign="left,middle" width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/abril.mp3" />
+      </cell>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> - Eth mes d'</text>
+      <target>
+       <answer>abriu</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="100" height="36">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>abriu</p>
+        </cell>
+       </info>
+       <text>abriu</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> mos pòrte ròses e libres tà acompanhar Sant Jòrdi, patron de Catalonha.</text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">
+      <cell txtAlign="left,middle" imgAlign="left,middle" width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/juny.mp3" />
+      </cell>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> - Eth mes de </text>
+      <target>
+       <answer>junh</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>junh</p>
+        </cell>
+       </info>
+       <text>junh</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> a eth dia mès long der an.</text>
+     </p>
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000" />
+     <p background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000">
+      <cell txtAlign="left,middle" imgAlign="left,middle" width="40" height="40" border="false" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/gener.mp3" />
+      </cell>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> - En mes de </text>
+      <target>
+       <answer>gèr</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info mode="onError">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" />
+          <color background="0xFFFFFF" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+         </style>
+         <p>gèr</p>
+        </cell>
+       </info>
+       <text>gèr</text>
+      </target>
+      <text background="0xC0DCC0" italic="false" bold="false" family="Arial" size="17" foreground="0x000000"> mos vien a visitar es tres reis Mags der Orient.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v14003/v14003.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>S'aué ei dissabte 29, de junh...</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tot ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="320" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" tabWidth="16" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">deman serà </text>
+      <target>
+       <answer>dimenge, trenta de junh</answer>
+       <optionList>
+        <option>deluns, un de junhsèga</option>
+        <option>dimenge, trenta de junh</option>
+        <option>dimars, dus de junhsèga</option>
+       </optionList>
+       <text>dimenge, trenta de junh.</text>
+      </target>
+     </p>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">deman passat serà </text>
+      <target>
+       <answer>deluns, un de junhsèga</answer>
+       <optionList>
+        <option>deluns, un de junhsèga</option>
+        <option>dimenge, trenta de junh</option>
+        <option>dimars, dus de junhsèga</option>
+       </optionList>
+       <text>deluns, un de junhsèga</text>
+      </target>
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">.</text>
+     </p>
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0" />
+     <p family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">d'aciu a tres dies serà </text>
+      <target>
+       <answer>dimars, dus de junhsèga</answer>
+       <optionList>
+        <option>deluns, un de junhsèga</option>
+        <option>dimenge, trenta de junh</option>
+        <option>dimars, dus de junhsèga</option>
+       </optionList>
+       <text>dimars, dus de junhsèga</text>
+      </target>
+      <text family="Arial" italic="false" bold="false" size="28" foreground="0x000000" background="0xC0DCC0">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="v50030/v50030.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Tròba es quate sasons der an</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="40.0" cellHeight="40.0" border="false">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" />
+    </style>
+    <text>
+     <row>************</row>
+     <row>TARDOR******</row>
+     <row>************</row>
+     <row>**********O*</row>
+     <row>**********S*</row>
+     <row>*IUERN****T*</row>
+     <row>**********I*</row>
+     <row>**********U*</row>
+     <row>************</row>
+     <row>PRIMAUERA***</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PRIMAUERA</clue>
+    <clue id="1">OSTIU</clue>
+    <clue id="2">TARDOR</clue>
+    <clue id="3">IUERN</clue>
+   </clues>
+   <cells rows="4" cols="1" cellWidth="10.0" cellHeight="10.0" border="false" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/primaver.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/estiu.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/tardor.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/hivern.mp3" />
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="v60017/v60017.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escota e escriu</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fòrça ben!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="400.0" cellHeight="401.0" border="false" id="primary">
+    <style>
+     <font family="Arial" size="34" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/primaver.mp3" />
+     <p>1</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/tardor.mp3" />
+     <p>2</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/estiu.mp3" />
+     <p>3</p>
+    </cell>
+    <cell id="3">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/hivern.mp3" />
+     <p>4</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="390.0" cellHeight="120.0" border="true" id="answers">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>primauera</p>
+    </cell>
+    <cell>
+     <p>tardor</p>
+    </cell>
+    <cell>
+     <p>ostiu</p>
+    </cell>
+    <cell>
+     <p>iuèrn</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="400.0" cellHeight="401.0" border="false" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="img/primaver.gif" />
+    <cell image="img/tardor.gif" />
+    <cell image="img/estiu.gif" />
+    <cell image="img/hivern.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="img/eprimave.gif" file="img_eprimave.gif" animated="false" />
+  <media name="img/estiu.gif" file="img_estiu.gif" animated="false" />
+  <media name="img/hivern.gif" file="img_hivern.gif" animated="false" />
+  <media name="img/ore1.gif" file="img_ore1.gif" animated="false" />
+  <media name="img/play1.gif" file="img_play1.gif" animated="false" />
+  <media name="img/play2.gif" file="img_play2.gif" animated="false" />
+  <media name="img/play3.gif" file="img_play3.gif" animated="false" />
+  <media name="img/play4.gif" file="img_play4.gif" animated="false" />
+  <media name="img/primaver.gif" file="img_primaver.gif" animated="false" />
+  <media name="img/rec1.gif" file="img_rec1.gif" animated="false" />
+  <media name="img/rec2.gif" file="img_rec2.gif" animated="false" />
+  <media name="img/rec3.gif" file="img_rec3.gif" animated="false" />
+  <media name="img/rec4.gif" file="img_rec4.gif" animated="false" />
+  <media name="img/tardor.gif" file="img_tardor.gif" animated="false" />
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="wav/a/fp114aa1.mp3" file="wav_a_fp114aa1.mp3" />
+  <media name="wav/a/fp114aa2.mp3" file="wav_a_fp114aa2.mp3" />
+  <media name="wav/a/fp114ab1.mp3" file="wav_a_fp114ab1.mp3" />
+  <media name="wav/a/fp114ab2.mp3" file="wav_a_fp114ab2.mp3" />
+  <media name="wav/a/fp114ac1.mp3" file="wav_a_fp114ac1.mp3" />
+  <media name="wav/a/fp114ac2.mp3" file="wav_a_fp114ac2.mp3" />
+  <media name="wav/a/fp114ad1.mp3" file="wav_a_fp114ad1.mp3" />
+  <media name="wav/a/fp114ad2.mp3" file="wav_a_fp114ad2.mp3" />
+  <media name="wav/a/fp114ae1.mp3" file="wav_a_fp114ae1.mp3" />
+  <media name="wav/a/fp114ae2.mp3" file="wav_a_fp114ae2.mp3" />
+  <media name="wav/a/fp114af1.mp3" file="wav_a_fp114af1.mp3" />
+  <media name="wav/a/fp114af2.mp3" file="wav_a_fp114af2.mp3" />
+  <media name="wav/a/fp114da1.mp3" file="wav_a_fp114da1.mp3" />
+  <media name="wav/a/fp114da2.mp3" file="wav_a_fp114da2.mp3" />
+  <media name="wav/a/fp114db1.mp3" file="wav_a_fp114db1.mp3" />
+  <media name="wav/a/fp114db2.mp3" file="wav_a_fp114db2.mp3" />
+  <media name="wav/a/fp114dc1.mp3" file="wav_a_fp114dc1.mp3" />
+  <media name="wav/a/fp114dc2.mp3" file="wav_a_fp114dc2.mp3" />
+  <media name="wav/a/fp114dd1.mp3" file="wav_a_fp114dd1.mp3" />
+  <media name="wav/a/fp114dd2.mp3" file="wav_a_fp114dd2.mp3" />
+  <media name="wav/f/abril.mp3" file="wav_f_abril.mp3" />
+  <media name="wav/f/avui.mp3" file="wav_f_avui.mp3" />
+  <media name="wav/f/demapass.mp3" file="wav_f_demapass.mp3" />
+  <media name="wav/f/desembre.mp3" file="wav_f_desembre.mp3" />
+  <media name="wav/f/dia.mp3" file="wav_f_dia.mp3" />
+  <media name="wav/f/diari.mp3" file="wav_f_diari.mp3" />
+  <media name="wav/f/estiu.mp3" file="wav_f_estiu.mp3" />
+  <media name="wav/f/futur.mp3" file="wav_f_futur.mp3" />
+  <media name="wav/f/gener.mp3" file="wav_f_gener.mp3" />
+  <media name="wav/f/hivern.mp3" file="wav_f_hivern.mp3" />
+  <media name="wav/f/mensual.mp3" file="wav_f_mensual.mp3" />
+  <media name="wav/f/mes.mp3" file="wav_f_mes.mp3" />
+  <media name="wav/f/passat.mp3" file="wav_f_passat.mp3" />
+  <media name="wav/f/primaver.mp3" file="wav_f_primaver.mp3" />
+  <media name="wav/f/quinzena.mp3" file="wav_f_quinzena.mp3" />
+  <media name="wav/f/semestre.mp3" file="wav_f_semestre.mp3" />
+  <media name="wav/m/abansdah.mp3" file="wav_m_abansdah.mp3" />
+  <media name="wav/m/ahir.mp3" file="wav_m_ahir.mp3" />
+  <media name="wav/m/anual.mp3" file="wav_m_anual.mp3" />
+  <media name="wav/m/any.mp3" file="wav_m_any.mp3" />
+  <media name="wav/m/dema.mp3" file="wav_m_dema.mp3" />
+  <media name="wav/m/hivern.mp3" file="wav_m_hivern.mp3" />
+  <media name="wav/m/juny.mp3" file="wav_m_juny.mp3" />
+  <media name="wav/m/present.mp3" file="wav_m_present.mp3" />
+  <media name="wav/m/primaver.mp3" file="wav_m_primaver.mp3" />
+  <media name="wav/m/setembre.mp3" file="wav_m_setembre.mp3" />
+  <media name="wav/m/setmana.mp3" file="wav_m_setmana.mp3" />
+  <media name="wav/m/setmanal.mp3" file="wav_m_setmanal.mp3" />
+  <media name="wav/m/tardor.mp3" file="wav_m_tardor.mp3" />
+  <media name="wav/m/trimestr.mp3" file="wav_m_trimestr.mp3" />
+  <media name="gali.xml" file="gali.xml" />
+ </mediaBag>
+</JClicProject>
+

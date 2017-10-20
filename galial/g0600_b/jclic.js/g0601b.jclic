@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0601b" version="0.1.3" code="gali">
+ <settings>
+  <title>g0601b</title>
+  <revision description="created" date="5/22/03" />
+  <descriptors />
+  <skin file="gali.xml" />
+ </settings>
+ <sequence>
+  <item id="g0601b.pac" name="ms03004/ms03004.txa">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="v09006a/v09006a.txa" />
+  <item name="v09006b/v09006b.txa" />
+  <item name="v09006c/v09006c.txa" />
+  <item name="ms10002/ms10002.txa" />
+  <item name="ms40022/ms40022.txa" />
+  <item name="ms40023/ms40023.txa" />
+  <item name="ms40003/ms40003.ass" />
+  <item name="ms40024/ms40024.ass" />
+  <item name="ms40004/ms40004.txa" />
+  <item name="ms40005/ms40005.txa" />
+  <item name="ms22003a/ms22003a.txa" />
+  <item name="v09009f/v09009f.txa" />
+  <item name="v09007a/v09007a.txa" />
+  <item name="v19002/v19002.ass" />
+  <item name="v09011/v09011.txa" />
+  <item name="ms22004a/ms22004a.txa" />
+  <item name="ms22004b/ms22004b.txa" />
+  <item name="ms03006b/ms03006b.txa" />
+  <item name="ms40019/ms40019.txa" />
+  <item name="ms40007/ms40007.txa" />
+  <item name="v50008/v50008.sop">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="ms03004/ms03004.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria la paraula correcta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="296" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">- Has menjat </text>
+      <target>
+       <answer>tanta</answer>
+       <optionList>
+        <option>tant</option>
+        <option>tanta</option>
+       </optionList>
+       <text>molta</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> crema a l'hora </text>
+      <target>
+       <answer>dels</answer>
+       <optionList>
+        <option>dels</option>
+        <option>de les</option>
+       </optionList>
+       <text>de les</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> dolços.</text>
+     </p>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default" />
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">- Fa </text>
+      <target>
+       <answer>tanta</answer>
+       <optionList>
+        <option>tant</option>
+        <option>tanta</option>
+       </optionList>
+       <text>tanta</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> calor que tenen </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>l'</option>
+        <option>la</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">habitud de menjar al terrat.</text>
+     </p>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default" />
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">- A l'autunjo cauen </text>
+      <target>
+       <answer>les fulles</answer>
+       <optionList>
+        <option>el fulls</option>
+        <option>les fulles</option>
+       </optionList>
+       <text>les fulles</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> dels arbres.</text>
+     </p>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default" />
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">- En aquest laboratori d'anàlisis </text>
+      <target>
+       <answer>clíniques</answer>
+       <optionList>
+        <option>clínics</option>
+        <option>clíniques</option>
+       </optionList>
+       <text>clíniques</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> tots porten davantals verds.</text>
+     </p>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default" />
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default">- Aquestos salts d'aigua s'ampren per fer corrent </text>
+      <target>
+       <answer>elèctrica</answer>
+       <optionList>
+        <option>elèctric</option>
+        <option>elèctrica</option>
+       </optionList>
+       <text>elèctrica</text>
+      </target>
+      <text size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default"> per tot lo país.</text>
+     </p>
+     <p size="17" family="Arial" foreground="0x000000" tabWidth="16" italic="false" background="0xC0DCC0" bold="false" name="default" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms03006b/ms03006b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases escrivint en singular totes les paraules que puguis</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Just!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="355" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="17" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>-Los avisos que deixen penjats no els lligi ningú</text>
+     </p>
+     <p>
+      <text> L'</text>
+      <target>
+       <answer>avís que deixa penjat no el lligi ningú</answer>
+       <answer>avís que deixen penjat no el lligi ningú</answer>
+       <response fill="_" length="40" maxLength="40" />
+       <text>avís que deixen penjat no el lligi ningú</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>-Me dolen los ossos de la mà</text>
+     </p>
+     <p>
+      <text> Me </text>
+      <target>
+       <answer>dol un os de la mà</answer>
+       <response fill="_" length="18" maxLength="18" />
+       <text>dol un os de la mà</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>-Compra-me dos sedassos per la farina</text>
+     </p>
+     <p>
+      <text> Me pots comprar </text>
+      <target>
+       <answer>un sedàs per la farina</answer>
+       <response fill="_" length="22" maxLength="22" />
+       <text>un sedàs per la farina</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>-Són grossos perquè mengen massa</text>
+     </p>
+     <p>
+      <text> És </text>
+      <target>
+       <answer>gros perquè menja massa</answer>
+       <response fill="_" length="23" maxLength="23" />
+       <text>gros perquè menja massa</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>-Ne són tornats amb els nasos unflats</text>
+     </p>
+     <p>
+      <text> N'és </text>
+      <target>
+       <answer>tornat amb el nas unflat</answer>
+       <response fill="_" length="24" maxLength="24" />
+       <text>tornat amb el nas unflat</text>
+      </target>
+     </p>
+     <p />
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms10002/ms10002.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu l'adjectiu que correspon a cada frase</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="303" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="10" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="540" height="60" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: Quin atabalament! </p>
+       <p>ATABALAT - ATABALADA - ATABALATS - ATABALADES</p>
+      </cell>
+     </p>
+     <p italic="false" size="18" foreground="0x000000" family="Arial" bold="false" Alignment="1" background="0xC0DCC0" />
+     <p>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">Qui ràbia!		en</text>
+      <target>
+       <answer>rabiat</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>rabiat</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">		en</text>
+      <target>
+       <answer>rabiada</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>rabiada</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">		en</text>
+      <target>
+       <answer>rabiats</answer>
+       <response fill="_" length="6" maxLength="7" />
+       <text>rabiats</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">	en</text>
+      <target>
+       <answer>rabiades</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>rabiades</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">Quina tranquil·litat!	</text>
+      <target>
+       <answer>tranquil</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>tranquil</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">		</text>
+      <target>
+       <answer>tranquil·la</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>tranquil·la</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">	</text>
+      <target>
+       <answer>tranquils</answer>
+       <response fill="_" length="6" maxLength="9" />
+       <text>tranquils</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">	</text>
+      <target>
+       <answer>tranquil·les</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>tranquil·les</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">Qui enfado!		</text>
+      <target>
+       <answer>enfadats</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>enfadat</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">		</text>
+      <target>
+       <answer>enfadades</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>enfadada</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">		</text>
+      <target>
+       <answer>enfadades</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>enfadats</text>
+      </target>
+      <text italic="false" size="16" foreground="0x000000" family="Arial" bold="false" background="0xC0DCC0">	</text>
+      <target>
+       <answer>enfadades</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>enfadades</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms22003a/ms22003a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases posant en femení o masculí les paraules en majúscula</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="520" height="336" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="5" size="17" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	- Té un GERMÀ assai SIMPÀTIC.</text>
+     </p>
+     <p>
+      <text>	- Té una </text>
+      <target>
+       <answer>germana</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>germana</text>
+      </target>
+      <text> assai </text>
+      <target>
+       <answer>simpàtica</answer>
+       <response fill="_" length="1" maxLength="9" />
+       <text>simpàtica</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- És un MESTRE assai SEVER.</text>
+     </p>
+     <p>
+      <text>	- És una </text>
+      <target>
+       <answer>mestra</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>mestra</text>
+      </target>
+      <text> assai </text>
+      <target>
+       <answer>severa</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>severa</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- Tenc un COSÍ assai CREGUT.</text>
+     </p>
+     <p>
+      <text>	- Tinc una </text>
+      <target>
+       <answer>cosina</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>cosina</text>
+      </target>
+      <text> molt </text>
+      <target>
+       <answer>creguda</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>creguda</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- Aquell MINYÓ és assai TÍMID.</text>
+     </p>
+     <p>
+      <text>	- Aquella </text>
+      <target>
+       <answer>minyona</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>minyona</text>
+      </target>
+      <text> és assai </text>
+      <target>
+       <answer>tímida</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>tímida</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms22004a/ms22004a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases escrivint en plural les paraules que hi manquen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="277" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="17" background="0xC0DCC0" tabWidth="10" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	- La posento més tranquil·la és aquesta.</text>
+     </p>
+     <p>
+      <text>	- Les </text>
+      <target>
+       <answer>posentos</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>posentos</text>
+      </target>
+      <text> més </text>
+      <target>
+       <answer>tranquil·les</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>tranquil·les</text>
+      </target>
+      <text> són </text>
+      <target>
+       <answer>aquestes</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>aquestes</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- M'agrada aquella cançó napolitana.</text>
+     </p>
+     <p>
+      <text>	- M'agraden </text>
+      <target>
+       <answer>mallorquines</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>aquelles</text>
+      </target>
+      <text> </text>
+      <target>
+       <answer>mallorquines</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>cançons </text>
+      </target>
+      <text> </text>
+      <target>
+       <answer>napolitanes</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>napolitanes</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	- Pren lo tovallol del calaix</text>
+     </p>
+     <p>
+      <text>	- Pren los </text>
+      <target>
+       <answer>tovallols</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>tovallols</text>
+      </target>
+      <text> dels </text>
+      <target>
+       <answer>calaixos</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>calaixos</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p>
+      <text>	</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms22004b/ms22004b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases escrivint en plural les paraules que hi manquen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="250" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" background="0xC0DCC0" bold="false" tabWidth="10" family="Arial" size="17" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	- Aquella oca no hi veu; és cega.</text>
+     </p>
+     <p>
+      <text>	- Aquelles </text>
+      <target>
+       <answer>oques</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>oques</text>
+      </target>
+      <text> no hi veuen; són </text>
+      <target>
+       <answer>cegues</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>cegues</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- Un serpent escamós ha assustat la rata.</text>
+     </p>
+     <p>
+      <text>	- Dos </text>
+      <target>
+       <answer>serpents</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>serpents</text>
+      </target>
+      <text> </text>
+      <target>
+       <answer>escamosos</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>escamosos</text>
+      </target>
+      <text> han assustat les </text>
+      <target>
+       <answer>rates</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>rates</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	- És un minyó sa, alt i magre.</text>
+     </p>
+     <p>
+      <text>	- Són uns minyons </text>
+      <target>
+       <answer>sans</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>sans</text>
+      </target>
+      <text>, </text>
+      <target>
+       <answer>alts</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>alts</text>
+      </target>
+      <text> i </text>
+      <target>
+       <answer>magres</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>magres</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Identify" name="ms40003/ms40003.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Senyala les paraules que tenen "ss" al femení i al plural</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="5" cols="2" cellWidth="150.0" cellHeight="100.0" border="false" id="primary">
+    <style>
+     <font family="Arial" size="18" bold="true" />
+     <color background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="1">
+     <p>espès</p>
+    </cell>
+    <cell id="1">
+     <p>cos</p>
+    </cell>
+    <cell id="0">
+     <p>cortès</p>
+    </cell>
+    <cell id="0">
+     <p>andalús</p>
+    </cell>
+    <cell id="0">
+     <p>furiós</p>
+    </cell>
+    <cell id="1">
+     <p>gros</p>
+    </cell>
+    <cell id="0">
+     <p>llis</p>
+    </cell>
+    <cell id="0">
+     <p>burguès</p>
+    </cell>
+    <cell id="1">
+     <p>os</p>
+    </cell>
+    <cell id="1">
+     <p>gros</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="150.0" cellHeight="100.0" border="false" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/espessos.mp3" />
+     <p>espès</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/gossos.mp3" />
+     <p>cos</p>
+    </cell>
+    <cell>
+     <p>cortès</p>
+    </cell>
+    <cell>
+     <p>andalús</p>
+    </cell>
+    <cell>
+     <p>furiós</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/grossos.mp3" />
+     <p>gros</p>
+    </cell>
+    <cell>
+     <p>llis</p>
+    </cell>
+    <cell>
+     <p>burguès</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/ossos.mp3" />
+     <p>os</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/grossos.mp3" />
+     <p>gros</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40004/ms40004.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu cada adjectiu en masculí i femení singular</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excel·lent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="520" height="244" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="30" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	Masculí singular	Femení singular</text>
+     </p>
+     <p>
+      <text>	____________	_____________</text>
+     </p>
+     <p />
+     <p>
+      <text>cultes	</text>
+      <target>
+       <answer>culte</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/culte.mp3" />
+       </info>
+       <text>culte</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>culta</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/culte.mp3" />
+       </info>
+       <text>culta</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>indignes	</text>
+      <target>
+       <answer>indigne</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/indigne.mp3" />
+       </info>
+       <text>indigne</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>indigna</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/indigne.mp3" />
+       </info>
+       <text>indigna</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>pobres	</text>
+      <target>
+       <answer>pobre</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/pobre.mp3" />
+       </info>
+       <text>pobre</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>pobra</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/pobre.mp3" />
+       </info>
+       <text>pobra</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40005/ms40005.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu cada adjectiu en masculí i femení singular</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfecte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="520" height="320" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="30" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	Masculí singular	Femení singular</text>
+     </p>
+     <p>
+      <text>	____________	_____________</text>
+     </p>
+     <p />
+     <p>
+      <text>amples	</text>
+      <target>
+       <answer>ample</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/ample.mp3" />
+       </info>
+       <text>ample</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>ampla</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/ample.mp3" />
+       </info>
+       <text>ampla</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>tendres	</text>
+      <target>
+       <answer>tendre</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/tendre.mp3" />
+       </info>
+       <text>tendre</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>tendra</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/tendre.mp3" />
+       </info>
+       <text>tendra</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>exactes	</text>
+      <target>
+       <answer>exacte</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/exacte.mp3" />
+       </info>
+       <text>exacte</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>exacta</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/exacte.mp3" />
+       </info>
+       <text>exacta</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>negres	</text>
+      <target>
+       <answer>negre</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/negre.mp3" />
+       </info>
+       <text>negre</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>negra</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/negre.mp3" />
+       </info>
+       <text>negra</text>
+      </target>
+     </p>
+     <p />
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40007/ms40007.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu en femení les paraules que ixin</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="447" height="296" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="9" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <target>
+       <answer>Aquella pobra</answer>
+       <response fill="_" length="1" maxLength="15" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>Aquell pobre</p>
+        </cell>
+       </info>
+       <text>Aquella pobra</text>
+      </target>
+      <text> jove de la qual vos parlava era </text>
+      <target>
+       <answer>òrfena</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <info>
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>orfe</p>
+        </cell>
+       </info>
+       <text>òrfena</text>
+      </target>
+      <text> i viviva amb </text>
+      <target>
+       <answer>la xia</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>lo xiu</p>
+        </cell>
+       </info>
+       <text>la seua tia</text>
+      </target>
+      <text>, que era </text>
+      <target>
+       <answer>doctoressa</answer>
+       <response fill="_" length="1" maxLength="10" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>doctor</p>
+        </cell>
+       </info>
+       <text>jutgessa</text>
+      </target>
+      <text> del país i </text>
+      <target>
+       <answer>hereva</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>hereu</p>
+        </cell>
+       </info>
+       <text>hereva</text>
+      </target>
+      <text> d'una gran fortuna. Era </text>
+      <target>
+       <answer>una minyona fea</answer>
+       <response fill="_" length="1" maxLength="15" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>un minyó feo</p>
+        </cell>
+       </info>
+       <text>una noia lletja</text>
+      </target>
+      <text> i </text>
+      <target>
+       <answer>ambigua</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>ambigu</p>
+        </cell>
+       </info>
+       <text>ambigua</text>
+      </target>
+      <text>; precoç en els estudis de piano, però </text>
+      <target>
+       <answer>xapina</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>xapí</p>
+        </cell>
+       </info>
+       <text>fracassada</text>
+      </target>
+      <text> en lo terrer de l'escriptura o el càlcul. També que se donguessi àries de </text>
+      <target>
+       <answer>marquesa</answer>
+       <response fill="_" length="1" maxLength="9" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>marquès</p>
+        </cell>
+       </info>
+       <text>marquesa</text>
+      </target>
+      <text> a davant </text>
+      <target>
+       <answer>de les amigues</answer>
+       <response fill="_" length="1" maxLength="14" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>dels amics</p>
+        </cell>
+       </info>
+       <text>d'alguna amiga</text>
+      </target>
+      <text>, era poc xerradora i feva la impressió d'ésser </text>
+      <target>
+       <answer>tranquil·la</answer>
+       <response fill="_" length="1" maxLength="12" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <color background="0xFFFFFF" />
+         </style>
+         <p>tranquil</p>
+        </cell>
+       </info>
+       <text>tranquil·la</text>
+      </target>
+      <text> i prudent.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40019/ms40019.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu les frases posant en plural totes paraules que puguis</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="380" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="30" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>- Aquest coixí que hi és a damunt del llit no m'agrada.</text>
+     </p>
+     <p>
+      <text>- </text>
+      <target>
+       <answer>Aquestos coixins que hi són a damunt dels llits no m'agraden</answer>
+       <response fill="_" length="1" maxLength="70" />
+       <text>Aquests coixins que hi ha a sobre els llits no m'agraden gens</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>- Porta un bell braçalet al braç.</text>
+     </p>
+     <p>
+      <text>- </text>
+      <target>
+       <answer>Porten uns bells braçalets als braços</answer>
+       <response fill="_" length="1" maxLength="53" />
+       <text>Porten unes polseres molt boniques als braços</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>- Aquesta part no sé on va.</text>
+     </p>
+     <p>
+      <text>- </text>
+      <target>
+       <answer>Aquestes parts no sé on van</answer>
+       <response fill="_" length="1" maxLength="35" />
+       <text>Aquestes peces no sé on van</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>- L'aigua de la pluja és bona perquè fa omplir el pou.</text>
+     </p>
+     <p>
+      <text>- </text>
+      <target>
+       <answer>Les aigües de les pluges són bones perquè fan omplir els pous</answer>
+       <response fill="_" length="1" maxLength="73" />
+       <text>Les aigües de les pluges són bones perquè fan omplir els pantans</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>- Aquell poeta se pensava bé tot, era assai reflexiu.</text>
+     </p>
+     <p>
+      <text>- </text>
+      <target>
+       <answer>Aquellos poetes se pensaven bé tot, eren assai reflexius</answer>
+       <response fill="_" length="1" maxLength="62" />
+       <text>Aquells poetes s'ho rumiaven molt tot, eren molt reflexius</text>
+      </target>
+      <text>.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40022/ms40022.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les sèries d'adjectius</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="560" height="312" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="30" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p italic="false" foreground="0x000000" tabWidth="30" size="18" family="Arial" bold="false" Alignment="1" name="default" background="0xC0DCC0">
+      <text>	 	   	</text>
+      <cell width="450" height="40" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: covard  -  covarda  -  covards  -  covardes</p>
+      </cell>
+     </p>
+     <p />
+     <p>
+      <target>
+       <answer>antic</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>antic</text>
+      </target>
+      <text>	antiga	</text>
+      <target>
+       <answer>antics</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>antics</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>antigues</answer>
+       <response fill="_" length="1" maxLength="9" />
+       <text>antigues</text>
+      </target>
+     </p>
+     <p>
+      <text>verd	</text>
+      <target>
+       <answer>verda</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>verda</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>verds</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>verds</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>verdes</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>verdes</text>
+      </target>
+     </p>
+     <p>
+      <target>
+       <answer>sòlid</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>sòlid</text>
+      </target>
+      <text>	sòlida	</text>
+      <target>
+       <answer>sòlids</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>sòlids</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>sòlides</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <text>sòlides</text>
+      </target>
+     </p>
+     <p>
+      <target>
+       <answer>mitjà</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>mitjà</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>mitjana</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <text>mitjana</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>mitjans</answer>
+       <response fill="_" length="1" maxLength="8" />
+       <text>mitjans</text>
+      </target>
+      <text>	mitjanes</text>
+     </p>
+     <p>
+      <target>
+       <answer>rar</answer>
+       <response fill="_" length="1" maxLength="4" />
+       <text>rar</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>rara</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>rara</text>
+      </target>
+      <text>	rars	</text>
+      <target>
+       <answer>rares</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>rares</text>
+      </target>
+     </p>
+     <p>
+      <target>
+       <answer>sa</answer>
+       <response fill="_" length="1" maxLength="3" />
+       <text>sa</text>
+      </target>
+      <text>	</text>
+      <target>
+       <answer>sana</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>sana</text>
+      </target>
+      <text>	sans	</text>
+      <target>
+       <answer>sanes</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>sanes</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms40023/ms40023.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les sèries d'adjectius</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Magnífic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="294" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false"> </text>
+      <cell width="450" height="40" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: covard  -  covarda  -  covards  -  covardes</p>
+      </cell>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false" />
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">
+      <target>
+       <answer>nou</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>tou</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	</text>
+      <target>
+       <answer>nova</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>tova</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	nous	</text>
+      <target>
+       <answer>noves</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>toves</text>
+      </target>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false" />
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">topo	</text>
+      <target>
+       <answer>topa</answer>
+       <response fill="_" length="1" maxLength="4" />
+       <text>topa</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	</text>
+      <target>
+       <answer>topos</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>topos</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	</text>
+      <target>
+       <answer>topes</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>topes</text>
+      </target>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false" />
+     <p size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">
+      <target>
+       <answer>enter</answer>
+       <response fill="_" length="1" maxLength="5" />
+       <text>enter</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	entera	</text>
+      <target>
+       <answer>enters</answer>
+       <response fill="_" length="1" maxLength="6" />
+       <text>enters</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" tabWidth="30" italic="false" background="0xC0DCC0" name="default" bold="false">	</text>
+      <target>
+       <answer>enteres</answer>
+       <response fill="_" length="1" maxLength="7" />
+       <text>enteres</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="ms40024/ms40024.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Posa en relació cada adjectiu amb la casella que correspongui</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="160.0" cellHeight="82.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="18" bold="true" />
+     <color background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0">
+     <p>intel·ligent</p>
+    </cell>
+    <cell id="0">
+     <p>excel·lent</p>
+    </cell>
+    <cell id="0">
+     <p>abundant</p>
+    </cell>
+    <cell id="0">
+     <p>important</p>
+    </cell>
+    <cell id="0">
+     <p>següent</p>
+    </cell>
+    <cell id="0">
+     <p>següent</p>
+    </cell>
+    <cell id="0">
+     <p>elegant</p>
+    </cell>
+    <cell id="1">
+     <p>calent</p>
+    </cell>
+    <cell id="1">
+     <p>valent</p>
+    </cell>
+    <cell id="0">
+     <p>imponent</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="200.0" cellHeight="80.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="18" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="img/ms40024a.gif" />
+    <cell image="img/ms40024b.gif" />
+   </cells>
+   <cells rows="2" cols="5" cellWidth="160.0" cellHeight="82.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>intel·ligent</p>
+    </cell>
+    <cell>
+     <p>excel·lent</p>
+    </cell>
+    <cell>
+     <p>abundant</p>
+    </cell>
+    <cell>
+     <p>important</p>
+    </cell>
+    <cell>
+     <p>següent</p>
+    </cell>
+    <cell>
+     <p>elegant</p>
+    </cell>
+    <cell>
+     <p>equivalent</p>
+    </cell>
+    <cell>
+     <p>calent</p>
+    </cell>
+    <cell>
+     <p>valent</p>
+    </cell>
+    <cell>
+     <p>imponent</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09006a/v09006a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les sèries amb les paraules que manquen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Magnífic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="490" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xC0DCC0" tabWidth="16" bold="false" family="Arial" size="17" italic="false" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p>
+      <text>	</text>
+      <cell imgAlign="left,middle" width="410" height="60" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>maneta       mà         manassa</p>
+      </cell>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/viatge.mp3" />
+      </cell>
+      <text>	viatget		</text>
+      <target>
+       <answer>viatge</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>viatge</text>
+      </target>
+      <text>		viatjàs</text>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/barqueta.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>barqueta</answer>
+       <response fill="_" length="6" maxLength="8" />
+       <text>barqueta</text>
+      </target>
+      <text>		barca		barcassa</text>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/gras.mp3" />
+      </cell>
+      <text>	grassonet		</text>
+      <target>
+       <answer>gras</answer>
+       <response fill="_" length="4" maxLength="6" />
+       <text>grassó</text>
+      </target>
+      <text>		grassonàs</text>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/teatret.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>teatrí</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>teatret</text>
+      </target>
+      <text>		teatre		teatràs</text>
+     </p>
+     <p />
+     <p />
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09006b/v09006b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les sèries amb les paraules que manquen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Magnífic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="430" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xC0DCC0" tabWidth="20" bold="false" family="Arial" size="17" italic="false" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p>
+      <text>							</text>
+      <cell imgAlign="left,middle" width="410" height="60" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>paperet      paper      paperassa</p>
+      </cell>
+     </p>
+     <p />
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/peu.mp3" />
+      </cell>
+      <text>	peuet	</text>
+      <target>
+       <answer>peu</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>peu</text>
+      </target>
+      <text>	peuàs</text>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/ditas.mp3" />
+      </cell>
+      <text>	ditet	dit	</text>
+      <target>
+       <answer>ditàs</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <text>ditàs</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/noiassa.mp3" />
+      </cell>
+      <text>	minyoneta	minyona	</text>
+      <target>
+       <answer>minyonassa</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <text>noiassa</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/xicotet.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>minyonet</answer>
+       <response fill="_" length="3" maxLength="8" />
+       <text>minyonet</text>
+      </target>
+      <text>	minyó	minyonàs</text>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09006c/v09006c.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les sèries amb les paraules que manquen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Magnífic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xC0DCC0" tabWidth="20" bold="false" family="Arial" size="17" italic="false" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p Alignment="0" bold="false" background="0xC0DCC0" size="17" family="Arial" italic="false" foreground="0x000000">
+      <cell imgAlign="left,middle" width="430" height="60" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>paperet      paper      paperassa</p>
+      </cell>
+     </p>
+     <p>
+      <text>	</text>
+     </p>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/cotxas.mp3" />
+      </cell>
+      <text>	maquineta	màquina	</text>
+      <target>
+       <answer>maquinassa</answer>
+       <response fill="_" length="4" maxLength="10" />
+       <text>cotxàs</text>
+      </target>
+     </p>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/sabata.mp3" />
+      </cell>
+      <text>	sabateta	</text>
+      <target>
+       <answer>sabata</answer>
+       <response fill="_" length="4" maxLength="6" />
+       <text>sabata</text>
+      </target>
+      <text>	sabatassa</text>
+     </p>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/dentassa.mp3" />
+      </cell>
+      <text>	denteta	dent	</text>
+      <target>
+       <answer>dentassa</answer>
+       <response fill="_" length="4" maxLength="8" />
+       <text>dentassa</text>
+      </target>
+     </p>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/mitjo.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>calceta</answer>
+       <response fill="_" length="4" maxLength="7" />
+       <text>calceta</text>
+      </target>
+      <text>	calça	calçassa</text>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09007a/v09007a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu el companyó de cada paraula</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="420" height="332" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="15" size="17" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	</text>
+      <text italic="false" size="17" foreground="0x000000" family="Arial" bold="true" background="0xC0DCC0">confiar		confiança</text>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <target>
+       <answer>llampar</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <text>llampegar</text>
+      </target>
+      <text>		llampec</text>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <target>
+       <answer>felicitar</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <text>felicitar</text>
+      </target>
+      <text>		felicitat</text>
+     </p>
+     <p />
+     <p>
+      <text>	afinestrar		</text>
+      <target>
+       <answer>finestra</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <text>cara</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	tronar		</text>
+      <target>
+       <answer>tro</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>entrebanc</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <target>
+       <answer>estroniar</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <text>estroniar</text>
+      </target>
+      <text>		estroniada</text>
+     </p>
+     <p />
+     <p>
+      <text>	espampolar	</text>
+      <target>
+       <answer>pàmpol</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <text>pàmpol</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09009f/v09009f.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu la paraula que manca a cada còpia</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfecte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="640" height="360" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="16" size="18" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>		</text>
+      <cell width="320" height="30" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p>Exemple: calaix - calaixera</p>
+      </cell>
+     </p>
+     <p />
+     <p>
+      <text>		gallina		</text>
+      <target>
+       <answer>galliner</answer>
+       <response fill="_" length="4" maxLength="8" />
+       <text>galliner</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>		</text>
+      <target>
+       <answer>botiga</answer>
+       <response fill="_" length="4" maxLength="6" />
+       <text>botiga</text>
+      </target>
+      <text>		botiguer</text>
+     </p>
+     <p />
+     <p>
+      <text>		capçal		</text>
+      <target>
+       <answer>capçalera</answer>
+       <response fill="_" length="4" maxLength="9" />
+       <text>capçalera</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>		</text>
+      <target>
+       <answer>taula</answer>
+       <response fill="_" length="4" maxLength="5" />
+       <text>taula</text>
+      </target>
+      <text>		taulera</text>
+     </p>
+     <p />
+     <p>
+      <text>		</text>
+      <target>
+       <answer>maití</answer>
+       <response fill="_" length="4" maxLength="5" />
+       <text>maití</text>
+      </target>
+      <text>		maitinera</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="v09011/v09011.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Converteix cada verb en majúscules en lo nom correspondent</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="400" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" foreground="0x000000" tabWidth="6" size="17" family="Arial" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>1. 	Tot lo públic del teatre HA APLAUDIT lo gran tenor.</text>
+     </p>
+     <p>
+      <text>	Tot lo públic ha dedicat un gran </text>
+      <target>
+       <answer>aplaudiment</answer>
+       <response fill="_" length="5" maxLength="12" />
+       <text>aplaudiment</text>
+      </target>
+      <text> al gran tenor.</text>
+     </p>
+     <p />
+     <p>
+      <text>2.	Ahir al maití HAN ASSALTAT la banca.</text>
+     </p>
+     <p>
+      <text>	Ahir al matí han fet un </text>
+      <target>
+       <answer>assalt</answer>
+       <response fill="_" length="5" maxLength="6" />
+       <text>atracament</text>
+      </target>
+      <text> a la banca.</text>
+     </p>
+     <p />
+     <p>
+      <text>3.	No HAN PAGAT lo butlletí.</text>
+     </p>
+     <p>
+      <text>	No han fet ningun </text>
+      <target>
+       <answer>pagament</answer>
+       <response fill="_" length="5" maxLength="8" />
+       <text>pagament</text>
+      </target>
+      <text>.</text>
+     </p>
+     <p />
+     <p>
+      <text>4.	Com era PREOCUPAT! Eren les tres de la nit i encara no era  arribat.</text>
+     </p>
+     <p>
+      <text>	Qui </text>
+      <target>
+       <answer>preocupació</answer>
+       <response fill="_" length="5" maxLength="11" />
+       <text>preocupació</text>
+      </target>
+      <text> Eren les tres de la nit i encara no era arribat.</text>
+     </p>
+     <p />
+     <p>
+      <text>5. 	I Salvador HA PENSAT: segur que Anna no venguerà.</text>
+     </p>
+     <p>
+      <text>	I Salvador ha tengut un </text>
+      <target>
+       <answer>pensament</answer>
+       <response fill="_" length="5" maxLength="9" />
+       <text>pensament</text>
+      </target>
+      <text>: segur que Anna no venguerà.</text>
+     </p>
+     <p />
+     <p>
+      <text>6.	SÓ ESTRAC: no he dormit en tota la nit.</text>
+     </p>
+     <p>
+      <text>	Tenc una gran </text>
+      <target>
+       <answer>estraquitud</answer>
+       <response fill="_" length="5" maxLength="11" />
+       <text>estraquitud</text>
+      </target>
+      <text>: no he dormit en tota la nit.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="v19002/v19002.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Associa cada paraula amb el sou contrari</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Fantàstic!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="2" cellWidth="143.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" inactive="0x408080" alternative="0x408080" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="5">
+     <p>feo</p>
+    </cell>
+    <cell id="3">
+     <p>magre</p>
+    </cell>
+    <cell id="4">
+     <p>pesant</p>
+    </cell>
+    <cell id="0">
+     <p>nou</p>
+    </cell>
+    <cell id="2">
+     <p>bo</p>
+    </cell>
+    <cell id="1">
+     <p>barat</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="184.0" cellHeight="70.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>vell</p>
+    </cell>
+    <cell>
+     <p>car</p>
+    </cell>
+    <cell>
+     <p>mal</p>
+    </cell>
+    <cell>
+     <p>gros</p>
+    </cell>
+    <cell>
+     <p>lleuger</p>
+    </cell>
+    <cell>
+     <p>bell</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="2" cellWidth="143.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/lleig.mp3" />
+     <p>feo</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/prim.mp3" />
+     <p>magre</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/pesat.mp3" />
+     <p>pesant</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/nou.mp3" />
+     <p>nou</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/bo.mp3" />
+     <p>bo</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/barat.mp3" />
+     <p>barat</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="v50008/v50008.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Troba cinc adjectius relacionats amb el tacte</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+    <eventSounds>
+     <sound id="finishedOk" enabled="false" />
+    </eventSounds>
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="40.0" cellHeight="40.0" border="false">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" />
+    </style>
+    <text>
+     <row>***A********</row>
+     <row>***S********</row>
+     <row>***P********</row>
+     <row>***R*******D</row>
+     <row>***E*******U</row>
+     <row>***********R</row>
+     <row>MOLL********</row>
+     <row>*****SEC****</row>
+     <row>************</row>
+     <row>*LLIS*******</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">DUR</clue>
+    <clue id="1">MOLL</clue>
+    <clue id="2">ASPRE</clue>
+    <clue id="3">SEC</clue>
+    <clue id="4">LLIS</clue>
+   </clues>
+   <cells rows="5" cols="1" cellWidth="10.0" cellHeight="10.0" border="false" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/dur.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/tou.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/aspre.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/sec.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/llis.mp3" />
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="img/ms40024a.gif" file="img_ms40024a.gif" animated="false" />
+  <media name="img/ms40024b.gif" file="img_ms40024b.gif" animated="false" />
+  <media name="img/ore1.gif" file="img_ore1.gif" animated="false" />
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="wav/f/ample.mp3" file="wav_f_ample.mp3" />
+  <media name="wav/f/barat.mp3" file="wav_f_barat.mp3" />
+  <media name="wav/f/culte.mp3" file="wav_f_culte.mp3" />
+  <media name="wav/f/ditas.mp3" file="wav_f_ditas.mp3" />
+  <media name="wav/f/espessos.mp3" file="wav_f_espessos.mp3" />
+  <media name="wav/f/gras.mp3" file="wav_f_gras.mp3" />
+  <media name="wav/f/grossos.mp3" file="wav_f_grossos.mp3" />
+  <media name="wav/f/mitjo.mp3" file="wav_f_mitjo.mp3" />
+  <media name="wav/f/noiassa.mp3" file="wav_f_noiassa.mp3" />
+  <media name="wav/f/nou.mp3" file="wav_f_nou.mp3" />
+  <media name="wav/f/prim.mp3" file="wav_f_prim.mp3" />
+  <media name="wav/f/sabata.mp3" file="wav_f_sabata.mp3" />
+  <media name="wav/f/sec.mp3" file="wav_f_sec.mp3" />
+  <media name="wav/f/tou.mp3" file="wav_f_tou.mp3" />
+  <media name="wav/f/viatge.mp3" file="wav_f_viatge.mp3" />
+  <media name="wav/m/aspre.mp3" file="wav_m_aspre.mp3" />
+  <media name="wav/m/barqueta.mp3" file="wav_m_barqueta.mp3" />
+  <media name="wav/m/bo.mp3" file="wav_m_bo.mp3" />
+  <media name="wav/m/cotxas.mp3" file="wav_m_cotxas.mp3" />
+  <media name="wav/m/dentassa.mp3" file="wav_m_dentassa.mp3" />
+  <media name="wav/m/dur.mp3" file="wav_m_dur.mp3" />
+  <media name="wav/m/gossos.mp3" file="wav_m_gossos.mp3" />
+  <media name="wav/m/lleig.mp3" file="wav_m_lleig.mp3" />
+  <media name="wav/m/llis.mp3" file="wav_m_llis.mp3" />
+  <media name="wav/m/ossos.mp3" file="wav_m_ossos.mp3" />
+  <media name="wav/m/pesat.mp3" file="wav_m_pesat.mp3" />
+  <media name="wav/m/peu.mp3" file="wav_m_peu.mp3" />
+  <media name="wav/m/teatret.mp3" file="wav_m_teatret.mp3" />
+  <media name="wav/m/xicotet.mp3" file="wav_m_xicotet.mp3" />
+  <media name="gali.xml" file="gali.xml" />
+ </mediaBag>
+</JClicProject>
+

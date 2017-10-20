@@ -1,0 +1,3321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0103b" version="0.1.3" code="gali">
+ <settings>
+  <title>g0103b</title>
+  <revision description="created" date="5/15/03" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="g0103b.pac" name="fp60028/fp60028.txa">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="fp60029/fp60029.txa" />
+  <item name="e60017b/e60017b.ass" />
+  <item name="e60304/e60304.ass" />
+  <item name="e60032b/e60032b.txa" />
+  <item name="fp60039/fp60039.txa" />
+  <item name="fp60030/fp60030.txa" />
+  <item name="e60017c/e60017c.ass" />
+  <item name="fp60040/fp60040.txa" />
+  <item name="e60032c/e60032c.txa" />
+  <item name="fp60034/fp60034.txa" />
+  <item name="e60017d/e60017d.ass" />
+  <item name="fp60043/fp60043.txa" />
+  <item name="fp60044/fp60044.txa" />
+  <item name="fp60037/fp60037.txa" />
+  <item name="fp60038/fp60038.txa" />
+  <item name="e60305a/e60305a.txa" />
+  <item name="e60305b/e60305b.txa" />
+  <item name="e60306/e60306.txa" />
+  <item name="ms07002a/ms07002a.txa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="e60017b/e60017b.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Posa en relació les paraules amb les xifres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="100.0" cellHeight="100.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="53" bold="true" />
+     <color background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0" image="img/100.gif" />
+    <cell id="1" image="img/300.gif" />
+    <cell id="2" image="img/500.gif" />
+    <cell id="3" image="img/600.gif" />
+    <cell id="4" image="img/800.gif" />
+    <cell id="5" image="img/900.gif" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="130.0" cellHeight="120.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/100.mp3" />
+     <p>cent</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/300.mp3" />
+     <p>tres-cents</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/500.mp3" />
+     <p>cinc-centes</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/600.mp3" />
+     <p>sis-cents</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/800.mp3" />
+     <p>vuit-cents</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/900.mp3" />
+     <p>nou-centes</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="100.0" cellHeight="100.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>100</p>
+    </cell>
+    <cell>
+     <p>300</p>
+    </cell>
+    <cell>
+     <p>500</p>
+    </cell>
+    <cell>
+     <p>600</p>
+    </cell>
+    <cell>
+     <p>800</p>
+    </cell>
+    <cell>
+     <p>900</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="e60017c/e60017c.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Posa en relació les paraules amb les xifres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="190.0" cellHeight="110.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="53" bold="true" />
+     <color foreground="0x008080" background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0">
+     <p>20.000</p>
+    </cell>
+    <cell id="1">
+     <p>40.000</p>
+    </cell>
+    <cell id="2">
+     <p>70.000</p>
+    </cell>
+    <cell id="3">
+     <p>10.000</p>
+    </cell>
+    <cell id="4">
+     <p>30.000</p>
+    </cell>
+    <cell id="5">
+     <p>80.000</p>
+    </cell>
+    <cell id="6">
+     <p>60.000</p>
+    </cell>
+    <cell id="7">
+     <p>50.000</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="160.0" cellHeight="120.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/20000.mp3" />
+     <p>vint mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/40000.mp3" />
+     <p>quaranta mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/70000.mp3" />
+     <p>setanta mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/10000.mp3" />
+     <p>deu mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/30000.mp3" />
+     <p>trenta mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/80000.mp3" />
+     <p>vuitanta mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/60000.mp3" />
+     <p>seixanta mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/50000.mp3" />
+     <p>cinquanta mil</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="190.0" cellHeight="110.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <p>20.000</p>
+    </cell>
+    <cell>
+     <p>40.000</p>
+    </cell>
+    <cell>
+     <p>70.000</p>
+    </cell>
+    <cell>
+     <p>10.000</p>
+    </cell>
+    <cell>
+     <p>30.000</p>
+    </cell>
+    <cell>
+     <p>80.000</p>
+    </cell>
+    <cell>
+     <p>60.000</p>
+    </cell>
+    <cell>
+     <p>50.000</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="e60017d/e60017d.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Posa en relació les paraules amb les xifres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="190.0" cellHeight="130.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="53" bold="true" />
+     <color foreground="0x008080" background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0">
+     <p>100.000</p>
+    </cell>
+    <cell id="1">
+     <p>200.000</p>
+    </cell>
+    <cell id="2">
+     <p>300.000</p>
+    </cell>
+    <cell id="3">
+     <p>400.000</p>
+    </cell>
+    <cell id="4">
+     <p>500.000</p>
+    </cell>
+    <cell id="5">
+     <p>600.000</p>
+    </cell>
+    <cell id="6">
+     <p>700.000</p>
+    </cell>
+    <cell id="7">
+     <p>800.000</p>
+    </cell>
+    <cell id="8">
+     <p>900.000</p>
+    </cell>
+    <cell id="9">
+     <p>1.000.000</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="190.0" cellHeight="130.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="16" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/100000.mp3" />
+     <p>cent mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/200000.mp3" />
+     <p>dos-centes mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/300000.mp3" />
+     <p>tres-cents mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/400000.mp3" />
+     <p>quatre-cents mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/500000.mp3" />
+     <p>cinc-centes mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/600000.mp3" />
+     <p>sis-cents mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/700000.mp3" />
+     <p>set-cents mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/800000.mp3" />
+     <p>vuit-cents mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/f/900000.mp3" />
+     <p>nou-centes mil</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="wav/m/1000000.mp3" />
+     <p>un milió</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="190.0" cellHeight="130.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>100.000</p>
+    </cell>
+    <cell>
+     <p>200.000</p>
+    </cell>
+    <cell>
+     <p>300.000</p>
+    </cell>
+    <cell>
+     <p>400.000</p>
+    </cell>
+    <cell>
+     <p>500.000</p>
+    </cell>
+    <cell>
+     <p>600.000</p>
+    </cell>
+    <cell>
+     <p>700.000</p>
+    </cell>
+    <cell>
+     <p>800.000</p>
+    </cell>
+    <cell>
+     <p>900.000</p>
+    </cell>
+    <cell>
+     <p>1.000.000</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="e60032b/e60032b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta i escriu la xifra</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="556" height="380" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="8" foreground="0x000000" bold="false" size="30" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>	</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/300.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>300</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>300</text>
+      </target>
+      <text>		</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/200.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>200</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>200</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/400.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>400</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>400</text>
+      </target>
+      <text>		</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/800.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>800</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>800</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/900.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>900</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>900</text>
+      </target>
+      <text>		</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/500.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>500</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>500</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <text>	</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/600.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>600</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>600</text>
+      </target>
+      <text>		</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/700.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>700</answer>
+       <response fill="_" length="2" maxLength="3" />
+       <text>700</text>
+      </target>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="e60032c/e60032c.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta i escriu la xifra</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="8" foreground="0x000000" bold="false" size="30" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/70000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>70.000</answer>
+       <answer> 70000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>70.000</text>
+      </target>
+      <text>			</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/60000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>60.000</answer>
+       <answer> 60000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>60.000</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/30000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>30.000</answer>
+       <answer> 30000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>30.000</text>
+      </target>
+      <text>			</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/40000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>40.000</answer>
+       <answer> 40000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>40.000</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/15000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>15.000</answer>
+       <answer> 15000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>15.000</text>
+      </target>
+      <text>			</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/27000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>27.000</answer>
+       <answer> 27000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>27.000</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/90000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>90.000</answer>
+       <answer> 90000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>90.000</text>
+      </target>
+      <text>			</text>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/10000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>10.000</answer>
+       <answer> 10000</answer>
+       <response fill="_" length="2" maxLength="7" />
+       <text>10.000</text>
+      </target>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="e60304/e60304.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta i posa en relació amb les paraules escrites</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="150.0" cellHeight="100.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="53" bold="true" />
+     <color background="0xC0DCC0" inactive="0xFF8000" alternative="0xFF8000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/200.mp3" />
+    </cell>
+    <cell id="1" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/300.mp3" />
+    </cell>
+    <cell id="2" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/400.mp3" />
+    </cell>
+    <cell id="3" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/500.mp3" />
+    </cell>
+    <cell id="4" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/700.mp3" />
+    </cell>
+    <cell id="5" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/800.mp3" />
+    </cell>
+    <cell id="6" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/900.mp3" />
+    </cell>
+    <cell id="7" image="img/ore1.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/1000.mp3" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="150.0" cellHeight="100.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="18" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <p>dues-centes</p>
+    </cell>
+    <cell>
+     <p>tres-cents</p>
+    </cell>
+    <cell>
+     <p>quatre-cents</p>
+    </cell>
+    <cell>
+     <p>cinc-centes</p>
+    </cell>
+    <cell>
+     <p>set-cents</p>
+    </cell>
+    <cell>
+     <p>vuit-cents</p>
+    </cell>
+    <cell>
+     <p>nou-centes</p>
+    </cell>
+    <cell>
+     <p>mil</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="150.0" cellHeight="100.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <p>200</p>
+    </cell>
+    <cell>
+     <p>300</p>
+    </cell>
+    <cell>
+     <p>400</p>
+    </cell>
+    <cell>
+     <p>500</p>
+    </cell>
+    <cell>
+     <p>700</p>
+    </cell>
+    <cell>
+     <p>800</p>
+    </cell>
+    <cell>
+     <p>900</p>
+    </cell>
+    <cell>
+     <p>1.000</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="e60305a/e60305a.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta i escriu en lletres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="320" height="362" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="20" foreground="0x000000" bold="false" size="18" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/300.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>tres-cents</answer>
+       <response fill="_" length="4" maxLength="12" />
+       <text>tres-cents</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/200.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>dues-centes</answer>
+       <answer>dos-cents</answer>
+       <response fill="_" length="4" maxLength="11" />
+       <text>dues-centes</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/400.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>quatre-cents</answer>
+       <response fill="_" length="4" maxLength="14" />
+       <text>quatre-cents</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/900.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>nou-centes</answer>
+       <answer>nou-cents</answer>
+       <response fill="_" length="4" maxLength="13" />
+       <text>nou-centes</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/700.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>set-cents</answer>
+       <response fill="_" length="4" maxLength="11" />
+       <text>set-cents</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="e60305b/e60305b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta i escriu en lletres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="369" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="20" foreground="0x000000" bold="false" size="18" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/100.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>cent</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <text>cent</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/500.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>cinc-centes</answer>
+       <answer>cinc-cents</answer>
+       <response fill="_" length="3" maxLength="13" />
+       <text>cinc-centes</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>mil</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <text>mil</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/800.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>vuit-cents</answer>
+       <response fill="_" length="3" maxLength="12" />
+       <text>vuit-cents</text>
+      </target>
+     </p>
+     <p />
+     <p>
+      <cell width="40" height="40" border="true" image="img/ore1.gif">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/600.mp3" />
+      </cell>
+      <text>	</text>
+      <target>
+       <answer>sis-cents</answer>
+       <response fill="_" length="3" maxLength="11" />
+       <text>sis-cents</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="e60306/e60306.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu les xifres amb lletres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfecte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="350" height="295" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xC0DCC0" tabWidth="6" bold="false" size="18" family="Arial" italic="false" foreground="0x000000" />
+    <style name="target" base="default" target="true" background="0xC0C0C0" foreground="0x0000FF" />
+    <style name="targetError" base="target" background="0xFF0000" foreground="0xFFFFFF" />
+    <section>
+     <p>
+      <text>	100	</text>
+      <target>
+       <answer>cent</answer>
+       <response fill="_" length="3" maxLength="6" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/100.mp3" />
+       </info>
+       <text>cent</text>
+      </target>
+     </p>
+     <p>
+      <text>	200	</text>
+      <target>
+       <answer>dos-cents</answer>
+       <response fill="_" length="3" maxLength="12" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/200.mp3" />
+       </info>
+       <text>dos-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	300	</text>
+      <target>
+       <answer>tres-cents</answer>
+       <response fill="_" length="3" maxLength="11" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/300.mp3" />
+       </info>
+       <text>tres-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	400	</text>
+      <target>
+       <answer>quatre-cents</answer>
+       <response fill="_" length="3" maxLength="13" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/400.mp3" />
+       </info>
+       <text>quatre-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	500	</text>
+      <target>
+       <answer>cinc-cents</answer>
+       <response fill="_" length="3" maxLength="12" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/500.mp3" />
+       </info>
+       <text>cinc-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	600	</text>
+      <target>
+       <answer>sis-cents</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/600.mp3" />
+       </info>
+       <text>sis-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	700	</text>
+      <target>
+       <answer>set-cents</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/700.mp3" />
+       </info>
+       <text>set-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	800	</text>
+      <target>
+       <answer>vuit-cents</answer>
+       <response fill="_" length="3" maxLength="11" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/800.mp3" />
+       </info>
+       <text>vuit-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	900	</text>
+      <target>
+       <answer>nou-cents</answer>
+       <response fill="_" length="3" maxLength="11" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/m/900.mp3" />
+       </info>
+       <text>nou-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>	1.000	</text>
+      <target>
+       <answer>mil</answer>
+       <response fill="_" length="3" maxLength="5" />
+       <info>
+        <media type="PLAY_AUDIO" level="1" file="wav/f/1000.mp3" />
+       </info>
+       <text>mil</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60028/fp60028.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="545" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="10" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/100.mp3" />
+       <p>100</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/100.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/200.mp3" />
+       <p>200</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/200.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/300.mp3" />
+       <p>300</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/300.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/400.mp3" />
+       <p>400</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/400.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/500.mp3" />
+       <p>500</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/500.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60029/fp60029.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="545" height="280" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="10" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/600.mp3" />
+       <p>600</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/600.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/700.mp3" />
+       <p>700</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/700.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/800.mp3" />
+       <p>800</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/800.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="60" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/900.mp3" />
+       <p>900</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/900.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60030/fp60030.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="625" height="280" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="10" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000.mp3" />
+       <p>1.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/10000.mp3" />
+       <p>10.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/10000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/100000.mp3" />
+       <p>100.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/100000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000000.mp3" />
+       <p>1.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1000000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60034/fp60034.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="625" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="10" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/123456.mp3" />
+       <p>123.456</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/123456.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/200000.mp3" />
+       <p>200.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/200000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/364463.mp3" />
+       <p>364.463</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/364463.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/456789.mp3" />
+       <p>456.768</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/456789.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="120" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/800000.mp3" />
+       <p>800.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/800000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60037/fp60037.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="3" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000000_.mp3" />
+       <p>100.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1000000_.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/2000000_.mp3" />
+       <p>200.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/2000000_.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/3000000_.mp3" />
+       <p>300.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/3000000_.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/4000000_.mp3" />
+       <p>400.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/4000000_.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/5000000_.mp3" />
+       <p>500.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/5000000_.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60038/fp60038.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="220" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="3" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/100000__.mp3" />
+       <p>1.000.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/100000__.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000____.mp3" />
+       <p>100.000.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1000____.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/100_____.mp3" />
+       <p>1.000.000.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/100_____.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60039/fp60039.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="2" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/153.mp3" />
+       <p>153</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/153.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/341.mp3" />
+       <p>341</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/341.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/289.mp3" />
+       <p>289</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/289.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/664.mp3" />
+       <p>664</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/664.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/836.mp3" />
+       <p>836</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/836.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60040/fp60040.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="3" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1349.mp3" />
+       <p>1.349</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1349.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1768.mp3" />
+       <p>1.768</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1768.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/3333.mp3" />
+       <p>3.333</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/3333.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/24542.mp3" />
+       <p>24.542</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/24542.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/44444.mp3" />
+       <p>44.444</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/44444.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60043/fp60043.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="3" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1000000.mp3" />
+       <p>1.000.000</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1000000.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/4444444.mp3" />
+       <p>4.444.444</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/4444444.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/6666666.mp3" />
+       <p>6.666.666</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/6666666.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/7000007.mp3" />
+       <p>7.000.007</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/7000007.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/1200012.mp3" />
+       <p>1.200.012</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/1200012.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="fp60044/fp60044.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escolta, repiti i confronta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="3" foreground="0x000000" bold="false" size="17" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/24300342.mp3" />
+       <p>24.300.342</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/24300342.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="1" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="1" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/34343434.mp3" />
+       <p>34.343.434</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/34343434.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="2" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play2.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="2" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/99999999.mp3" />
+       <p>99.999.999</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/99999999.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="3" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play3.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="3" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/12344321.mp3" />
+       <p>12.344.321</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/12344321.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="4" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play4.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="4" />
+      </cell>
+     </p>
+     <p>
+      <cell width="220" height="60" border="false">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/m/11111111.mp3" />
+       <p>11.111.111</p>
+      </cell>
+      <cell width="55" height="60" border="false" image="img/ore1.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="wav/f/11111111.mp3" />
+      </cell>
+      <text>		</text>
+      <cell width="140" height="60" border="false" image="img/rec5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="RECORD_AUDIO" level="1" buffer="5" length="2" />
+      </cell>
+      <text>	</text>
+      <cell width="140" height="60" border="false" image="img/play5.gif">
+       <style>
+        <font family="Arial" size="38" bold="true" />
+        <color foreground="0xFF0000" background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <media type="PLAY_RECORDED_AUDIO" level="1" buffer="5" />
+      </cell>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms07002a/ms07002a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Escriu les xifres en lletres</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="350" height="310" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" tabWidth="6" foreground="0x000000" bold="false" size="18" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p>
+      <text>-	400		</text>
+      <target>
+       <answer>quatre-cents</answer>
+       <response fill="_" length="3" maxLength="12" />
+       <text>quatre-cents</text>
+      </target>
+     </p>
+     <p>
+      <text>- 	202		</text>
+      <target>
+       <answer>dos-cents dos</answer>
+       <response fill="_" length="3" maxLength="13" />
+       <text>dos-cents dos</text>
+      </target>
+     </p>
+     <p>
+      <text>-	330		</text>
+      <target>
+       <answer>tres-cents trenta</answer>
+       <response fill="_" length="3" maxLength="18" />
+       <text>tres-cents trenta</text>
+      </target>
+     </p>
+     <p>
+      <text>- 	1.000		</text>
+      <target>
+       <answer>mil</answer>
+       <response fill="_" length="3" maxLength="4" />
+       <text>mil</text>
+      </target>
+     </p>
+     <p>
+      <text>-	921		</text>
+      <target>
+       <answer>nou-cents vint-i-u</answer>
+       <response fill="_" length="3" maxLength="18" />
+       <text>nou-cents vint-i-u</text>
+      </target>
+     </p>
+     <p>
+      <text>-	805		</text>
+      <target>
+       <answer>vuit-cents cinc</answer>
+       <response fill="_" length="3" maxLength="16" />
+       <text>vuit-cents cinc</text>
+      </target>
+     </p>
+     <p>
+      <text>-	111		</text>
+      <target>
+       <answer>cent onze</answer>
+       <response fill="_" length="3" maxLength="9" />
+       <text>cent onze</text>
+      </target>
+     </p>
+     <p>
+      <text>-	714		</text>
+      <target>
+       <answer>set-cents catorze</answer>
+       <response fill="_" length="3" maxLength="17" />
+       <text>set-cents catorze</text>
+      </target>
+     </p>
+     <p>
+      <text>-	10.000		</text>
+      <target>
+       <answer>deu mil</answer>
+       <response fill="_" length="3" maxLength="7" />
+       <text>deu mil</text>
+      </target>
+      <text> </text>
+     </p>
+     <p>
+      <text>-	1.000.000	</text>
+      <target>
+       <answer>un milió</answer>
+       <response fill="_" length="3" maxLength="10" />
+       <text>un milió</text>
+      </target>
+     </p>
+     <p>
+      <text>-	550		</text>
+      <target>
+       <answer>cinc-cents cinquanta</answer>
+       <response fill="_" length="3" maxLength="20" />
+       <text>cinc-cents cinquanta</text>
+      </target>
+     </p>
+     <p />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="img/100.gif" file="img_100.gif" animated="false" />
+  <media name="img/300.gif" file="img_300.gif" animated="false" />
+  <media name="img/500.gif" file="img_500.gif" animated="false" />
+  <media name="img/600.gif" file="img_600.gif" animated="false" />
+  <media name="img/800.gif" file="img_800.gif" animated="false" />
+  <media name="img/900.gif" file="img_900.gif" animated="false" />
+  <media name="img/ore1.gif" file="img_ore1.gif" animated="false" />
+  <media name="img/play1.gif" file="img_play1.gif" animated="false" />
+  <media name="img/play2.gif" file="img_play2.gif" animated="false" />
+  <media name="img/play3.gif" file="img_play3.gif" animated="false" />
+  <media name="img/play4.gif" file="img_play4.gif" animated="false" />
+  <media name="img/play5.gif" file="img_play5.gif" animated="false" />
+  <media name="img/rec1.gif" file="img_rec1.gif" animated="false" />
+  <media name="img/rec2.gif" file="img_rec2.gif" animated="false" />
+  <media name="img/rec3.gif" file="img_rec3.gif" animated="false" />
+  <media name="img/rec4.gif" file="img_rec4.gif" animated="false" />
+  <media name="img/rec5.gif" file="img_rec5.gif" animated="false" />
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="wav/f/100.mp3" file="wav_f_100.mp3" />
+  <media name="wav/f/1000.mp3" file="wav_f_1000.mp3" />
+  <media name="wav/f/10000.mp3" file="wav_f_10000.mp3" />
+  <media name="wav/f/100000.mp3" file="wav_f_100000.mp3" />
+  <media name="wav/f/1000000.mp3" file="wav_f_1000000.mp3" />
+  <media name="wav/f/1000000_.mp3" file="wav_f_1000000_.mp3" />
+  <media name="wav/f/100000__.mp3" file="wav_f_100000__.mp3" />
+  <media name="wav/f/1000____.mp3" file="wav_f_1000____.mp3" />
+  <media name="wav/f/100_____.mp3" file="wav_f_100_____.mp3" />
+  <media name="wav/f/11111111.mp3" file="wav_f_11111111.mp3" />
+  <media name="wav/f/1200012.mp3" file="wav_f_1200012.mp3" />
+  <media name="wav/f/12344321.mp3" file="wav_f_12344321.mp3" />
+  <media name="wav/f/123456.mp3" file="wav_f_123456.mp3" />
+  <media name="wav/f/1349.mp3" file="wav_f_1349.mp3" />
+  <media name="wav/f/15000.mp3" file="wav_f_15000.mp3" />
+  <media name="wav/f/153.mp3" file="wav_f_153.mp3" />
+  <media name="wav/f/1768.mp3" file="wav_f_1768.mp3" />
+  <media name="wav/f/200.mp3" file="wav_f_200.mp3" />
+  <media name="wav/f/20000.mp3" file="wav_f_20000.mp3" />
+  <media name="wav/f/200000.mp3" file="wav_f_200000.mp3" />
+  <media name="wav/f/2000000_.mp3" file="wav_f_2000000_.mp3" />
+  <media name="wav/f/24300342.mp3" file="wav_f_24300342.mp3" />
+  <media name="wav/f/24542.mp3" file="wav_f_24542.mp3" />
+  <media name="wav/f/289.mp3" file="wav_f_289.mp3" />
+  <media name="wav/f/300.mp3" file="wav_f_300.mp3" />
+  <media name="wav/f/30000.mp3" file="wav_f_30000.mp3" />
+  <media name="wav/f/300000.mp3" file="wav_f_300000.mp3" />
+  <media name="wav/f/3000000_.mp3" file="wav_f_3000000_.mp3" />
+  <media name="wav/f/3333.mp3" file="wav_f_3333.mp3" />
+  <media name="wav/f/341.mp3" file="wav_f_341.mp3" />
+  <media name="wav/f/34343434.mp3" file="wav_f_34343434.mp3" />
+  <media name="wav/f/364463.mp3" file="wav_f_364463.mp3" />
+  <media name="wav/f/400.mp3" file="wav_f_400.mp3" />
+  <media name="wav/f/4000000_.mp3" file="wav_f_4000000_.mp3" />
+  <media name="wav/f/44444.mp3" file="wav_f_44444.mp3" />
+  <media name="wav/f/4444444.mp3" file="wav_f_4444444.mp3" />
+  <media name="wav/f/456789.mp3" file="wav_f_456789.mp3" />
+  <media name="wav/f/500.mp3" file="wav_f_500.mp3" />
+  <media name="wav/f/500000.mp3" file="wav_f_500000.mp3" />
+  <media name="wav/f/5000000_.mp3" file="wav_f_5000000_.mp3" />
+  <media name="wav/f/600.mp3" file="wav_f_600.mp3" />
+  <media name="wav/f/60000.mp3" file="wav_f_60000.mp3" />
+  <media name="wav/f/664.mp3" file="wav_f_664.mp3" />
+  <media name="wav/f/6666666.mp3" file="wav_f_6666666.mp3" />
+  <media name="wav/f/700.mp3" file="wav_f_700.mp3" />
+  <media name="wav/f/70000.mp3" file="wav_f_70000.mp3" />
+  <media name="wav/f/700000.mp3" file="wav_f_700000.mp3" />
+  <media name="wav/f/7000007.mp3" file="wav_f_7000007.mp3" />
+  <media name="wav/f/800.mp3" file="wav_f_800.mp3" />
+  <media name="wav/f/800000.mp3" file="wav_f_800000.mp3" />
+  <media name="wav/f/836.mp3" file="wav_f_836.mp3" />
+  <media name="wav/f/900.mp3" file="wav_f_900.mp3" />
+  <media name="wav/f/90000.mp3" file="wav_f_90000.mp3" />
+  <media name="wav/f/900000.mp3" file="wav_f_900000.mp3" />
+  <media name="wav/f/99999999.mp3" file="wav_f_99999999.mp3" />
+  <media name="wav/m/100.mp3" file="wav_m_100.mp3" />
+  <media name="wav/m/1000.mp3" file="wav_m_1000.mp3" />
+  <media name="wav/m/10000.mp3" file="wav_m_10000.mp3" />
+  <media name="wav/m/100000.mp3" file="wav_m_100000.mp3" />
+  <media name="wav/m/1000000.mp3" file="wav_m_1000000.mp3" />
+  <media name="wav/m/1000000_.mp3" file="wav_m_1000000_.mp3" />
+  <media name="wav/m/100000__.mp3" file="wav_m_100000__.mp3" />
+  <media name="wav/m/1000____.mp3" file="wav_m_1000____.mp3" />
+  <media name="wav/m/100_____.mp3" file="wav_m_100_____.mp3" />
+  <media name="wav/m/11111111.mp3" file="wav_m_11111111.mp3" />
+  <media name="wav/m/1200012.mp3" file="wav_m_1200012.mp3" />
+  <media name="wav/m/12344321.mp3" file="wav_m_12344321.mp3" />
+  <media name="wav/m/123456.mp3" file="wav_m_123456.mp3" />
+  <media name="wav/m/1349.mp3" file="wav_m_1349.mp3" />
+  <media name="wav/m/153.mp3" file="wav_m_153.mp3" />
+  <media name="wav/m/1768.mp3" file="wav_m_1768.mp3" />
+  <media name="wav/m/200.mp3" file="wav_m_200.mp3" />
+  <media name="wav/m/200000.mp3" file="wav_m_200000.mp3" />
+  <media name="wav/m/2000000_.mp3" file="wav_m_2000000_.mp3" />
+  <media name="wav/m/24300342.mp3" file="wav_m_24300342.mp3" />
+  <media name="wav/m/24542.mp3" file="wav_m_24542.mp3" />
+  <media name="wav/m/27000.mp3" file="wav_m_27000.mp3" />
+  <media name="wav/m/289.mp3" file="wav_m_289.mp3" />
+  <media name="wav/m/300.mp3" file="wav_m_300.mp3" />
+  <media name="wav/m/3000000_.mp3" file="wav_m_3000000_.mp3" />
+  <media name="wav/m/3333.mp3" file="wav_m_3333.mp3" />
+  <media name="wav/m/341.mp3" file="wav_m_341.mp3" />
+  <media name="wav/m/34343434.mp3" file="wav_m_34343434.mp3" />
+  <media name="wav/m/364463.mp3" file="wav_m_364463.mp3" />
+  <media name="wav/m/400.mp3" file="wav_m_400.mp3" />
+  <media name="wav/m/40000.mp3" file="wav_m_40000.mp3" />
+  <media name="wav/m/400000.mp3" file="wav_m_400000.mp3" />
+  <media name="wav/m/4000000_.mp3" file="wav_m_4000000_.mp3" />
+  <media name="wav/m/44444.mp3" file="wav_m_44444.mp3" />
+  <media name="wav/m/4444444.mp3" file="wav_m_4444444.mp3" />
+  <media name="wav/m/456789.mp3" file="wav_m_456789.mp3" />
+  <media name="wav/m/500.mp3" file="wav_m_500.mp3" />
+  <media name="wav/m/50000.mp3" file="wav_m_50000.mp3" />
+  <media name="wav/m/5000000_.mp3" file="wav_m_5000000_.mp3" />
+  <media name="wav/m/600.mp3" file="wav_m_600.mp3" />
+  <media name="wav/m/60000.mp3" file="wav_m_60000.mp3" />
+  <media name="wav/m/600000.mp3" file="wav_m_600000.mp3" />
+  <media name="wav/m/664.mp3" file="wav_m_664.mp3" />
+  <media name="wav/m/6666666.mp3" file="wav_m_6666666.mp3" />
+  <media name="wav/m/700.mp3" file="wav_m_700.mp3" />
+  <media name="wav/m/7000007.mp3" file="wav_m_7000007.mp3" />
+  <media name="wav/m/800.mp3" file="wav_m_800.mp3" />
+  <media name="wav/m/80000.mp3" file="wav_m_80000.mp3" />
+  <media name="wav/m/800000.mp3" file="wav_m_800000.mp3" />
+  <media name="wav/m/836.mp3" file="wav_m_836.mp3" />
+  <media name="wav/m/900.mp3" file="wav_m_900.mp3" />
+  <media name="wav/m/99999999.mp3" file="wav_m_99999999.mp3" />
+ </mediaBag>
+</JClicProject>
+

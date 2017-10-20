@@ -1,0 +1,2342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="g0604a" version="0.1.3" code="gali">
+ <settings>
+  <title>g0604a</title>
+  <revision description="created" date="5/23/03" />
+  <descriptors />
+  <skin file="gali.xml" />
+ </settings>
+ <sequence>
+  <item id="g0604a.pac" name="ms11001/ms11001.txa">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="v50032/v50032.sop" />
+  <item name="ms12010a/ms12010a.txa" />
+  <item name="ms12010b/ms12010b.txa" />
+  <item name="ms12010c/ms12010c.txa" />
+  <item name="ms12011b/ms12011b.txa" />
+  <item name="ms12008b/ms12008b.txa" />
+  <item name="ms99021/ms99021.txa" />
+  <item name="ms12025/ms12025.txa" />
+  <item name="ms12026/ms12026.txa" />
+  <item name="ms12007a/ms12007a.txa" />
+  <item name="ms12007b/ms12007b.txa" />
+  <item name="ms12011a/ms12011a.txa" />
+  <item name="ms12008a/ms12008a.txa" />
+  <item name="ms12019/ms12019.txa" />
+  <item name="ms12009a/ms12009a.txa" />
+  <item name="ms12009b/ms12009b.txa" />
+  <item name="ms12009c/ms12009c.txa" />
+  <item name="ms12030a/ms12030a.txa" />
+  <item name="ms12030b/ms12030b.txa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="ms11001/ms11001.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Umpli els buits amb el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Just!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <cell width="580" height="30" border="true">
+       <style>
+        <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+       </style>
+       <p> jo / tu / ell / ella / nosaltros / vosaltros / ellos / elles</p>
+      </cell>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Jo</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <text>Jo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> estudic al tercer any de l’escola mitjana.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Elles</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>Elles</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> eren japoneses; </text>
+      <target>
+       <answer>ellos</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>ellos</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> eren russos.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Tu</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <text>Tu</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> viatges sempre tot sol?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Ell</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>Ell</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> era el meu millor amic.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Nosaltros</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>Nosaltros</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> cantàvem en la coral de l'escola.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Vosaltros</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>Vosaltros</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> éreu los sous professors.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Quan era petita, </text>
+      <target>
+       <answer>ella</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>ella</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> era més bella de mi.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12007a/ms12007a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria el pronom adequat a cada frase</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="250" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Aquest xarop és per ta germana, però a ella no </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> agrada.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Tots nosaltros volívem anar a la piscina, però no </text>
+      <target>
+       <answer>mos</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>mos</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> hi han convidat.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- M'han regalat diversos lapis de colors, però no </text>
+      <target>
+       <answer>m'</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>m'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">agraden.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- He comprat aquest malló per a tu, però no sé si </text>
+      <target>
+       <answer>t'</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>t'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">estiguerà bé.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12007b/ms12007b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria el pronom adequat a cada frase</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Si vosaltres voleu menjar ara, </text>
+      <target>
+       <answer>vos</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>vos</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> teniu de moure per trobar lloc.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Mengem tantes cariases cada dia que en poc temps </text>
+      <target>
+       <answer>mos</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>mos</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> les acabarem totes!</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Paga la factura al mestre de llenya i no </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> demanis més arrés perquè és massa car.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Són llençols per la posento tua, però no sé si </text>
+      <target>
+       <answer>t'</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>t'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">agradaran.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Jo t'estim assai, però no sé si tu </text>
+      <target>
+       <answer>m'</answer>
+       <optionList>
+        <option>m'</option>
+        <option>t'</option>
+        <option>mos</option>
+        <option>vos</option>
+        <option>li</option>
+       </optionList>
+       <text>m'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">estimes.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12008a/ms12008a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria la forma correcta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="430" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="18" family="Arial" foreground="0x000000" tabWidth="5" italic="false" bold="false" background="0xC0DCC0" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">- Ja han recivit la lletra? No, </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>la</option>
+        <option>lo</option>
+        <option>ne</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0"> reciviran demà.</text>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0" />
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">- Ja has fet les fotocòpies? Sí, ja </text>
+      <target>
+       <answer>les</answer>
+       <optionList>
+        <option>los</option>
+        <option>les</option>
+        <option>ne</option>
+       </optionList>
+       <text>les</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0"> he fetes.</text>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0" />
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">- Tens menester de més moneda? No, gràcies. No  </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>n'</option>
+        <option>'n</option>
+        <option>ne</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0"> tenc menester.</text>
+     </p>
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0" />
+     <p size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0">- On has estotjat les claus? </text>
+      <target>
+       <answer>Les</answer>
+       <optionList>
+        <option>Los</option>
+        <option>Les</option>
+        <option>L'</option>
+       </optionList>
+       <text>Les</text>
+      </target>
+      <text size="18" family="Arial" foreground="0x000000" italic="false" bold="false" background="0xC0DCC0"> he estotjades al calaix.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12008b/ms12008b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria la forma correcta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="500" height="265" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Quan faràs lo llit? </text>
+      <target>
+       <answer>Lo</answer>
+       <optionList>
+        <option>Lo</option>
+        <option>La</option>
+        <option>Ne</option>
+       </optionList>
+       <text>Lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> faré ara.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- On pos aquestos llibres? </text>
+      <target>
+       <answer>Los</answer>
+       <optionList>
+        <option>Ne</option>
+        <option>Los</option>
+        <option>Les</option>
+       </optionList>
+       <text>Los</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> pots posar a la llibreria de la posento.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Qui juga la partida avui? </text>
+      <target>
+       <answer>La</answer>
+       <optionList>
+        <option>Lo</option>
+        <option>La</option>
+        <option>Ne</option>
+       </optionList>
+       <text>La</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> juguem jo i ell.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Quan faràs les baliges? </text>
+      <target>
+       <answer>Les</answer>
+       <optionList>
+        <option>Lo</option>
+        <option>Los</option>
+        <option>Les</option>
+       </optionList>
+       <text>Les</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> faré demà, maití maití.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12009a/ms12009a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les respostes amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="273" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Tens un poc de treball, no? Sí, </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> tenc tant.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Que teniu fraules? No, no </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> resten.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Vols lo lapis? Sí, </text>
+      <target>
+       <answer>lo</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> vull ara mateix.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Has convidat Maria a la festa? No, però si vols, convida-</text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12009b/ms12009b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les respostes amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="171" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Voleu bitllets? Sí, </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> volem tres.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Portes lo llibre d'història? Sí, </text>
+      <target>
+       <answer>lo</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> port a la bossa.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- On és Eulàlia? No el sé. Ja és un poc que </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> cerc.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12009c/ms12009c.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les respostes amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="285" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Quants metres quadrats fa aquest apartament?  </text>
+      <target>
+       <answer>Ne</answer>
+       <optionList>
+        <option>Ne</option>
+        <option>Lo</option>
+        <option>La</option>
+       </optionList>
+       <text>Ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> té 90.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- D'aquellos programes, </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> faré estampar de més.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Cosiràs lo calçó? No, no </text>
+      <target>
+       <answer>el</answer>
+       <optionList>
+        <option>ne</option>
+        <option>el</option>
+        <option>la</option>
+       </optionList>
+       <text>el</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> sé cosir!</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Tens la clau de la màquina? Sí, </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> tenc en butxaca.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Diu que arribarà en temps però jo </text>
+      <target>
+       <answer>el</answer>
+       <optionList>
+        <option>ne</option>
+        <option>el</option>
+        <option>la</option>
+       </optionList>
+       <text>el</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> veig que bistenta sempre.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12010a/ms12010a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="273" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Cada dia </text>
+      <target>
+       <answer>me</answer>
+       <optionList>
+        <option>me</option>
+        <option>-me</option>
+        <option>m'</option>
+       </optionList>
+       <text>me</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> n’aixec a les set.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Estic comprant</text>
+      <target>
+       <answer>-me</answer>
+       <optionList>
+        <option>me</option>
+        <option>-me</option>
+        <option>m'</option>
+       </optionList>
+       <text>-me</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> préssecs, que m’agraden.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>M'</answer>
+       <optionList>
+        <option>Me</option>
+        <option>-me</option>
+        <option>M'</option>
+       </optionList>
+       <text>M'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">acost a la finestra perquè no hi veig.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Porta</text>
+      <target>
+       <answer>-me</answer>
+       <optionList>
+        <option>me</option>
+        <option>-me</option>
+        <option>m'</option>
+       </optionList>
+       <text>-me</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> una tassa d'aigua.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Teniva una taca i no </text>
+      <target>
+       <answer>me</answer>
+       <optionList>
+        <option>me</option>
+        <option>-me</option>
+        <option>M'</option>
+       </optionList>
+       <text>me</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> n'era abijat.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12010b/ms12010b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="268" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>Te</answer>
+       <optionList>
+        <option>Te</option>
+        <option>T'</option>
+        <option>-te</option>
+       </optionList>
+       <text>Te</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">  n'abiges, que això és un maquini?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>T'</answer>
+       <optionList>
+        <option>Te</option>
+        <option>T'</option>
+        <option>-te</option>
+       </optionList>
+       <text>T'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">acompanyaré on és lo doctor aquesta tarda.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Visti</text>
+      <target>
+       <answer>-te</answer>
+       <optionList>
+        <option>te</option>
+        <option>t'</option>
+        <option>-te</option>
+       </optionList>
+       <text>-te</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> ràpidament que farem tard.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Compra</text>
+      <target>
+       <answer>-te</answer>
+       <optionList>
+        <option>te</option>
+        <option>t'</option>
+        <option>-te</option>
+       </optionList>
+       <text>-te</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> altres sabates als rebaixos.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>Te</answer>
+       <optionList>
+        <option>Te</option>
+        <option>T'</option>
+        <option>-te</option>
+       </optionList>
+       <text>Te</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> compraré un regal del Brasil.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12010c/ms12010c.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="540" height="334" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- No </text>
+      <target>
+       <answer>s'</answer>
+       <optionList>
+        <option>-se</option>
+        <option>s'</option>
+        <option>se</option>
+       </optionList>
+       <text>s'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">atreviva a eixir tota sola.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Quasi sempre </text>
+      <target>
+       <answer>se</answer>
+       <optionList>
+        <option>-se</option>
+        <option>s'</option>
+        <option>se</option>
+       </optionList>
+       <text>se</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> fa el menjar quan arriba.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Sempre mostrant</text>
+      <target>
+       <answer>-se</answer>
+       <optionList>
+        <option>-se</option>
+        <option>s'</option>
+        <option>se</option>
+       </optionList>
+       <text>-se</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> simpàtic, ell.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Posi</text>
+      <target>
+       <answer>-se</answer>
+       <optionList>
+        <option>-se</option>
+        <option>s'</option>
+        <option>se</option>
+       </optionList>
+       <text>-se</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> a la fi de la fila.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>Se</answer>
+       <optionList>
+        <option>-Se</option>
+        <option>S'</option>
+        <option>Se</option>
+       </optionList>
+       <text>Se</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> veuen de lluny.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12011a/ms12011a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="550" height="366" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Jo ja </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> só soci, del club.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Això </text>
+      <target>
+       <answer>n'</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>n'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">és una prova.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- L'ampolla, </text>
+      <target>
+       <answer>n'</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>n'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">és plena, d'aigua.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Jo també ara me</text>
+      <target>
+       <answer>'n</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>'n</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> vaig, d’aquí.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Culli</text>
+      <target>
+       <answer>-ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>-ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> de més, de raïm, perquè quest l’acabaràs en un dia.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Recorda-te</text>
+      <target>
+       <answer>'n</answer>
+       <optionList>
+        <option>ne</option>
+        <option>-ne</option>
+        <option>n'</option>
+        <option>'n</option>
+       </optionList>
+       <text>'n</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">. Me l'has empromès.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12011b/ms12011b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom correcte</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excel·lent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="550" height="366" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Avisa</text>
+      <target>
+       <answer>'l</answer>
+       <optionList>
+        <option>lo</option>
+        <option>-lo</option>
+        <option>l'</option>
+        <option>'l</option>
+       </optionList>
+       <text>'l</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">, que tenc de parlar amb ell.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Lo rasor elèctric encara no funciona: no </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>lo</option>
+        <option>-lo</option>
+        <option>l'</option>
+        <option>'l</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">havies portat a adobar?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>Lo</answer>
+       <optionList>
+        <option>Lo</option>
+        <option>-lo</option>
+        <option>L'</option>
+        <option>'l</option>
+       </optionList>
+       <text>Lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> despertaré maití perquè té d’estudiar.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Tenc de pintar</text>
+      <target>
+       <answer>-lo</answer>
+       <optionList>
+        <option>lo</option>
+        <option>-lo</option>
+        <option>l'</option>
+        <option>'l</option>
+       </optionList>
+       <text>-lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial"> tot si vull que sigui ben fet.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Per què </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>lo</option>
+        <option>-lo</option>
+        <option>l'</option>
+        <option>'l</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">has fet venir?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">- Se n'és fugit lo pardal de la gàbia: cerca</text>
+      <target>
+       <answer>'l</answer>
+       <optionList>
+        <option>lo</option>
+        <option>-lo</option>
+        <option>l'</option>
+        <option>'l</option>
+       </optionList>
+       <text>'l</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" name="default" family="Arial">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12019/ms12019.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria la forma correcta</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Exacte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="333" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Ara prenc la carn del frigo i </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>la</option>
+        <option>ne</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> coc.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Tots los iaios meus porten ulleres i jo també </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>les</option>
+        <option>ne</option>
+        <option>los</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> port.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Deixa-li un lapis perquè no </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>ne</option>
+        <option>lo</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> té.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Tenguerives de comprar súcura. No </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>lo</option>
+        <option>ne</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> tenim.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Obri el bòtul de l’oliva però no te </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>ne</option>
+        <option>la</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> mengis tota.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Coneix los sous genitors però als germans no </text>
+      <target>
+       <answer>els</answer>
+       <optionList>
+        <option>ne</option>
+        <option>els</option>
+       </optionList>
+       <text>els</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> coneix.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12025/ms12025.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excel·lent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="397" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" background="0xC0C0C0" target="true" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- D'acord, senyora; si </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>li</option>
+        <option>lo</option>
+        <option>la</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> agraden aquestos calçons, prengui-se'ls.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Tens de comprar</text>
+      <target>
+       <answer>-lo</answer>
+       <optionList>
+        <option>-li</option>
+        <option>el</option>
+        <option>-la</option>
+        <option>-lo</option>
+       </optionList>
+       <text>-lo</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> , lo bitllet? Si </text>
+      <target>
+       <answer>el</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>el</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> tens lego, dóna</text>
+      <target>
+       <answer>'l</answer>
+       <optionList>
+        <option>'l</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>'l</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> a Eulàlia, que </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+        <option>l'</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">ampra aquesta tarda.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- </text>
+      <target>
+       <answer>La</answer>
+       <optionList>
+        <option>Li</option>
+        <option>El</option>
+        <option>La</option>
+        <option>Lo</option>
+       </optionList>
+       <text>La</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> tens, aquesta comèdia? Jo </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> tenc ja d’un mes, l’he prestada per llegir a mon germà i ell diu que </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> és agradada.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Que </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+        <option>l'</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">estrenes ara, aquesta gonella? No te </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+        <option>l'</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">havia vista mai; o és nova o no te </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> poses sovent.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial">- Aquesta caixeta no </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> té i segur que si </text>
+      <target>
+       <answer>la</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> tenguessi </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>li</option>
+        <option>el</option>
+        <option>la</option>
+        <option>lo</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> agradaria escoltar</text>
+      <target>
+       <answer>-la</answer>
+       <optionList>
+        <option>-li</option>
+        <option>el</option>
+        <option>-la</option>
+        <option>-lo</option>
+       </optionList>
+       <text>-la</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" name="default" family="Arial"> cada dia.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12026/ms12026.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa cada frase amb el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Excel·lent!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="510" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>L'</answer>
+       <optionList>
+        <option>L'</option>
+        <option>Li</option>
+       </optionList>
+       <text>L'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">escoltes, la ràdio?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Qui cosa </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>l'</option>
+        <option>li</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> han regalat, a vostra mare?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Escriu</text>
+      <target>
+       <answer>-li</answer>
+       <optionList>
+        <option>'l</option>
+        <option>-li</option>
+       </optionList>
+       <text>-li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> més lego que pots.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>L'</answer>
+       <optionList>
+        <option>L'</option>
+        <option>Li</option>
+       </optionList>
+       <text>L'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">ha canviat per un altro.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Vull regalar</text>
+      <target>
+       <answer>-li</answer>
+       <optionList>
+        <option>'l</option>
+        <option>-li</option>
+       </optionList>
+       <text>-li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> una moto nova.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Com </text>
+      <target>
+       <answer>li</answer>
+       <optionList>
+        <option>l'</option>
+        <option>li</option>
+       </optionList>
+       <text>li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> explicarem, a Doloreta, tot lo que és succeït?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Per què </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>l'</option>
+        <option>li</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">allongues, lo vestit?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>L'</answer>
+       <optionList>
+        <option>L'</option>
+        <option>Li</option>
+       </optionList>
+       <text>L'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">ha deixada a la carreta, la xapa.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- No </text>
+      <target>
+       <answer>l'</answer>
+       <optionList>
+        <option>l'</option>
+        <option>li</option>
+       </optionList>
+       <text>l'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">aquidrarem mai a jugar a pòquer.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Li</answer>
+       <optionList>
+        <option>L'</option>
+        <option>Li</option>
+       </optionList>
+       <text>Li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> haveu dit la veritat?</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12030a/ms12030a.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfecte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="347" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Vols anar a passejar? Sí, </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>ne</option>
+        <option>hi</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> vull anar.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Quants anys té aquella minyona? Me pareix que </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> té catorze.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- L'excursió a Mont Dolla no és anada bé: quan </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> sem arribats ploieva i quan </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> tornàvem feva trons i llamps.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- T'</text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> trobes bé, en aquest apartament nou?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- La iaia Carolina nos donava sempre moneda: feva veure que </text>
+      <target>
+       <answer>ne</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">  portava enrere de les orelles.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms12030b/ms12030b.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Completa les frases amb el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Perfecte!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="600" height="303" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="16" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Ja </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>en</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> has escrit lo nom tou, al llibre de visitadors?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Ne</answer>
+       <optionList>
+        <option>Hi</option>
+        <option>Ne</option>
+       </optionList>
+       <text>Ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> saps, de llatí? No, jo no </text>
+      <target>
+       <answer>n'</answer>
+       <optionList>
+        <option>l'</option>
+        <option>n'</option>
+       </optionList>
+       <text>n'</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> he estudiat mai.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Jo no </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>en</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> puc fer arrés, amb aquest problema!</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- Tu </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>en</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> tenives tants amics, a Vilanova. </text>
+      <target>
+       <answer>Ne</answer>
+       <optionList>
+        <option>Hi</option>
+        <option>Ne</option>
+       </optionList>
+       <text>Ne</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> saps arrés d'ellos?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- En aquella piscina, no nos </text>
+      <target>
+       <answer>hi</answer>
+       <optionList>
+        <option>hi</option>
+        <option>ne</option>
+       </optionList>
+       <text>hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> podívem banyar; l'aigua era ben bruta.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="ms99021/ms99021.txa" code="" autoJump="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Tria el pronom just</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" shadow="0x000000" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false">
+     <size width="700" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="false" foreground="0x000000" size="18" background="0xC0DCC0" tabWidth="5" italic="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xC0C0C0" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Li</answer>
+       <optionList>
+        <option>Te</option>
+        <option>Li</option>
+        <option>Vos</option>
+        <option>Lis hi</option>
+       </optionList>
+       <text>Li</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> dóna enfado a vostè que deixi aquestos papers en aquí?</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Te</answer>
+       <optionList>
+        <option>Te</option>
+        <option>Li</option>
+        <option>Vos</option>
+        <option>Lis hi</option>
+       </optionList>
+       <text>Te</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> dóna enfado a tu que tanqui la finestra? Tenc massa fred.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Lis hi</answer>
+       <optionList>
+        <option>Te</option>
+        <option>Li</option>
+        <option>Vos</option>
+        <option>Lis hi</option>
+       </optionList>
+       <text>Lis hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> donguerà enfado a elles si abaix lo volum del televisor? Jo tenc dolor de cap.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Vos</answer>
+       <optionList>
+        <option>Te</option>
+        <option>Li</option>
+        <option>Vos</option>
+        <option>Lis hi</option>
+       </optionList>
+       <text>Vos</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> dóna enfado a vosaltros que despagui l'estufa? Tenc massa calor.</text>
+     </p>
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial" />
+     <p bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial">- </text>
+      <target>
+       <answer>Lis hi</answer>
+       <optionList>
+        <option>Te</option>
+        <option>Li</option>
+        <option>Vos</option>
+        <option>Lis hi</option>
+       </optionList>
+       <text>Lis hi</text>
+      </target>
+      <text bold="false" foreground="0x000000" size="18" background="0xC0DCC0" italic="false" family="Arial"> dóna enfado a ellos que obri la porta? Hi ha massa fum.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="v50032/v50032.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Troba set pronoms personals</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x804000" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>Bé!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF8000">
+     <image name="img/textura.gif" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008080" transparent="true" border="false" />
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="40.0" cellHeight="40.0" border="false">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xC0DCC0" />
+    </style>
+    <text>
+     <row>*****ELLES**</row>
+     <row>*V*********N</row>
+     <row>*O*********O</row>
+     <row>*S*********S</row>
+     <row>*A**JO*****A</row>
+     <row>*L*****T***L</row>
+     <row>*T*****U***T</row>
+     <row>*R***ELLA**R</row>
+     <row>*O*********O</row>
+     <row>*S**ELL****S</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">JO</clue>
+    <clue id="1">NOSALTROS</clue>
+    <clue id="2">VOSALTROS</clue>
+    <clue id="3">ELLES</clue>
+    <clue id="4">ELL</clue>
+    <clue id="5">TU</clue>
+    <clue id="6">ELLA</clue>
+   </clues>
+   <cells rows="7" cols="1" cellWidth="10.0" cellHeight="10.0" border="false" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/jo.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/nosaltre.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/vosaltre.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/elles.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/f/ell.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/tu.mp3" />
+    </cell>
+    <cell image="img/textura.gif">
+     <media type="PLAY_AUDIO" level="1" file="wav/m/ella.mp3" />
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="img/textura.gif" file="img_textura.gif" animated="false" />
+  <media name="wav/f/ell.mp3" file="wav_f_ell.mp3" />
+  <media name="wav/f/jo.mp3" file="wav_f_jo.mp3" />
+  <media name="wav/f/vosaltre.mp3" file="wav_f_vosaltre.mp3" />
+  <media name="wav/m/ella.mp3" file="wav_m_ella.mp3" />
+  <media name="wav/m/elles.mp3" file="wav_m_elles.mp3" />
+  <media name="wav/m/nosaltre.mp3" file="wav_m_nosaltre.mp3" />
+  <media name="wav/m/tu.mp3" file="wav_m_tu.mp3" />
+  <media name="gali.xml" file="gali.xml" />
+ </mediaBag>
+</JClicProject>
+
