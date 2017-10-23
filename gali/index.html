@@ -78,10 +78,55 @@
   </script>
 
   <link rel="stylesheet" href="gali.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
-  Pàgina d'inici
+  <div id="portada">
+    <h1>Galí</h1>
+    <p>Seleccioneu <a href="index.html?page=variant">llengua i variant</a></p>
+  </div>
+  <div id="variant">
+    <h2>Selecció de llengua i variant</h2>
+    <ul class="opcions">
+      <li>Català central</li>
+      <li>Català nord-occidental</li>
+      <li>Català de l'Alguer</li>
+      <li>Occitan d'Aran</li>
+    </ul>
+    <div class="enrere"><a href="?page=portada">enrere</a></div>
+  </div>
+  <div id="grups">
+    <h2>Selecció de grup temàtic</h2>
+    <ul class="opcions">
+      <li>Grup primer
+        <span class="n1">x</span>
+        <span class="n2">x</span>
+      </li>
+      <li>Grup segon
+        <span class="n1">x</span>
+        <span class="n2">x</span>
+      </li>
+    </ul>
+    <div class="enrere"><a href="?page=variant">enrere</a></div>    
+  </div>
+  <div id="tema">
+    <h2>Títol del grup i nivell</h2>
+    <ul class="opcions">
+      <li>Tema primer
+        <span class="n1">x</span>
+      </li>
+      <li>Tema segon
+        <span class="n1">x</span>
+      </li>
+    </ul>
+    <div class="enrere"><a href="?page=grups">enrere</a></div>    
+  </div>
+  <div id="resultat">
+    <h2>Títol del resultat</h2>
+    <p>Explicació...</p>
+  </div>
 </body>
 
 </html>
