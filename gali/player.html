@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  File    : gali.html
-  Created : 20/10/2017
+  File    : player.html
+  Created : 24/10/2017
   By      : Francesc Busquets <francesc@gmail.com>
 
   Galí
@@ -69,31 +69,43 @@
   <meta name="msapplication-TileColor" content="#2196F3">
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- Load and register pre-caching Service Worker -->
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('service-worker.js');
-      });
+    // Paràmetres generals de l'aplicació
+    var params = {
+      page: 'variant',
+      variant: 'cent',
+      grup: 1,
+      nivell: 'a',
+      tema: 1
+    }
+
+    // Read params
+    window.location.search.substring(1).split('&').forEach(function (p) {
+      var kv = p.split('=');
+      var key = kv[0], value = kv[1] || '';
+      if (key in params)
+        params[key] = value;
+      else
+        console.log('Paràmetre desconegut: ' + key + '=' + value);
+    });
+
+    var projectName = 'g0' + params.grup + '0' + params.tema + params.nivell;
+    var exitParams = 'page=results&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema + '&project=' + projectName;
+    var JClicDataProject, JClicDataOptions;
+
+    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost')
+      window.location.replace(window.location.href.replace('http:', 'https:'));
+    else {
+      JClicDataProject = '../projects/gali' + params.variant + '/g0' + params.grup + '00_' + params.nivell + '/jclic.js/' + projectName + '.jclic';
+      JClicDataOptions = { logLevel: 'trace', reporter: 'SessionStorageReporter', returnAsExit: true, exitUrl: 'gali.html?' + exitParams };
     }
   </script>
+  <script type="text/javascript" src="https://clic.xtec.cat/dist/jclic-beta/jclic.min.js"></script>
 
-  <link rel="stylesheet" href="gali.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="gali.js"></script>
 </head>
 
-<body>
-  <div class="main-container">
-    <div class="header">
-      <div class="logo"></div>
-      <div class="titol t1"></div>
-      <div class="titol t2"></div>
-      <div class="descripcio"></div>
-    </div>
-    <div class="opcions"></div>
-    <div class="footer"></div>
-  </div>
+<body style="margin:0">
+  <div class="JClic" />
 </body>
 
 </html>

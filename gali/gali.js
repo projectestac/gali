@@ -355,8 +355,6 @@ $(function () {
       console.log('Paràmetre desconegut: ' + key + '=' + value);
   });
 
-  $('.enrere a').html('[' + getTxt('enrere') + ']');
-
   var elements = {
     ret: null,
     img_logo: 'img/logo_petit.gif',
@@ -409,8 +407,13 @@ $(function () {
           .append($('<a/>', { href: link }).append($('<img>', { src: img, alt: text }))));
       });
       break;
+
+    case 'results':
+      console.log('Llegint resultats!');
+      break;
     default:
       console.log('Pàgina desconeguda: ' + params.page);
+      return;
   }
 
   if (elements.ret)
