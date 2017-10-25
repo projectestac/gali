@@ -344,12 +344,15 @@ function initScore() {
   settings.variants.forEach(function (v) {
     result[v] = [];
     settings.grups.forEach(function (g) {
+      var gr = [];
       for (var l = 0; l < 2; l++) {
-        result[v][l] = [];
+        var tr = [];
         g.temes[l].forEach(function (v) {
-          result[v][l].push(0);
+          tr.push(0);
         });
+        gr.push(tr);
       }
+      result[v].push(gr);
     })
   });
   return result;
@@ -401,8 +404,8 @@ function getLastGaliReport(remove) {
   if (sessionStorageAvailable && window.sessionStorage.length > 0) {
     var keys = [];
     for (var i = 0; i < window.sessionStorage.length; i++)
-      if (window.sessionStorage.key[i].indexOf('jclic_') == 0)
-        keys.push(window.sessionStorage.key[i]);
+      if (window.sessionStorage.key(i).indexOf('jclic_') == 0)
+        keys.push(window.sessionStorage.key(i));
     keys.sort();
     for (var i = keys.length - 1; i >= 0; i--) {
       var report = JSON.parse(window.sessionStorage.getItem(keys[i]));
