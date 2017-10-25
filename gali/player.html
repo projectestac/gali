@@ -72,6 +72,7 @@
   <script>
     // Paràmetres generals de l'aplicació
     var params = {
+      base: '../projects/',
       page: 'variant',
       variant: 'cent',
       grup: 1,
@@ -90,13 +91,13 @@
     });
 
     var projectName = 'g0' + params.grup + '0' + params.tema + params.nivell;
-    var exitParams = 'page=results&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema + '&project=' + projectName;
+    var exitParams = 'page=result&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema + '&project=' + projectName;
     var JClicDataProject, JClicDataOptions;
 
     if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost')
       window.location.replace(window.location.href.replace('http:', 'https:'));
     else {
-      JClicDataProject = '../projects/gali' + params.variant + '/g0' + params.grup + '00_' + params.nivell + '/jclic.js/' + projectName + '.jclic';
+      JClicDataProject = params.base + 'gali' + params.variant + '/g0' + params.grup + '00_' + params.nivell + '/jclic.js/' + projectName + '.jclic';
       JClicDataOptions = { logLevel: 'trace', reporter: 'SessionStorageReporter', returnAsExit: true, exitUrl: 'gali.html?' + exitParams };
     }
   </script>

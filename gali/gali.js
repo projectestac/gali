@@ -338,12 +338,92 @@ var params = {
   tema: 1
 }
 
-$(function () {
+// Inicialitza un conjunt de puntuacions a zero
+function initScore() {
+  var result = {};
+  settings.variants.forEach(function (v) {
+    result[v] = [];
+    settings.grups.forEach(function (g) {
+      for (var l = 0; l < 2; l++) {
+        result[v][l] = [];
+        g.temes[l].forEach(function (v) {
+          result[v][l].push(0);
+        });
+      }
+    })
+  });
+  return result;
+}
 
-  // Retorna una paraula del diccionari
-  function getTxt(key) {
-    return settings.dict[params.variant][key];
+// Comprova l'existència de localStorage i sessionStorage
+// from: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+function storageAvailable(type) {
+  try {
+    var storage = window[type],
+      x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
   }
+  catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22 ||
+      // Firefox
+      e.code === 1014 ||
+      // test name field too, because code might not be present
+      // everything except Firefox
+      e.name === 'QuotaExceededError' ||
+      // Firefox
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      storage.length !== 0;
+  }
+}
+
+var localStorageAvailable = storageAvailable('localStorage');
+var sessionStorageAvailable = storageAvailable('sessionStorage');
+
+// Llegeix la puntuació actual, si està disponible
+function getScore() {
+  var s = localStorageAvailable ? window.localStorage.getItem('gali') : '';
+  return s ? JSON.parse(s) : initScore();
+}
+
+// Desa la puntuació
+function saveScore(score) {
+  if (localStorageAvailable)
+    window.localStorage.setItem('gali', JSON.stringify(score));
+}
+
+function getLastGaliReport(remove) {
+  var result = null;
+  if (sessionStorageAvailable && window.sessionStorage.length > 0) {
+    var keys = [];
+    for (var i = 0; i < window.sessionStorage.length; i++)
+      if (window.sessionStorage.key[i].indexOf('jclic_') == 0)
+        keys.push(window.sessionStorage.key[i]);
+    keys.sort();
+    for (var i = keys.length - 1; i >= 0; i--) {
+      var report = JSON.parse(window.sessionStorage.getItem(keys[i]));
+      if (report.sessions.length > 0 && report.sessions[0].projectName.match(/^g0[0-9]0[0-9][ab]$/)) {
+        result = report;
+        if (remove)
+          window.sessionStorage.removeItem(keys[i]);
+        break;
+      }
+    }
+  }
+  return result;
+}
+
+// Retorna una paraula del diccionari
+function getTxt(key) {
+  return settings.dict[params.variant][key];
+}
+
+// S'executa immediatament després d'haver carregat la pàgina
+$(function () {
 
   // Read params
   window.location.search.substring(1).split('&').forEach(function (p) {
@@ -363,6 +443,8 @@ $(function () {
     t2_text: null,
     descripcio: null
   }
+
+  var score = getScore();
 
   switch (params.page) {
     case 'variant':
@@ -398,8 +480,9 @@ $(function () {
       elements.ret = '?page=grups&variant=' + params.variant;
       elements.img_logo = 'img/' + g.icon;
       elements.alt_logo = elements.t2;
-      var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + '.gif';
       g.temes[params.nivell === 'b' ? 1 : 0].forEach(function (t, i) {
+        var solved = score[params.variant][params.grup-1][params.nivell === 'b' ? 1 : 0][i] === 1;
+        var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + (solved ? '_ok' : '')  + '.gif';
         var text = getTxt(t);
         var link = 'player.html?variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + (i + 1);
         $('.opcions').append($('<div/>', { class: 'itemTema' })
@@ -408,8 +491,30 @@ $(function () {
       });
       break;
 
-    case 'results':
+    case 'result':
       console.log('Llegint resultats!');
+      elements.ret = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema' + params.tema;
+      var report = getLastGaliReport(true);
+      if (report == null) {
+        elements.img_logo = 'img/nenplora.gif';
+        elements.t1_text = 'Error!';
+        elements.descripcio = 'No s\'han pogut llegir els resultats de les activitats!'
+      } else if(report.globalScore < 8) {
+        elements.img_logo = 'img/nenplora.gif';
+        elements.t1_text = 'Ohhh!';
+        elements.descripcio = 'No has superat el nivell! Has obtingut una puntuació del '+ report.globalScore + '% i el mínim a assolir era el 80%. Torna a intentar-ho!' ;
+      } else {
+        elements.img_logo = 'img/nenriu.gif';
+        elements.t1_text = 'Fantàstic';
+        elements.descripcio = 'Nivell superat! Has obtingut una puntuació del '+ report.globalScore + '% Seguim?' ;
+        var pn = report.sessions[0].projectName;
+        var g=Number.parseInt(pn.substring(1,2));
+        var t=Number.parseInt(pn.substring(3,4));
+        var n = pn.substring(5) === 'b' ? 1 : 0;
+        score[params.variant][g][n][t] = 1;
+        // Calcular agrupaments!
+        saveScore(score);
+      }
       break;
     default:
       console.log('Pàgina desconeguda: ' + params.page);
@@ -420,15 +525,15 @@ $(function () {
     $('.footer').append($('<a/>', { href: elements.ret }).html('[' + getTxt('enrere') + ']'));
 
   if (elements.img_logo)
-    $('.logo').append($('<img>', {src: elements.img_logo, alt: elements.alt_logo}));
+    $('.logo').append($('<img>', { src: elements.img_logo, alt: elements.alt_logo }));
 
-  if(elements.t1_text)
+  if (elements.t1_text)
     $('.t1').html(elements.t1_text);
 
-  if(elements.descripcio)
-    $('.descripcio').html(elements.descripcio);    
+  if (elements.descripcio)
+    $('.descripcio').html(elements.descripcio);
 
-  if(elements.t2_text)
+  if (elements.t2_text)
     $('.t2').html(elements.t2_text);
 
 });
