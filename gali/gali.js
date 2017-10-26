@@ -338,6 +338,10 @@ var params = {
   tema: 1
 }
 
+// Puntuació mínima per a superar les activitats
+//var minScore = 80;
+var minScore = 8;
+
 // Inicialitza un conjunt de puntuacions a zero
 function initScore() {
   var result = {};
@@ -350,13 +354,16 @@ function initScore() {
         g.temes[l].forEach(function (v) {
           tr.push(0);
         });
+        tr.push(false);
         gr.push(tr);
       }
+      gr.push(false);
       result[v].push(gr);
     })
   });
   return result;
 }
+
 
 // Comprova l'existència de localStorage i sessionStorage
 // from: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
@@ -399,6 +406,7 @@ function saveScore(score) {
     window.localStorage.setItem('gali', JSON.stringify(score));
 }
 
+// Llegeix el darrer informe de sessionStorage
 function getLastGaliReport(remove) {
   var result = null;
   if (sessionStorageAvailable && window.sessionStorage.length > 0) {
@@ -484,8 +492,8 @@ $(function () {
       elements.img_logo = 'img/' + g.icon;
       elements.alt_logo = elements.t2;
       g.temes[params.nivell === 'b' ? 1 : 0].forEach(function (t, i) {
-        var solved = score[params.variant][params.grup-1][params.nivell === 'b' ? 1 : 0][i] === 1;
-        var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + (solved ? '_ok' : '')  + '.gif';
+        var solved = score[params.variant][params.grup - 1][params.nivell === 'b' ? 1 : 0][i] === 1;
+        var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + (solved ? '_ok' : '') + '.gif';
         var text = getTxt(t);
         var link = 'player.html?variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + (i + 1);
         $('.opcions').append($('<div/>', { class: 'itemTema' })
@@ -498,21 +506,23 @@ $(function () {
       console.log('Llegint resultats!');
       elements.ret = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema' + params.tema;
       var report = getLastGaliReport(true);
+      console.log(report);
       if (report == null) {
         elements.img_logo = 'img/nenplora.gif';
         elements.t1_text = 'Error!';
         elements.descripcio = 'No s\'han pogut llegir els resultats de les activitats!'
-      } else if(report.globalScore < 8) {
+      } else if (report.globalScore < minScore) {
         elements.img_logo = 'img/nenplora.gif';
         elements.t1_text = 'Ohhh!';
-        elements.descripcio = 'No has superat el nivell! Has obtingut una puntuació del '+ report.globalScore + '% i el mínim a assolir era el 80%. Torna a intentar-ho!' ;
+        elements.descripcio = 'No has superat el nivell! Has obtingut una puntuació del ' + report.globalScore + '% i el mínim a assolir era el 80%. Torna a intentar-ho!';
       } else {
         elements.img_logo = 'img/nenriu.gif';
         elements.t1_text = 'Fantàstic';
-        elements.descripcio = 'Nivell superat! Has obtingut una puntuació del '+ report.globalScore + '% Seguim?' ;
+        elements.descripcio = 'Nivell superat! Has obtingut una puntuació del ' + report.globalScore + '% Seguim?';
         var pn = report.sessions[0].projectName;
-        var g=Number.parseInt(pn.substring(1,2));
-        var t=Number.parseInt(pn.substring(3,4));
+        console.log(pn);
+        var g = Number.parseInt(pn.substring(1, 3));
+        var t = Number.parseInt(pn.substring(3, 5));
         var n = pn.substring(5) === 'b' ? 1 : 0;
         score[params.variant][g][n][t] = 1;
         // Calcular agrupaments!
