@@ -105,7 +105,15 @@ var settings = {
       sel_bloc: 'Fes un clic sobre el grup d\'activitats pel qual vulguis començar:',
       bloc_label: 'Blocs temàtics de contingut',
       nivell_a: 'Iniciació',
-      nivell_b: 'Aprofundiment'
+      nivell_b: 'Aprofundiment',
+      continua: 'continua',
+      enrere: 'enrere',
+      felicitats: 'Felicitats!',
+      puntuacio: 'Has obtingut una puntuació del ',
+      puntuacio_min: ' i el mínim per superar la prova era del ',
+      prova_superada: 'Prova superada!',
+      torna: 'Torna a intentar-ho!'
+
     },
     no: {
       id: 'Català nord-occidental',
@@ -177,7 +185,14 @@ var settings = {
       sel_bloc: 'Fes un clic sobre el grup d\'activitats pel qual vulguis començar:',
       bloc_label: 'Blocs temàtics de contingut',
       nivell_a: 'Iniciació',
-      nivell_b: 'Aprofundiment'
+      nivell_b: 'Aprofundiment',
+      continua: 'continua',
+      enrere: 'enrere',
+      felicitats: 'Felicitats!',
+      puntuacio: 'Has obtingut una puntuació del ',
+      puntuacio_min: ' i el mínim per superar la prova era del ',
+      prova_superada: 'Prova superada!',
+      torna: 'Torna a intentar-ho!'
     },
     al: {
       id: 'Català de l\'Alguer',
@@ -249,7 +264,14 @@ var settings = {
       sel_bloc: 'Fes un clic sobre el grup d\'activitats pel qual vulguis començar:',
       bloc_label: 'Blocs temàtics de contengut',
       nivell_a: 'Iniciació',
-      nivell_b: 'Aprofundiment'
+      nivell_b: 'Aprofundiment',
+      continua: 'continua',
+      enrere: 'enrere',
+      felicitats: 'Felicitats!',
+      puntuacio: 'Has obtengut una puntuació del ',
+      puntuacio_min: ' i el mínim per superar la prova era del ',
+      prova_superada: 'Prova superada!',
+      torna: 'Torna a provar!'
     },
     oc: {
       id: 'Occitan d\'Aran',
@@ -321,7 +343,14 @@ var settings = {
       sel_bloc: 'Hè un clic sus eth grop d\'activitats peth que volgues començar:',
       bloc_label: 'Blocs tematics de contengut',
       nivell_a: 'Iniciacion',
-      nivell_b: 'Apregondiment'
+      nivell_b: 'Apregondiment',
+      continua: 'contunha',
+      enrere: 'enrè',
+      felicitats: 'Felicitats!',
+      puntuacio: 'As obtengut ua puntuación deth ',
+      puntucaio_min: ' e eth minim a superar era próva ére deth ',
+      prova_superada: 'Prova superada!',
+      torna: 'Torna\'c a sajar!'
     }
   },
   msg: {
@@ -340,6 +369,7 @@ var params = {
 
 // Puntuació mínima per a superar les activitats
 //var minScore = 80;
+// TODO: Treure llindar test!!
 var minScore = 8;
 
 // Inicialitza un conjunt de puntuacions a zero
@@ -354,16 +384,18 @@ function initScore() {
         g.temes[l].forEach(function (v) {
           tr.push(0);
         });
-        tr.push(false);
         gr.push(tr);
       }
-      gr.push(false);
       result[v].push(gr);
     })
   });
   return result;
 }
 
+// Comprova que tots els temes d'una determinada variant, grup i nivell estiguin resolts
+function checkTemes(score, v, g, n) {
+  return score[v][g][n === 'b' ? 1 : 0].every(function (t) { return t > 0 });
+}
 
 // Comprova l'existència de localStorage i sessionStorage
 // from: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
@@ -430,7 +462,7 @@ function getLastGaliReport(remove) {
 
 // Retorna una paraula del diccionari
 function getTxt(key) {
-  return settings.dict[params.variant][key];
+  return settings.dict[params.variant][key] || key;
 }
 
 // S'executa immediatament després d'haver carregat la pàgina
@@ -448,6 +480,7 @@ $(function () {
 
   var elements = {
     ret: null,
+    ret_text: 'enrere',
     img_logo: 'img/logo_petit.gif',
     alt_logo: 'Galí',
     t1_text: null,
@@ -476,12 +509,14 @@ $(function () {
       elements.t1_text = getTxt('sel_bloc');
       elements.ret = '?page=variant'
       settings.grups.forEach(function (g, i) {
+        var solvedA = checkTemes(score, params.variant, i, 'a');
+        var solvedB = checkTemes(score, params.variant, i, 'b');
         var link = '?page=tema&variant=' + params.variant + '&grup=' + (i + 1);
         var text = getTxt(g.id);
         $('.opcions').append($('<div/>', { class: 'itemGrup' })
           .append($('<div/>', { class: 'label' }).html(text))
-          .append($('<a/>', { href: link + '&nivell=a' }).append($('<img>', { src: 'img/led_verd.gif', alt: text + ' (' + getTxt('nivell_a') + ')' })))
-          .append($('<a/>', { href: link + '&nivell=b' }).append($('<img>', { src: 'img/led_taronja.gif', alt: text + ' (' + getTxt('nivell_b') + ')' }))));
+          .append($('<a/>', { href: link + '&nivell=a' }).append($('<img>', { src: 'img/led_verd' + (solvedA ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_a') + ')' })))
+          .append($('<a/>', { href: link + '&nivell=b' }).append($('<img>', { src: 'img/led_taronja' + (solvedB ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_b') + ')' }))));
       });
       break;
 
@@ -503,10 +538,9 @@ $(function () {
       break;
 
     case 'result':
-      console.log('Llegint resultats!');
-      elements.ret = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema' + params.tema;
+      elements.ret = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema;
+      elements.ret_text = 'continua';
       var report = getLastGaliReport(true);
-      console.log(report);
       if (report == null) {
         elements.img_logo = 'img/nenplora.gif';
         elements.t1_text = 'Error!';
@@ -514,18 +548,16 @@ $(function () {
       } else if (report.globalScore < minScore) {
         elements.img_logo = 'img/nenplora.gif';
         elements.t1_text = 'Ohhh!';
-        elements.descripcio = 'No has superat el nivell! Has obtingut una puntuació del ' + report.globalScore + '% i el mínim a assolir era el 80%. Torna a intentar-ho!';
+        elements.descripcio = getTxt('puntuacio') + report.globalScore + '% ' + getTxt('puntuacio_min') + minScore + '%.<br>' + getTxt('torna');
       } else {
         elements.img_logo = 'img/nenriu.gif';
-        elements.t1_text = 'Fantàstic';
-        elements.descripcio = 'Nivell superat! Has obtingut una puntuació del ' + report.globalScore + '% Seguim?';
+        elements.t1_text = getTxt('felicitats');
+        elements.descripcio = getTxt('puntuacio') + report.globalScore + '%.<br>' + getTxt('prova_superada');
         var pn = report.sessions[0].projectName;
-        console.log(pn);
-        var g = Number.parseInt(pn.substring(1, 3));
-        var t = Number.parseInt(pn.substring(3, 5));
+        var g = Number.parseInt(pn.substring(1, 3)) - 1;
+        var t = Number.parseInt(pn.substring(3, 5)) - 1;
         var n = pn.substring(5) === 'b' ? 1 : 0;
         score[params.variant][g][n][t] = 1;
-        // Calcular agrupaments!
         saveScore(score);
       }
       break;
@@ -535,7 +567,7 @@ $(function () {
   }
 
   if (elements.ret)
-    $('.footer').append($('<a/>', { href: elements.ret }).html('[' + getTxt('enrere') + ']'));
+    $('.footer').append($('<a/>', { href: elements.ret }).html('[' + getTxt(elements.ret_text) + ']'));
 
   if (elements.img_logo)
     $('.logo').append($('<img>', { src: elements.img_logo, alt: elements.alt_logo }));
