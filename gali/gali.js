@@ -499,9 +499,9 @@ $(function () {
         var icon = 'img/selecciona' + (v == 'oc' ? '-oc' : '') + '.gif';
         var label = settings.dict[v].id;
         $('.opcions').append($('<div/>', { class: 'itemVariant' })
-          .append($('<a/>', { 'href': link }).append($('<img>', { src: icon, alt: label })))
-          .append($('<a/>', { 'href': link }).append($('<h2/>').html(label)))
-          .append($('<p/>').html(settings.dict[v].descripcio)));
+          .append($('<a/>', { href: link, class: 'btVariant' }).append($('<img>', { src: icon, alt: label })))
+          .append($('<a/>', { href: link, class: 'titolVariant' }).html(label))
+          .append($('<div/>', {class: 'descVariant'}).html(settings.dict[v].descripcio)));
       });
       break;
 
