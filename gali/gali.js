@@ -368,7 +368,7 @@ var params = {
 }
 
 // Puntuació mínima per a superar les activitats
-//var minScore = 80;
+//var minScore = 75;
 // TODO: Treure llindar test!!
 var minScore = 8;
 
@@ -500,41 +500,53 @@ $(function () {
         var label = settings.dict[v].id;
         $('.opcions').append($('<div/>', { class: 'itemVariant' })
           .append($('<a/>', { href: link, class: 'btVariant' }).append($('<img>', { src: icon, alt: label })))
-          .append($('<a/>', { href: link, class: 'titolVariant' }).html(label))
-          .append($('<div/>', {class: 'descVariant'}).html(settings.dict[v].descripcio)));
+          .append($('<div/>', { class: 'descVariant' })
+            .append($('<a/>', { href: link, class: 'titolVariant' }).html(label))
+            .append($('<span/>').html('<br>' + settings.dict[v].descripcio))));
       });
       break;
 
     case 'grups':
       elements.t1_text = getTxt('sel_bloc');
       elements.ret = '?page=variant'
+      var $table = $('<table/>', { class: 'llista' })
+        .append($('<thead/>')
+          .append($('<tr/>').append([
+            $('<th/>').html(getTxt('bloc_label')),
+            $('<th/>').html(getTxt('nivell_a')),
+            $('<th/>').html(getTxt('nivell_b'))])));
       settings.grups.forEach(function (g, i) {
         var solvedA = checkTemes(score, params.variant, i, 'a');
         var solvedB = checkTemes(score, params.variant, i, 'b');
         var link = '?page=tema&variant=' + params.variant + '&grup=' + (i + 1);
         var text = getTxt(g.id);
-        $('.opcions').append($('<div/>', { class: 'itemGrup' })
-          .append($('<div/>', { class: 'label' }).html(text))
-          .append($('<a/>', { href: link + '&nivell=a' }).append($('<img>', { src: 'img/led_verd' + (solvedA ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_a') + ')' })))
-          .append($('<a/>', { href: link + '&nivell=b' }).append($('<img>', { src: 'img/led_taronja' + (solvedB ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_b') + ')' }))));
+        $table.append($('<tr/>').append([
+          $('<td/>').html(text),
+          $('<td/>').append($('<a/>', { href: link + '&nivell=a' }).append($('<img>', { src: 'img/led_verd' + (solvedA ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_a') + ')' }))),
+          $('<td/>').append($('<a/>', { href: link + '&nivell=b' }).append($('<img>', { src: 'img/led_taronja' + (solvedB ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_b') + ')' })))
+        ]));
       });
+      $('.opcions').append($table);
       break;
 
     case 'tema':
       var g = settings.grups[params.grup - 1];
-      elements.t2_text = getTxt(g.id);
       elements.ret = '?page=grups&variant=' + params.variant;
       elements.img_logo = 'img/' + g.icon;
       elements.alt_logo = elements.t2;
+      $('.opcions').append($('<div>', {class: 'titol'}).html(getTxt(g.id)));
+      var $table = $('<table/>', { class: 'llista' });
       g.temes[params.nivell === 'b' ? 1 : 0].forEach(function (t, i) {
         var solved = score[params.variant][params.grup - 1][params.nivell === 'b' ? 1 : 0][i] === 1;
         var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + (solved ? '_ok' : '') + '.gif';
         var text = getTxt(t);
         var link = 'player.html?variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + (i + 1);
-        $('.opcions').append($('<div/>', { class: 'itemTema' })
-          .append($('<div/>', { class: 'label' }).html(text))
-          .append($('<a/>', { href: link }).append($('<img>', { src: img, alt: text }))));
+        $table.append($('<tr/>').append([
+          $('<td>').html(text),
+          $('<td/>').append($('<a/>', { href: link }).append($('<img>', { src: img, alt: text })))
+        ]));
       });
+      $('.opcions').append($table);
       break;
 
     case 'result':
@@ -567,7 +579,7 @@ $(function () {
   }
 
   if (elements.ret)
-    $('.footer').append($('<a/>', { href: elements.ret }).html('[' + getTxt(elements.ret_text) + ']'));
+    $('.footer').append($('<div/>', { class: 'back' }).append($('<a/>', { href: elements.ret }).html('[' + getTxt(elements.ret_text) + ']')));
 
   if (elements.img_logo)
     $('.logo').append($('<img>', { src: elements.img_logo, alt: elements.alt_logo }));

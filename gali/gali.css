@@ -3,13 +3,33 @@ body {
   font-family: 'Roboto', 'Noto', sans-serif;
   font-size: 11pt;
   min-height: 100vh;
-  background-color: beige;
+  background-color: white;
 }
 
 .main-container {
   margin: auto;
   max-width: 45rem;
   padding: 1rem;
+}
+
+.main-container a {
+  text-decoration: none;
+  color: #05508a;
+  font-weight: bold;
+}
+
+h2 {
+  color: #05508a;
+  margin-top: 3rem;
+}
+
+.espaiat li {
+  margin-bottom: 0.5rem;
+}
+
+.bullet {
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 .animacio {
@@ -20,13 +40,35 @@ body {
   width: 557px;
   padding: 10pt;
   text-align: center;
-  border: 2px solid blue;
+  border: 2px solid #05508a;
   border-radius: 10pt;
+}
+
+.back {
+  margin-top: 2rem;
 }
 
 .header {
   display: flex;
   margin-bottom: 3rem;
+}
+
+.targetes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.targetes figure {
+  width: 120px;
+  border: 2px solid #05508a;
+  padding: 0.8rem;
+  border-radius: 10pt;
+  text-align: center;
+  background-color: #eff8ff;
+}
+
+.targetes figcaption {
+  color: #05508a;
 }
 
 .logo {
@@ -46,6 +88,8 @@ body {
 
 .itemVariant {
   display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .btVariant {
@@ -58,10 +102,16 @@ body {
   text-decoration: none;
   font-size: 14pt;
   font-weight: bold;
+  color: #05508a;
 }
 
 .descVariant {
+  font-size: 10pt;
+}
 
+.llista {
+  width: 100%;
+  border-collapse: separate;
 }
 
 
