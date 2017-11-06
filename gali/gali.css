@@ -8,7 +8,8 @@ body {
 
 .main-container {
   margin: auto;
-  max-width: 45rem;
+  margin-top: 2rem;
+  max-width: 41rem;
   padding: 1rem;
 }
 
@@ -25,7 +26,8 @@ h2 {
 
 h3 {
   color: #05508a;
-  margin-bottom: 0;
+  margin-bottom: 0.3rem;
+  margin-top: 1.5rem;
   font-size: 12pt;
 }
 
@@ -47,11 +49,18 @@ h3 + p {
 }
 
 .botons {
-  width: 557px;
+  display: flex;
+  justify-content: center;
+}
+
+.botons > * {
+  width: 100pt;
+  height: 60px;
   padding: 10pt;
-  text-align: center;
-  border: 2px solid #05508a;
-  border-radius: 10pt;
+  margin: 0.5rem;
+  border: 1px solid #05508a;
+  border-radius: 5pt;
+  text-align: left;
 }
 
 .back {
@@ -121,9 +130,42 @@ h3 + p {
 
 .llista {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
+  margin-top: 2rem;
 }
 
+.llista th,td { 
+  text-align: center;
+  padding: 0.3rem;
+}
 
+.llista td { 
+  border-bottom: 1px solid darkgray;
+  border-top: 1px solid darkgray;
+  text-transform: uppercase;
+}
 
+.llista th:first-child,td:first-child {
+  text-align: left;
+}
 
+.credits li {
+  margin-bottom: 1rem;
+}
+
+.credits .logos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos > * {
+  margin: 0.5rem 1rem;
+}
+
+.centered {
+  text-align: center;
+}
