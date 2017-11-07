@@ -45,6 +45,20 @@
   <link rel="manifest" href="manifest.json">
 
   <link rel="stylesheet" href="gali.css">
+  <script>
+    function netejaRegistres() {
+      if (window.confirm('Esteu segurs de voler esborrar tots els resultats obtinguts per l\'usuari actual? (ATENCIÓ: no es pot desfer!)')) {
+        var keys = [];
+        for (var i = 0; i < window.localStorage.length; i++) {
+          var key = window.localStorage.key(i);
+          if (key.startsWith('gali-'))
+            keys.push(key);
+        }
+        keys.forEach(function (k) { window.localStorage.removeItem(k); });
+        window.alert('Els registres han estat esborrats');
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -114,6 +128,13 @@
         bloc cal haver superat totes les seves sessions.</p>
       <p>En qualsevol cas, l'alumnat sempre pot consultar els resultats dels exercicis de cada sessió de treball, fent clic
         damunt els comptadors d'encerts, intents i temps.</p>
+      <p>Els resultats es guarden al perfil d'usuari del navegador web. Quan diversos alumnes hagin de compartir un mateix navegador
+        web (per exemple, en una aula d'informàtica) s'aconsella crear un
+        <a href="https://support.google.com/chrome/answer/2364824?co=GENIE.Platform%3DDesktop&hl=ca">perfil específic</a> per a cadacun d'ells, o bé iniciar la sessió al sistema operatiu amb usuaris individuals.</p>
+      <p>Per iniciar una sessió de treball sense registres de resultats anteriors podeu obrir una
+        <a href="https://support.google.com/chromebook/answer/95464?co=GENIE.Platform%3DDesktop&hl=ca">finestra en mode d'incògnit</a> al navegador web.</p>
+      <p>Per esborrar tots els resultats acumulats per l'usuari actual, feu clic en
+        <a href="javascript:netejaRegistres()">aquest enllaç</a>.</p>
       <h2>Els tipus d'activitats</h2>
       <div class="targetes">
         <figure>
@@ -173,7 +194,7 @@
           <a href="https://clic.xtec.cat/repo/index.html?lang=ca&title=Galí:%20Aranès" target="_blank">Aranès</a>
         </li>
       </ul>
-      <p>Amb cadascun dels paquets de la biblioteca podeu:</p>
+      <p>Amb cadascun dels paquets de la biblioteca podreu:</p>
       <ul class="espaiat">
         <li>Descarregar i instal·lar les activitats al vostre ordinador per integrar-les a la biblioteca local o modificar-les
           amb l'aplicació

@@ -6,6 +6,57 @@ body {
   background-color: white;
 }
 
+.logo-portada {
+  color: white;
+  font-family: Helvetica,Arial,sans-serif;
+  background-color: #05508a;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  min-width: 450px;
+}
+
+.lletres-titol {
+  font-size: 128pt;
+  font-weight: bold;
+  text-align: center;
+  padding: 20pt 20pt 0pt 20pt;
+  opacity: 0;
+  animation: landing ease 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.lema {
+  font-size: 12pt;
+  text-align: center;
+  opacity: 0; 
+  animation: fade-in-right ease 1.5s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes landing {
+  from {
+    opacity: 0;
+    transform: scaleX(4) scaleY(4);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
 .main-container {
   margin: auto;
   margin-top: 2rem;
@@ -44,17 +95,14 @@ h3 + p {
   vertical-align: middle;
 }
 
-.animacio {
-  margin: 30pt;
-}
-
 .botons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .botons > * {
-  width: 100pt;
+  width: 120pt;
   height: 60px;
   padding: 10pt;
   margin: 0.5rem;
@@ -84,6 +132,7 @@ h3 + p {
   border-radius: 10pt;
   text-align: center;
   background-color: #eff8ff;
+  margin: 10pt;
 }
 
 .targetes figcaption {

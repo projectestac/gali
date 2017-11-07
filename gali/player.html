@@ -94,7 +94,7 @@
     var exitParams = 'page=result&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema + '&project=' + projectName;
     var JClicDataProject, JClicDataOptions;
 
-    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost')
+    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
       window.location.replace(window.location.href.replace('http:', 'https:'));
     else {
       JClicDataProject = params.base + 'gali' + params.variant + '/g0' + params.grup + '00_' + params.nivell + '/jclic.js/' + projectName + '.jclic';

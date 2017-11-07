@@ -374,27 +374,24 @@ var minScore = 8;
 
 // Inicialitza un conjunt de puntuacions a zero
 function initScore() {
-  var result = {};
-  settings.variants.forEach(function (v) {
-    result[v] = [];
-    settings.grups.forEach(function (g) {
-      var gr = [];
-      for (var l = 0; l < 2; l++) {
-        var tr = [];
-        g.temes[l].forEach(function (v) {
-          tr.push(0);
-        });
-        gr.push(tr);
-      }
-      result[v].push(gr);
-    })
+  var result = [];
+  settings.grups.forEach(function (g) {
+    var gr = [];
+    for (var l = 0; l < 2; l++) {
+      var tr = [];
+      g.temes[l].forEach(function (v) {
+        tr.push(0);
+      });
+      gr.push(tr);
+    }
+    result.push(gr);
   });
   return result;
 }
 
-// Comprova que tots els temes d'una determinada variant, grup i nivell estiguin resolts
-function checkTemes(score, v, g, n) {
-  return score[v][g][n === 'b' ? 1 : 0].every(function (t) { return t > 0 });
+// Comprova que tots els temes d'un determinat grup i nivell estiguin resolts
+function checkTemes(score, g, n) {
+  return score[g][n === 'b' ? 1 : 0].every(function (t) { return t > 0 });
 }
 
 // Comprova l'existència de localStorage i sessionStorage
@@ -427,15 +424,15 @@ var localStorageAvailable = storageAvailable('localStorage');
 var sessionStorageAvailable = storageAvailable('sessionStorage');
 
 // Llegeix la puntuació actual, si està disponible
-function getScore() {
-  var s = localStorageAvailable ? window.localStorage.getItem('gali') : '';
+function getScore(v) {
+  var s = localStorageAvailable ? window.localStorage.getItem('gali-' + v) : '';
   return s ? JSON.parse(s) : initScore();
 }
 
 // Desa la puntuació
-function saveScore(score) {
+function saveScore(score, v) {
   if (localStorageAvailable)
-    window.localStorage.setItem('gali', JSON.stringify(score));
+    window.localStorage.setItem('gali-' + v, JSON.stringify(score));
 }
 
 // Llegeix el darrer informe de sessionStorage
@@ -488,7 +485,7 @@ $(function () {
     descripcio: null
   }
 
-  var score = getScore();
+  var score = getScore(params.variant);
 
   switch (params.page) {
     case 'variant':
@@ -516,8 +513,8 @@ $(function () {
             $('<th/>').html(getTxt('nivell_a')),
             $('<th/>').html(getTxt('nivell_b'))])));
       settings.grups.forEach(function (g, i) {
-        var solvedA = checkTemes(score, params.variant, i, 'a');
-        var solvedB = checkTemes(score, params.variant, i, 'b');
+        var solvedA = checkTemes(score, i, 'a');
+        var solvedB = checkTemes(score, i, 'b');
         var link = '?page=tema&variant=' + params.variant + '&grup=' + (i + 1);
         var text = getTxt(g.id);
         $table.append($('<tr/>').append([
@@ -534,10 +531,10 @@ $(function () {
       elements.ret = '?page=grups&variant=' + params.variant;
       elements.img_logo = 'img/' + g.icon;
       elements.alt_logo = elements.t2;
-      $('.opcions').append($('<div>', {class: 'titol'}).html(getTxt(g.id)));
+      $('.opcions').append($('<div>', { class: 'titol' }).html(getTxt(g.id)));
       var $table = $('<table/>', { class: 'llista' });
       g.temes[params.nivell === 'b' ? 1 : 0].forEach(function (t, i) {
-        var solved = score[params.variant][params.grup - 1][params.nivell === 'b' ? 1 : 0][i] === 1;
+        var solved = score[params.grup - 1][params.nivell === 'b' ? 1 : 0][i] === 1;
         var img = 'img/led_' + (params.nivell == 'a' ? 'verd' : 'taronja') + (solved ? '_ok' : '') + '.gif';
         var text = getTxt(t);
         var link = 'player.html?variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + (i + 1);
@@ -569,8 +566,8 @@ $(function () {
         var g = Number.parseInt(pn.substring(1, 3)) - 1;
         var t = Number.parseInt(pn.substring(3, 5)) - 1;
         var n = pn.substring(5) === 'b' ? 1 : 0;
-        score[params.variant][g][n][t] = 1;
-        saveScore(score);
+        score[g][n][t] = 1;
+        saveScore(score, params.variant);
       }
       break;
     default:
