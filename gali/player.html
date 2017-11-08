@@ -36,38 +36,16 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
   <title>Galí</title>
-  <meta name="description" content="Guia per a l'aprenentatge interactiu de la llengua">
+  <meta name="description" content="Guia per a l'aprenentatge interactiu de la llengua - Activitats">
   <meta name="author" content="XTEC">
 
   <link rel="shortcut icon" href="img/favicon.ico">
 
   <!-- See https://goo.gl/OOhYW5 -->
-  <link rel="manifest" href="manifest.json">
+  <!-- link rel="manifest" href="manifest.json" -->
 
-  <!-- See https://goo.gl/qRE0vM -->
-  <meta name="theme-color" content="#2196F3">
-
-  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Galí">
-  <meta name="theme-color" content="#2196F3">
-
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Galí">
-
-  <!-- Homescreen icons -->
-  <link rel="apple-touch-icon" href="img/icon-48x48.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="96x96" href="img/icon-96x96.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="img/icon-192x192.png">
-
-  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="img/icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#2196F3">
-  <meta name="msapplication-tap-highlight" content="no">
+  <!-- ATENCIÓ: Substituir-ho per la versió estàndard (no beta) a producció! -->
+  <script type="text/javascript" src="https://clic.xtec.cat/dist/jclic-beta/jclic.min.js"></script>
 
   <script>
     // Paràmetres generals de l'aplicació
@@ -80,14 +58,14 @@
       tema: 1
     }
 
-    // Read params
+    // Llegeix els paràmetres passats per URL
     window.location.search.substring(1).split('&').forEach(function (p) {
       var kv = p.split('=');
       var key = kv[0], value = kv[1] || '';
       if (key in params)
         params[key] = value;
-      else
-        console.log('Paràmetre desconegut: ' + key + '=' + value);
+      else if (key)
+        console.log('Paràmetre desconegut: ' + key);
     });
 
     var projectName = 'g0' + params.grup + '0' + params.tema + params.nivell;
@@ -98,11 +76,13 @@
       window.location.replace(window.location.href.replace('http:', 'https:'));
     else {
       JClicDataProject = params.base + 'gali' + params.variant + '/g0' + params.grup + '00_' + params.nivell + '/jclic.js/' + projectName + '.jclic';
-      JClicDataOptions = { logLevel: 'trace', reporter: 'SessionStorageReporter', returnAsExit: true, exitUrl: 'gali.html?' + exitParams };
+      JClicDataOptions = {
+        reporter: 'SessionStorageReporter',
+        returnAsExit: true,
+        exitUrl: 'gali.html?' + exitParams
+      };
     }
   </script>
-  <script type="text/javascript" src="https://clic.xtec.cat/dist/jclic-beta/jclic.min.js"></script>
-
 </head>
 
 <body style="margin:0">

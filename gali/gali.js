@@ -1,4 +1,6 @@
-/* global $ */
+/* global JClicObject */
+
+var $ = JClicObject.$;
 
 var settings = {
   variants: ['cent', 'no', 'al', 'oc'],
@@ -354,7 +356,7 @@ var settings = {
     }
   },
   msg: {
-    variant: 'El català i l\'occità, com moltes altres llengües, tenen diverses variants dialectals que presenten algunes diferències fonètiques i ortogràfiques. Els exercicis del Galí es poden fer en aquestes variants:'
+    variant: 'El català i l\'occità, com moltes altres llengües, tenen diverses variants dialectals que presenten algunes diferències fonètiques i ortogràfiques.<br>Els exercicis del Galí es poden fer en les variants següents:'
   }
 };
 
@@ -365,12 +367,10 @@ var params = {
   grup: 1,
   nivell: 'a',
   tema: 1
-}
+};
 
 // Puntuació mínima per a superar les activitats
-//var minScore = 75;
-// TODO: Treure llindar test!!
-var minScore = 8;
+var minScore = 75;
 
 // Inicialitza un conjunt de puntuacions a zero
 function initScore() {
@@ -471,8 +471,8 @@ $(function () {
     var key = kv[0], value = kv[1] || '';
     if (key in params)
       params[key] = value;
-    else
-      console.log('Paràmetre desconegut: ' + key + '=' + value);
+    else if (key)
+      console.log('Paràmetre desconegut: ' + key);
   });
 
   var elements = {
@@ -519,8 +519,10 @@ $(function () {
         var text = getTxt(g.id);
         $table.append($('<tr/>').append([
           $('<td/>').html(text),
-          $('<td/>').append($('<a/>', { href: link + '&nivell=a' }).append($('<img>', { src: 'img/led_verd' + (solvedA ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_a') + ')' }))),
-          $('<td/>').append($('<a/>', { href: link + '&nivell=b' }).append($('<img>', { src: 'img/led_taronja' + (solvedB ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_b') + ')' })))
+          $('<td/>').append($('<a/>', { href: link + '&nivell=a' })
+            .append($('<img>', { src: 'img/led_verd' + (solvedA ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_a') + ')' }))),
+          $('<td/>').append($('<a/>', { href: link + '&nivell=b' })
+            .append($('<img>', { src: 'img/led_taronja' + (solvedB ? '_ok.gif' : '.gif'), alt: text + ' (' + getTxt('nivell_b') + ')' })))
         ]));
       });
       $('.opcions').append($table);
@@ -551,15 +553,15 @@ $(function () {
       elements.ret_text = 'continua';
       var report = getLastGaliReport(true);
       if (report == null) {
-        elements.img_logo = 'img/nenplora.gif';
+        elements.img_logo = 'img/nenplora.png';
         elements.t1_text = 'Error!';
-        elements.descripcio = 'No s\'han pogut llegir els resultats de les activitats!'
+        elements.descripcio = 'No s\'han pogut llegir els resultats de les activitats!';
       } else if (report.globalScore < minScore) {
-        elements.img_logo = 'img/nenplora.gif';
+        elements.img_logo = 'img/nenplora.png';
         elements.t1_text = 'Ohhh!';
         elements.descripcio = getTxt('puntuacio') + report.globalScore + '% ' + getTxt('puntuacio_min') + minScore + '%.<br>' + getTxt('torna');
       } else {
-        elements.img_logo = 'img/nenriu.gif';
+        elements.img_logo = 'img/nenriu.png';
         elements.t1_text = getTxt('felicitats');
         elements.descripcio = getTxt('puntuacio') + report.globalScore + '%.<br>' + getTxt('prova_superada');
         var pn = report.sessions[0].projectName;
