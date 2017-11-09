@@ -7,32 +7,32 @@ var settings = {
   grups: [
     {
       id: 'com_escriu',
-      icon: 'comsescr.gif',
+      icon: 'comsescr.png',
       temes: [['alfabet', 'on_lletra', 'nombres', 'unitats'], ['vocals', 'consonants', 'centenes']]
     },
     {
       id: 'qui_soc',
-      icon: 'quisoc.gif',
+      icon: 'quisoc.png',
       temes: [['nom', 'familia', 'cos', 'fisic', 'naixement'], ['qui_es_qui', 'relacions_familiars', 'aspecte']]
     },
     {
       id: 'quina_hora',
-      icon: 'quinhora.gif',
+      icon: 'quinhora.png',
       temes: [['dies', 'hora', 'personals', 'vestit', 'animals'], ['ahir', 'hora_temps', 'opinions', 'vesteixo']]
     },
     {
       id: 'menjo',
-      icon: 'quemenjo.gif',
+      icon: 'quemenjo.png',
       temes: [['aliments', 'altres_aliments', 'mobles_menjador', 'mobles_cuina', 'escola'], ['menjar', 'habitatge', 'adreces', 'estudi']]
     },
     {
       id: 'faig',
-      icon: 'quefaig.gif',
+      icon: 'quefaig.png',
       temes: [['accions', 'ofici', 'comprar', 'eines', 'on_vas'], ['que_fa', 'oficis', 'on_comprar', 'avaria', 'viatge']]
     },
     {
       id: 'morfosintaxi',
-      icon: 'morfo.gif',
+      icon: 'morfo.png',
       temes: [['article', 'masculi', 'determinants', 'pronoms', 'adverbis', 'verb_present', 'verb_passat'], ['substantius', 'combinacions', 'quantificadors', 'verb_subjuntiu', 'obligacio', 'correlacio']]
     }
   ],
@@ -369,7 +369,7 @@ var params = {
   tema: 1
 };
 
-// Puntuació mínima per a superar les activitats
+// Puntuació mínima per superar les activitats
 var minScore = 75;
 
 // Inicialitza un conjunt de puntuacions a zero
@@ -480,6 +480,10 @@ $(function () {
     ret_text: 'enrere',
     img_logo: 'img/logo_petit.gif',
     alt_logo: 'Galí',
+    link_logo: null,
+    img_logo2: null,
+    alt_logo2: null,
+    link_logo2: null,
     t1_text: null,
     t2_text: null,
     descripcio: null
@@ -490,7 +494,7 @@ $(function () {
   switch (params.page) {
     case 'variant':
       elements.descripcio = settings.msg.variant;
-      elements.ret = 'index.html'
+      elements.ret = elements.link_logo = 'index.html'
       settings.variants.forEach(function (v) {
         var link = '?page=grups&variant=' + v;
         var icon = 'img/selecciona' + (v == 'oc' ? '-oc' : '') + '.gif';
@@ -505,7 +509,7 @@ $(function () {
 
     case 'grups':
       elements.t1_text = getTxt('sel_bloc');
-      elements.ret = '?page=variant'
+      elements.ret = elements.link_logo = '?page=variant'
       var $table = $('<table/>', { class: 'llista' })
         .append($('<thead/>')
           .append($('<tr/>').append([
@@ -530,9 +534,9 @@ $(function () {
 
     case 'tema':
       var g = settings.grups[params.grup - 1];
-      elements.ret = '?page=grups&variant=' + params.variant;
-      elements.img_logo = 'img/' + g.icon;
-      elements.alt_logo = elements.t2;
+      elements.ret = elements.link_logo = elements.link_logo2 = '?page=grups&variant=' + params.variant;      
+      elements.img_logo2 = 'img/' + g.icon;
+      elements.alt_logo2 = elements.t2;
       $('.opcions').append($('<div>', { class: 'titol' }).html(getTxt(g.id)));
       var $table = $('<table/>', { class: 'llista' });
       g.temes[params.nivell === 'b' ? 1 : 0].forEach(function (t, i) {
@@ -549,7 +553,7 @@ $(function () {
       break;
 
     case 'result':
-      elements.ret = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema;
+      elements.ret = elements.link_logo = '?page=tema&variant=' + params.variant + '&grup=' + params.grup + '&nivell=' + params.nivell + '&tema=' + params.tema;
       elements.ret_text = 'continua';
       var report = getLastGaliReport(true);
       if (report == null) {
@@ -580,8 +584,15 @@ $(function () {
   if (elements.ret)
     $('.footer').append($('<div/>', { class: 'back' }).append($('<a/>', { href: elements.ret }).html('[' + getTxt(elements.ret_text) + ']')));
 
-  if (elements.img_logo)
-    $('.logo').append($('<img>', { src: elements.img_logo, alt: elements.alt_logo }));
+  if (elements.img_logo) {
+    var $img = $('<img>', { src: elements.img_logo, alt: elements.alt_logo });
+    $('.logo').append(elements.link_logo ? $('<a/>', { href: elements.link_logo }).append($img) : $img);
+  }
+
+  if (elements.img_logo2) {
+    var $img = $('<img>', { src: elements.img_logo2, alt: elements.alt_logo2 });
+    $('.logo').append(elements.link_logo2 ? $('<a/>', { href: elements.link_logo2 }).append($img) : $img);
+  }
 
   if (elements.t1_text)
     $('.t1').html(elements.t1_text);

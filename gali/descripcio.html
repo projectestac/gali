@@ -46,13 +46,15 @@
   <link rel="stylesheet" href="gali.css">
   <script>
     function netejaRegistres() {
-      if (window.confirm('Esteu segurs de voler esborrar tots els resultats obtinguts per l\'usuari actual? (ATENCIÓ: no es pot desfer!)')) {
-        var keys = [];
-        for (var i = 0; i < window.localStorage.length; i++) {
-          var key = window.localStorage.key(i);
-          if (key.startsWith('gali-'))
-            keys.push(key);
-        }
+      var keys = [];
+      for (var i = 0; i < window.localStorage.length; i++) {
+        var key = window.localStorage.key(i);
+        if (key.startsWith('gali-'))
+          keys.push(key);
+      }
+      if (keys.length < 1)
+        window.alert('No hi ha cap resultat emmagatzemat per a l\'usuari actual!');
+      else if (window.confirm('Esteu segurs de voler esborrar tots els resultats obtinguts per l\'usuari actual? (ATENCIÓ: no es pot desfer!)')) {
         keys.forEach(function (k) { window.localStorage.removeItem(k); });
         window.alert('Els registres han estat esborrats');
       }
@@ -64,7 +66,9 @@
   <div class="main-container">
     <div class="header">
       <div class="logo">
-        <img src="img/logo_petit.gif" alt="Galí">
+        <a href="index.html">
+          <img src="img/logo_petit.gif" alt="Galí">
+        </a>
       </div>
     </div>
 
