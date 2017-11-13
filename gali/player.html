@@ -41,11 +41,7 @@
 
   <link rel="shortcut icon" href="img/favicon.ico">
 
-  <!-- See https://goo.gl/OOhYW5 -->
-  <!-- link rel="manifest" href="manifest.json" -->
-
-  <!-- ATENCIÓ: Substituir-ho per la versió estàndard (no beta) a producció! -->
-  <script type="text/javascript" src="https://clic.xtec.cat/dist/jclic-beta/jclic.min.js"></script>
+  <link rel="stylesheet" href="gali.css">
 
   <script>
     // Paràmetres generals de l'aplicació
@@ -82,11 +78,37 @@
         exitUrl: 'gali.html?' + exitParams
       };
     }
+
+    window.setTimeout(function () {
+      var avis = document.querySelector('.avis');
+      if (avis)
+        avis.style.display = 'block';
+    }, 1000);
   </script>
 </head>
 
 <body style="margin:0">
-  <div class="JClic" />
+  <div class="JClic">
+    <div class="avis">
+      <p>Espereu mentre es carrega l'activitat</p>
+      <!-- Animació de: https://github.com/tobiasahlin/SpinKit -->
+      <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://clic.xtec.cat/dist/jclic.js/jclic.min.js"></script>
 </body>
 
 </html>

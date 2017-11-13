@@ -14,37 +14,25 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v2';
+const PRECACHE = 'precache-v3';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
-const PRECACHE_URLS_OK = [
+const PRECACHE_URLS = [
   'index.html',
   './', // Alias for index.html
   'gali.css',
   'gali.html',
   'gali.js',
   'player.html',
-  'img/comsescr.gif',
+  'img/logo_petit.gif',
   'img/led_taronja.gif',
   'img/led_taronja_ok.gif',
   'img/led_verd.gif',
   'img/led_verd_ok.gif',
-  'img/logo_petit.gif',
-  'img/morfo.gif',
-  'img/nenplora.gif',
-  'img/nenriu.gif',
-  'img/presenta.swf',
-  'img/quefaig.gif',
-  'img/quemenjo.gif',
-  'img/quinhora.gif',
-  'img/quisoc.gif',
   'img/selecciona.gif',
-  'img/selecciona-oc.gif'
-];
-
-// Empty list in devel mode
-const PRECACHE_URLS = [
+  'img/selecciona-oc.gif',
+  'js/jquery-3.2.1.min.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
@@ -78,9 +66,8 @@ self.addEventListener('fetch', event => {
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {
-        if (cachedResponse) {
+        if (cachedResponse)
           return cachedResponse;
-        }
 
         return caches.open(RUNTIME).then(cache => {
           return fetch(event.request).then(response => {

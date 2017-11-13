@@ -42,7 +42,7 @@
   <link rel="shortcut icon" href="img/favicon.ico">
 
   <link rel="manifest" href="manifest.json">
-  
+
   <meta name="theme-color" content="#2196F3">
 
   <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
@@ -67,7 +67,13 @@
   <meta name="msapplication-TileColor" content="#2196F3">
   <meta name="msapplication-tap-highlight" content="no">
 
+  <script>
+    if ('serviceWorker' in navigator)
+      navigator.serviceWorker.register('service-worker.js');
+  </script>
+
   <link rel="stylesheet" href="gali.css">
+
 </head>
 
 <body>

@@ -1,6 +1,3 @@
-/* global JClicObject */
-
-var $ = JClicObject.$;
 
 var settings = {
   variants: ['cent', 'no', 'al', 'oc'],

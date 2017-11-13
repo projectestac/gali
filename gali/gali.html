@@ -70,16 +70,21 @@
   <meta name="msapplication-tap-highlight" content="no">
 
   <!-- Load and register pre-caching Service Worker -->
-  <script>
+  <!-- script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('service-worker.js');
       });
     }
+  </script -->
+
+  <script>
+    if ('serviceWorker' in navigator)
+      navigator.serviceWorker.register('service-worker.js');
   </script>
 
   <link rel="stylesheet" href="gali.css">
-  <script src="https://clic.xtec.cat/dist/jclic.js/jclic.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="gali.js"></script>
 </head>
 
