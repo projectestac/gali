@@ -12,7 +12,7 @@
   
   @license EUPL-1.1
   @licstart
-  (c) 2000-2017 Catalan Educational Telematic Network (XTEC)
+  (c) 2000-2021 Catalan Educational Telematic Network (XTEC)
 
   Licensed under the EUPL, Version 1.1 or -as soon they will be approved by
   the European Commission- subsequent versions of the EUPL (the "Licence");
@@ -69,18 +69,13 @@
   <meta name="msapplication-TileColor" content="#2196F3">
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- Load and register pre-caching Service Worker -->
-  <!-- script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('service-worker.js');
-      });
-    }
-  </script -->
-
+  <!-- Unregister service worker -->
   <script>
     if ('serviceWorker' in navigator)
-      navigator.serviceWorker.register('service-worker.js');
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations)
+          registration.unregister();
+      });
   </script>
 
   <link rel="stylesheet" href="gali.css">
