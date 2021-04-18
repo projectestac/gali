@@ -69,22 +69,19 @@
   <meta name="msapplication-TileColor" content="#2196F3">
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- Load and register pre-caching Service Worker -->
-  <!-- script>
+  <script>
+    // Check that service workers are supported
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
         navigator.serviceWorker.register('service-worker.js');
       });
     }
-  </script -->
-
-  <script>
-    if ('serviceWorker' in navigator)
-      navigator.serviceWorker.register('service-worker.js');
   </script>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="gali.css">
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="gali.js"></script>
 </head>
 

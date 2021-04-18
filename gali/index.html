@@ -68,10 +68,16 @@
   <meta name="msapplication-tap-highlight" content="no">
 
   <script>
-    if ('serviceWorker' in navigator)
-      navigator.serviceWorker.register('service-worker.js');
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
   </script>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="gali.css">
 
 </head>
